@@ -1,0 +1,51 @@
+{
+  "protocol_version": "2.1",
+  "freeze_date": "2026-09-26",
+  "scope": "Five AI product manager and five commercialization or ads product manager fictional roles",
+  "taxonomy_version_at_freeze": "2.0",
+  "taxonomy_sha256_at_freeze": "b7bbafa387d412c1f7bc5582a22e2ff001558c837a86c233e2a20734b7fce36c",
+  "case_ids": [
+    "RLV2F-01",
+    "RLV2F-02",
+    "RLV2F-03",
+    "RLV2F-04",
+    "RLV2F-05",
+    "RLV2F-06",
+    "RLV2F-07",
+    "RLV2F-08",
+    "RLV2F-09",
+    "RLV2F-10"
+  ],
+  "card_ids": [
+    "PMJD01",
+    "PMJD02",
+    "PMJD03",
+    "PMJD04",
+    "PMJD05",
+    "PMJD06",
+    "PMJD07",
+    "PMJD08",
+    "PMJD09",
+    "PMJD10"
+  ],
+  "profile_ids": [
+    "RL-P11",
+    "RL-P12",
+    "RL-P13",
+    "RL-P14",
+    "RL-P15",
+    "RL-P21",
+    "RL-P22",
+    "RL-P26",
+    "RL-P24",
+    "RL-P25"
+  ],
+  "pairing_rule": "Fixed source-card order; no selection by model or baseline outcome",
+  "pre_evaluation_revision": "PMJD06 source title was corrected to an official Product Manager title, and PMJD08 was re-paired from engineer RL-P23 to unused product-coordinator RL-P26 for PM-career scope. The preliminary v2.0 lock was archived outside this repository before any prediction or student label; final case IDs are new.",
+  "source_cards_sha256": "00e92869f02938e6a954f2957484f1f4da95d4cef776c99147ba96b1440add5e",
+  "source_profiles_sha256": "d98b0f2b0a83904009fd1d0821e547b6c3ecac3e65a70dc52e923b378c1729e4",
+  "input_case_lock_sha256": "748be0a56a5958954f30869332cd48a45748a9650b32e734fd6ac7a06cb5f86c",
+  "line_ending_normalization": "Source cards, profiles and input lock were changed from CRLF to LF before public staging; parsed inputs and record hashes are unchanged. Private packet manifest lock hash was updated without changing student-facing text or decisions.",
+  "reference_status": "PENDING_STUDENT_REVIEW",
+  "predictions_run_at_freeze": false
+}

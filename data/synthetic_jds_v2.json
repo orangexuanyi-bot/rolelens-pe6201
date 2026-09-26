@@ -1,0 +1,122 @@
+[
+  {
+    "id": "PMJD01",
+    "bucket": "AI_PM",
+    "job_title": "AI Product Manager — Youth AI Learning Experience",
+    "jd_text": "AI Product Manager — Youth AI Learning Experience\n\nA fictional education company is building an AI learning companion for teenagers and families. The product helps students explore difficult topics, draft study plans, and ask follow-up questions while giving adults understandable controls. The product manager will interview students, caregivers, and educators, then decide which learning and safety problems deserve the next release. They will define age-appropriate interaction rules, consent and escalation paths, and a clear way for users to report troubling answers. They will work with design, policy, trust, and engineering partners to decide where a human response is necessary.\n\nThe role calls for a roadmap that improves useful learning without encouraging over-reliance or exposing private information. Success measures include meaningful learning sessions, repeat use, complaints, safety escalations, and user comprehension of controls. A strong candidate can translate conflicting user needs into explicit tradeoffs, test a feature with a small cohort, explain its limitations, and use qualitative feedback alongside numbers. Prior product ownership in consumer or education experiences would be relevant. This is an original fictional evaluation card inspired by a public PM role, not that employer's job description.",
+    "source_company": "OpenAI",
+    "source_role_title": "Product Manager, Youth",
+    "source_url": "https://openai.com/careers/product-manager-youth-san-francisco/",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 188
+  },
+  {
+    "id": "PMJD02",
+    "bucket": "AI_PM",
+    "job_title": "AI Product Manager — Shared Workplace Assistant",
+    "jd_text": "AI Product Manager — Shared Workplace Assistant\n\nA fictional workplace software company wants its assistant to help teams coordinate inside chat and document tools. Unlike a private chatbot, this assistant can be mentioned by several colleagues, summarize a shared thread, and suggest next actions that everyone can inspect. The product manager will study how teams hand off work, identify moments where an agent genuinely saves time, and define interaction rules for asking permission before consequential actions. They will shape onboarding for early customers and work with partner platforms on integration requirements and launch plans.\n\nThe PM will choose which surfaces to support first, how to show uncertainty and source context, and how permissions should limit what the assistant can read or share. Product measures could include activated teams, completed collaborative tasks, repeated use, correction rates, and support incidents. The candidate should be able to run customer discovery, prioritize a roadmap across different team sizes, and coordinate design, security, engineering, and partner teams. They should make adoption decisions using both user interviews and measured behavior. This role card is fictional and originally worded; the linked public posting supplies only the role-family context.",
+    "source_company": "Anthropic",
+    "source_role_title": "Product Manager, Claude Tag",
+    "source_url": "https://job-boards.greenhouse.io/anthropic/jobs/5251866008",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 190
+  },
+  {
+    "id": "PMJD03",
+    "bucket": "AI_PM",
+    "job_title": "AI Product Manager — Consumer Agent Subscription",
+    "jd_text": "AI Product Manager — Consumer Agent Subscription\n\nA fictional consumer app offers an AI agent that helps people organize personal projects and follow through on small tasks. The company is considering a paid plan, but users currently try the agent once and rarely return. The product manager will investigate whether the problem is weak task value, confusing setup, poor reliability, or unclear pricing. They will speak with new and retained users, map the activation journey, and propose a focused experiment rather than adding a long list of features.\n\nThe PM owns the product direction from early validation through launch. They will decide which agent actions need user approval, how to communicate failures, which benefits belong in a free or paid tier, and how to compare acquisition cost with recurring value. They will partner with design, marketing, finance, analytics, and engineering to test onboarding and subscription changes. Success measures include task completion, week-four retention, conversion, cancellation reasons, refunds, and customer support load. The candidate needs evidence-led prioritization, sound consumer product judgment, and the ability to explain tradeoffs between growth, user trust, and AI operating cost. This synthetic role is not an employer vacancy.",
+    "source_company": "System1",
+    "source_role_title": "Lead Product Manager - AI Agents & Emerging Products",
+    "source_url": "https://jobs.lever.co/system1/77998bff-bc91-47f1-aa93-5714e9ae4101",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 191
+  },
+  {
+    "id": "PMJD04",
+    "bucket": "AI_PM",
+    "job_title": "AI Product Manager — Conversational Service Assurance",
+    "jd_text": "AI Product Manager — Conversational Service Assurance\n\nA fictional B2B company helps contact centers check whether their AI voice and chat assistants handle customer requests reliably. Buyers complain that simple demos look good while real multi-turn conversations fail silently. The product manager will interview operations leaders and frontline agents, define the highest-cost failure types, and prioritize a product that lets customers create realistic test scenarios, review evidence, and decide when a release is safe enough to deploy. They will distinguish automated test signals from cases that still need a human reviewer.\n\nThe PM will own a roadmap covering setup, test coverage, issue triage, and reporting. They will decide how to communicate uncertainty when a test misses a rare but serious problem. They will coordinate with sales, customer success, design, engineering, and legal so the product fits real approval workflows. Measures include defect discovery before launch, false alarms, time to resolve, customer adoption, renewal, and evaluator agreement on sampled cases. A strong candidate can turn ambiguous customer complaints into clear requirements, run structured pilots, and give commercial teams an honest product narrative. This is an original synthetic PM card based on a public role family.",
+    "source_company": "Cyara",
+    "source_role_title": "Sr. AI Product Manager",
+    "source_url": "https://jobs.lever.co/cyara/c9ee0d16-0f3c-45d8-a79c-17102ea06e59",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 193
+  },
+  {
+    "id": "PMJD05",
+    "bucket": "AI_PM",
+    "job_title": "AI Product Manager — Team Knowledge Workspace",
+    "jd_text": "AI Product Manager — Team Knowledge Workspace\n\nA fictional company is replacing scattered internal documents and chat searches with one workplace where people and AI assistants plan projects together. The product manager will observe how employees locate decisions, request access, and pass work between teams. They will choose an initial workflow where an assistant can summarize context and propose actions without crossing document permissions or obscuring who made a decision. Research with different departments should reveal what can be shared, what must stay restricted, and where the current workflow breaks down.\n\nThe PM owns the product vision, a short roadmap, and measurable outcomes. They will partner with security, operations, design, and engineering to define consent, audit, and escalation behavior. They will test adoption in a small group before wider rollout and compare actual task success with satisfaction surveys and support tickets. Measures could include weekly active teams, successful handoffs, time to find a decision, incorrect access attempts, and trust-related complaints. The candidate should show strong user discovery, prioritization under limited capacity, and judgment about AI behavior in sensitive team workflows. This is an invented PM role card informed by a public posting, not copied from it.",
+    "source_company": "Anthropic",
+    "source_role_title": "Product Manager, Business Technology",
+    "source_url": "https://job-boards.greenhouse.io/anthropic/jobs/5397737008",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 195
+  },
+  {
+    "id": "PMJD06",
+    "bucket": "COMMERCIAL_PM",
+    "job_title": "Commercial Product Manager — Sponsored Retail Discovery",
+    "jd_text": "Commercial Product Manager — Sponsored Retail Discovery\n\nA fictional shopping marketplace sells sponsored placements on product pages and in category feeds. Advertisers want more measurable sales, while shoppers complain that some sponsored items interrupt discovery. The product manager will research both sides of the marketplace and decide where ads can create useful discovery without overwhelming organic results. They will define the product requirements for new placements, advertiser controls, and reporting, then coordinate experiments with design, sales, analytics, and engineering.\n\nThe PM must choose guardrails before launch: relevance thresholds, disclosure, frequency limits, and ways to investigate complaints. They will compare revenue and advertiser return with shopper engagement and long-term trust. Success measures could include incremental advertiser sales, repeat campaign purchase, shopper conversion, session abandonment, ad-related complaints, and placement fill. A strong candidate can write a concise business case, make tradeoffs among stakeholders, and interpret A/B results without claiming that every revenue increase is beneficial. Familiarity with ads products and customer research matters more than writing the ranking algorithm. This is an originally written fictional card inspired by an official product-management posting.",
+    "source_company": "Amazon",
+    "source_role_title": "Principal, Product Manager-Tech, eShop Premium Ads CX",
+    "source_url": "https://amazon.jobs/en/jobs/10496017/principal-product-manager-tech-eshop-premium-ads-cx",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 180
+  },
+  {
+    "id": "PMJD07",
+    "bucket": "COMMERCIAL_PM",
+    "job_title": "Commercial Product Manager — Regional Advertiser Growth",
+    "jd_text": "Commercial Product Manager — Regional Advertiser Growth\n\nA fictional commerce platform is expanding self-service advertising to smaller merchants across several regional markets. Many merchants create an account but never launch a campaign, and some who do spend once without returning. The product manager will interview advertisers and account teams to learn whether budget risk, setup effort, weak measurement, or unclear value causes these drop-offs. They will segment merchants by maturity and choose an initial product change that can be tested in one market before rollout.\n\nThe PM owns advertiser onboarding, budget guidance, campaign feedback, and launch coordination with sales and marketing. They will work with analytics and engineering on product requirements but are accountable for customer outcomes and tradeoffs, not model training or coding. Success measures include activation, retained advertisers, meaningful spend, advertiser return, merchant support contacts, and shopper relevance. The role requires the ability to combine funnel data with interviews, define experiments, and adapt a global ads product to local merchant needs without fragmenting the experience. The fictional employer and wording are original; the source link establishes only a real PM job family.",
+    "source_company": "Amazon",
+    "source_role_title": "Sr. Product Manager - Tech, India Ads",
+    "source_url": "https://amazon.jobs/en/jobs/10531340/sr-product-manager-tech-india-ads",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 183
+  },
+  {
+    "id": "PMJD08",
+    "bucket": "COMMERCIAL_PM",
+    "job_title": "Commercial Product Manager — Subscription Value and Conversion",
+    "jd_text": "Commercial Product Manager — Subscription Value and Conversion\n\nA fictional media service offers a free tier and a paid membership with additional listening benefits. Research suggests users know that Premium exists but cannot explain why the price is worthwhile. The product manager will examine the journey from first use to consideration, interview free users who did and did not subscribe, and decide how to make the paid value clear at relevant moments. The PM will work with design, marketing, research, finance, and regional teams on a small set of experience and messaging experiments.\n\nThe role covers the value proposition, upgrade entry points, and local-market adaptation. The PM should avoid manipulative prompts that temporarily raise conversions while increasing cancellations or support complaints. They will set a baseline, design A/B tests, and monitor conversion, retained subscribers, lifetime value, cancellation reasons, and satisfaction by cohort. A strong candidate can reason about willingness to pay, prioritize across markets, and explain how product changes differ from marketing claims. They should use both quantitative funnel evidence and direct user feedback to decide what to launch. This is a fictional, originally worded product role card informed by a public subscriptions PM posting.",
+    "source_company": "Spotify",
+    "source_role_title": "Senior Product Manager - Subscriptions",
+    "source_url": "https://www.lifeatspotify.com/jobs/senior-product-manager-subscriptions",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 195
+  },
+  {
+    "id": "PMJD09",
+    "bucket": "COMMERCIAL_PM",
+    "job_title": "Commercial Product Manager — Creator Memberships",
+    "jd_text": "Commercial Product Manager — Creator Memberships\n\nA fictional creator platform is considering a membership tier that offers fans extra experiences and gives creators a more predictable income stream. The product manager will research what fans value, what creators can consistently deliver, and whether a single plan or flexible tiers fit different communities. They will define the first release, including discovery, benefits, pricing presentation, and cancellation. They will coordinate with creator relations, payments, design, data, and engineering while keeping the experience understandable on both sides of the marketplace.\n\nThe PM will judge success through subscriber conversion, retained members, creator participation, average revenue, benefit use, complaints, and refund rates. They will test whether early growth comes from genuine value or short-lived promotion and adjust the roadmap accordingly. Decisions should consider younger users, regional payment expectations, creator workload, and the effect of membership features on free community participation. The candidate needs product discovery, pricing judgment, experiment design, and cross-functional communication; engineering implementation remains with the engineering team. This is an original synthetic PM scenario informed by an official subscriptions role, not a copied job advertisement.",
+    "source_company": "Roblox",
+    "source_role_title": "Principal Product Manager, Subscriptions",
+    "source_url": "https://careers.roblox.com/jobs/8219433",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 181
+  },
+  {
+    "id": "PMJD10",
+    "bucket": "COMMERCIAL_PM",
+    "job_title": "Commercial Product Manager — AI Service Monetization",
+    "jd_text": "Commercial Product Manager — AI Service Monetization\n\nA fictional AI service sells usage-based access to organizations through direct accounts and partner channels. Customers say it is hard to predict spending, while partners struggle to reconcile usage with invoices. The product manager will study buyers, finance teams, and resellers to find the most costly sources of confusion. They will define a roadmap for spend visibility, understandable limits, partner attribution, and pricing packages that support new industries without creating hidden costs or billing disputes.\n\nThe PM will write commercial product requirements and work with finance, legal, sales, design, analytics, and engineering on release decisions. They should distinguish a pricing policy change from a product feature and explain the consequences of both. Success measures include billing disputes, time to first paid use, partner activation, revenue retention, customer support effort, and forecast error. The candidate should be able to map the customer journey, test packaging with buyers, and make clear choices when growth opportunities conflict with trust or implementation cost. Technical fluency helps in discussing usage data, but this is a product ownership role rather than an engineering or algorithm position. This fictional card is independently written from a public PM role theme.",
+    "source_company": "Anthropic",
+    "source_role_title": "Product Manager, New Markets and Monetization",
+    "source_url": "https://job-boards.greenhouse.io/anthropic/jobs/5386182008",
+    "synthetic": true,
+    "provenance_note": "Original fictional PM role card informed by the linked public employer job posting; not the official text or a live vacancy.",
+    "word_count": 198
+  }
+]

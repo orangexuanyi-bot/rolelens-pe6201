@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dataset_name": "RoleLens v2 blinded primary PM input cases",
+  "provenance": "Ten original synthetic PM JDs paired by pre-registered ID with ten fictional CV profiles; no predictions or labels",
+  "source_file_sha256": "0943cbe3daa2c348082553acc3b3ab47c49aa85bc8679868317ffe5814f68a2e",
+  "record_count": 10,
+  "records": [
+    {
+      "id": "RLV2F-01",
+      "sha256": "61a4ea634d376238421ad0ce30d5c510aaf55059b79ca0ef27dfb777958a3bd9"
+    },
+    {
+      "id": "RLV2F-02",
+      "sha256": "eb15d20f4a771774bbde31b21bd92c66cf7bd4060ce8e117a882d869206d704f"
+    },
+    {
+      "id": "RLV2F-03",
+      "sha256": "23f43372617b43208b891650b55cca19c1fb59f8fcd82a3954eb39364057fd38"
+    },
+    {
+      "id": "RLV2F-04",
+      "sha256": "c9ea5976647a405e7a955217fe4855a9fb0aec130f19ec72f6b988747c2d2e67"
+    },
+    {
+      "id": "RLV2F-05",
+      "sha256": "6ab42b841eafb9f3f09456cf568a328c0a0efb0ad4e4cccfcc61225b51847fb1"
+    },
+    {
+      "id": "RLV2F-06",
+      "sha256": "d1b378129f1681ff9c941916d1a106067a5bf344d552ca818e62288d7865d7dd"
+    },
+    {
+      "id": "RLV2F-07",
+      "sha256": "0ddd59745f3f0e1fe123c79ec6c4b4e22ff59db57467656d99e81cb24e3bed0f"
+    },
+    {
+      "id": "RLV2F-08",
+      "sha256": "c776fe3ad9cac0a9777e47e6d0295c4c1b2d7cbed3be3628e7adc8ac4a0e5b67"
+    },
+    {
+      "id": "RLV2F-09",
+      "sha256": "daf2b403323ea61f1e162300c72301d93f021af29a74efe37c15a3165b7b33f8"
+    },
+    {
+      "id": "RLV2F-10",
+      "sha256": "4c9a365337004a8f3f3b6dc06d28918cc3c0e618d7e86bc25e57362004617a03"
+    }
+  ]
+}

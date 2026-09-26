@@ -1,0 +1,3 @@
+Synthetic early-career profile for a software demonstration.
+
+Led user interviews for a student video-editing prototype and summarized creator needs for the team. Built a product roadmap with design and engineering partners. Designed a basic dashboard with retention metrics. Studied foundation models in coursework, but has no documented RAG deployment, model evaluation program, or AI safety project. This profile is fictional and contains no real personal data.

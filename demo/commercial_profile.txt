@@ -1,0 +1,3 @@
+Candidate Demo-C | Product operations associate
+
+At a fictional local marketplace I interviewed service providers about appointment cancellations and summarized their feedback for the product team. I helped update onboarding help text and checked weekly activation dashboards. I did not own pricing, subscriptions, paid conversion experiments, or go-to-market launches. My evidence is limited to research support and operational analysis; it should not be treated as end-to-end product ownership.

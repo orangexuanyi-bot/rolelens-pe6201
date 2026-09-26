@@ -1,0 +1,4 @@
+# Runtime core uses Python 3.11+ standard library.
+# Optional interface and local PDF extraction:
+streamlit>=1.48,<2
+pypdf>=5,<7

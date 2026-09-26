@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+private/
+results/private*/
+*.pdf
+*.docx
+*.jpg
+*.jpeg
+*.png
+*.webp

@@ -1,0 +1,3 @@
+AI Product Manager, Creative Tools (synthetic demonstration)
+
+You will define a product strategy for AI-assisted creative workflows and make prioritization trade-offs with design and engineering partners. You will conduct user research with creators and translate user needs into a roadmap. The role requires experience with large language model products, model evaluation, metrics, and A/B testing. You will partner with engineers on retrieval and RAG capabilities, define evaluation criteria for output quality, and consider safety and privacy risks before launching features. You will communicate decisions to cross-functional stakeholders and measure whether new workflows help users complete their tasks.
