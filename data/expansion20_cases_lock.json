@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "dataset_name": "RoleLens additional twenty fictional PM pairs",
+  "provenance": "Codex-authored; twenty previously unused synthetic profiles; ten AI PM and ten commercial PM target roles; frozen before expansion predictions",
+  "source_file_sha256": "dbf0c028634a770de7d56084ae0db5dc86404679cfa0a97effc8ea4b180d9918",
+  "record_count": 20,
+  "records": [
+    {
+      "id": "RLX20-01",
+      "sha256": "e8a75bbb18aef8df0e3e21efb231b0623a82daf5339fb3beedc788d1af869537"
+    },
+    {
+      "id": "RLX20-02",
+      "sha256": "930dc7416632af2a0a02af5b21b8de083489df0708c171e16b8455f6b40832e4"
+    },
+    {
+      "id": "RLX20-03",
+      "sha256": "14269a714a093d07d1131975a02e596e5876fea784d3d538bdb4c1ae788d2118"
+    },
+    {
+      "id": "RLX20-04",
+      "sha256": "7add2f3d46ef1093d284583b7671d72ba5ca804396dc4b815878e4cf240d014c"
+    },
+    {
+      "id": "RLX20-05",
+      "sha256": "c4b23a903870aa426f0f873fe4ef32586bab1737db6f8d22b8799c0e7a20a4bb"
+    },
+    {
+      "id": "RLX20-06",
+      "sha256": "8cda2597e0c25ded52924c288960fe4d1d4dabf2c71d75e830c3ea1dc521fdfa"
+    },
+    {
+      "id": "RLX20-07",
+      "sha256": "ff75d4ca9b4dfc0334055ff7d3460dd680622ced0692683c965435e0ba597daf"
+    },
+    {
+      "id": "RLX20-08",
+      "sha256": "fe33b351845f9fe75599ff838572f1552fc9c71a9eef29510be4d1ed109f3754"
+    },
+    {
+      "id": "RLX20-09",
+      "sha256": "4ed884bb61a5d7eafd2d2b82f7ec024977d74afb3b5405928017ab1d8f85b023"
+    },
+    {
+      "id": "RLX20-10",
+      "sha256": "7dab5ab7537730f0dbb76c2eb34c4f880b3c84105e2b5a34cce2fba289ad8207"
+    },
+    {
+      "id": "RLX20-11",
+      "sha256": "38b378257f529da83ed7875dfe10e982ca8068037a32f79f78327c012d31cae0"
+    },
+    {
+      "id": "RLX20-12",
+      "sha256": "91798044ad84fb409284daccd89f48c28a04292eac84e2182d381f90152d5f8f"
+    },
+    {
+      "id": "RLX20-13",
+      "sha256": "d441c2c26ebc4a4af4c97eb5c27f36b829f18ca6f24c0602aa6ec808011e971b"
+    },
+    {
+      "id": "RLX20-14",
+      "sha256": "6747497dc05456fddc24a624d07d825dc14032c7bbfd1ea1fc32e22dd683f4b3"
+    },
+    {
+      "id": "RLX20-15",
+      "sha256": "92115780b07ae10e30d11bd25b45fa4a81102f213b8214eb8fe1eab6608bc8c1"
+    },
+    {
+      "id": "RLX20-16",
+      "sha256": "a2c9591075d4103dff466e9f6dbea8d7e726567efd415b0376b81b2c455178a3"
+    },
+    {
+      "id": "RLX20-17",
+      "sha256": "d3a0b435cb97cf2a806488c5d4d7651c7144a1234c0125dff7f45797ea8bbbe8"
+    },
+    {
+      "id": "RLX20-18",
+      "sha256": "cc84194cb52e4c6afc1e9706a6a5847c0a915d94f4a5388275c19720b0b8d4e7"
+    },
+    {
+      "id": "RLX20-19",
+      "sha256": "b3aff44dc905bc222764322715fc8da66adfd96581755c9c15c03986936ecff9"
+    },
+    {
+      "id": "RLX20-20",
+      "sha256": "06a9401bfd451e0c75db5bdb3cba4dbb798efa72f4d9873f36d61d84659616e7"
+    }
+  ]
+}

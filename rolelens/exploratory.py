@@ -15,6 +15,7 @@ import json
 import math
 import os
 from pathlib import Path
+import re
 import time
 import uuid
 
@@ -113,14 +114,54 @@ def _valid_gaps(value) -> bool:
     )
 
 
-def load_references(path: Path) -> tuple[list[dict], dict, bytes]:
-    """Load only original frozen inputs; references stay in a separate artifact."""
-    cases = verify_lock(CASES, LOCK)
-    protocol = json.loads(PROTOCOL.read_text(encoding="utf-8"))
-    if len(cases) != 10 or [row["id"] for row in cases] != protocol["case_ids"]:
-        raise ValueError("Exploratory evaluation requires the original ten frozen v2 inputs")
-    if any(row.get("reference_status") != "PENDING_STUDENT_REVIEW" or "reference_gaps" in row for row in cases):
-        raise ValueError("Source inputs must retain their original pending student-review state")
+def _input_paths(cases_path: Path | None, lock_path: Path | None,
+                 protocol_path: Path | None) -> tuple[Path, Path, Path, bool]:
+    supplied = (cases_path is not None, lock_path is not None, protocol_path is not None)
+    if any(supplied) and not all(supplied):
+        raise ValueError("Custom inputs require --cases, --case-lock and --protocol together")
+    return (cases_path or CASES, lock_path or LOCK, protocol_path or PROTOCOL, all(supplied))
+
+
+def load_references(path: Path, *, cases_path: Path | None = None,
+                    lock_path: Path | None = None,
+                    protocol_path: Path | None = None) -> tuple[list[dict], dict, bytes]:
+    """Verify one frozen phase; AI references remain a separate artifact.
+
+    Omitting all three custom paths retains the original ten-case input gate.
+    An expansion must supply its own input lock and pre-prediction protocol.
+    """
+    source, lock, protocol_file, custom = _input_paths(cases_path, lock_path, protocol_path)
+    cases = verify_lock(source, lock)
+    protocol = json.loads(protocol_file.read_text(encoding="utf-8"))
+    count = len(cases)
+    if [row["id"] for row in cases] != protocol["case_ids"]:
+        raise ValueError("Frozen input IDs or ordering differ from the protocol")
+    if any(not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]{0,99}", row["id"]) for row in cases):
+        raise ValueError("Case IDs must be safe, nonempty filenames")
+    if custom:
+        if (type(protocol.get("case_count")) is not int or protocol["case_count"] != count
+                or not isinstance(protocol.get("phase_id"), str) or not protocol["phase_id"].strip()
+                or protocol.get("predictions_run_at_freeze") is not False
+                or protocol.get("input_reference_status") != "INPUT_ONLY_FROZEN"):
+            raise ValueError("Custom protocol needs the case count, phase ID and explicit input-only pre-prediction freeze")
+        if protocol.get("input_file_sha256") != _sha(source.read_bytes()):
+            raise ValueError("Custom protocol does not match the frozen input file hash")
+        if protocol.get("input_case_lock_sha256") != _sha(lock.read_bytes()):
+            raise ValueError("Custom protocol does not match the frozen input lock hash")
+        expected_status = "INPUT_ONLY_FROZEN"
+    else:
+        if count != 10:
+            raise ValueError("Default evaluation requires the original ten frozen v2 inputs")
+        expected_status = "PENDING_STUDENT_REVIEW"
+    if any(row.get("reference_status") != expected_status or "reference_gaps" in row for row in cases):
+        raise ValueError("Source inputs must retain their frozen input-only reference state")
+    if any(not isinstance(row.get(field), str) or not row[field].strip()
+           for row in cases for field in ("jd", "profile", "profile_id", "bucket")):
+        raise ValueError("Each case needs a nonempty JD, profile, profile ID and PM bucket")
+    if len({row["profile_id"] for row in cases}) != count:
+        raise ValueError("A profile must not be reused within a phase")
+    if any(row["bucket"] not in {"AI_PM", "COMMERCIAL_PM"} for row in cases):
+        raise ValueError("Only AI_PM and COMMERCIAL_PM target-role buckets are supported")
     if protocol["taxonomy_sha256_at_freeze"] != _sha((ROOT / "rolelens" / "taxonomy.py").read_bytes()):
         raise ValueError("Taxonomy differs from the original frozen input protocol")
     raw = path.read_bytes()
@@ -138,14 +179,14 @@ def load_references(path: Path) -> tuple[list[dict], dict, bytes]:
         raise ValueError("AI references need an explicit YYYY-MM-DD generated_date") from exc
     if generated_on < date.fromisoformat(protocol["freeze_date"]):
         raise ValueError("AI references cannot predate the frozen inputs")
-    if reference.get("input_file_sha256") != _sha(CASES.read_bytes()):
+    if reference.get("input_file_sha256") != _sha(source.read_bytes()):
         raise ValueError("AI references do not match the frozen source file hash")
     rows = reference.get("cases")
-    if not isinstance(rows, list) or len(rows) != 10 or any(not isinstance(row, dict) for row in rows):
-        raise ValueError("AI references must contain ten case objects")
+    if not isinstance(rows, list) or len(rows) != count or any(not isinstance(row, dict) for row in rows):
+        raise ValueError(f"AI references must contain {count} case objects")
     ids = [row.get("case_id") for row in rows]
-    if any(not isinstance(case_id, str) for case_id in ids) or len(set(ids)) != 10 or set(ids) != {row["id"] for row in cases}:
-        raise ValueError("AI reference IDs must match the ten original cases exactly")
+    if any(not isinstance(case_id, str) for case_id in ids) or len(set(ids)) != count or set(ids) != {row["id"] for row in cases}:
+        raise ValueError("AI reference IDs must match this frozen phase exactly")
     for row in rows:
         if not _valid_gaps(row.get("gap_ids")):
             raise ValueError(f"{row['case_id']}: require three distinct valid AI-reference gap IDs")
@@ -238,19 +279,23 @@ def summarize(records: list[dict], reference: dict, mode: str, manifest: dict) -
 
 def evaluate(reference_path: Path, out_dir: Path, *, mode: str = "baseline",
              knowledge: Path = ROOT / "data" / "knowledge_notes.jsonl",
-             allow_external_processing: bool = False, model: str = DEFAULT_MODEL) -> dict:
+             allow_external_processing: bool = False, model: str = DEFAULT_MODEL,
+             cases_path: Path | None = None, lock_path: Path | None = None,
+             protocol_path: Path | None = None) -> dict:
     if mode not in {"baseline", "ai"}:
         raise ValueError("mode must be baseline or ai")
     if mode == "ai" and not allow_external_processing:
         raise ValueError("AI exploratory evaluation requires --allow-external-processing")
-    cases, reference, reference_bytes = load_references(reference_path)
+    source, lock, protocol_file, custom = _input_paths(cases_path, lock_path, protocol_path)
+    cases, reference, reference_bytes = load_references(
+        reference_path, cases_path=cases_path, lock_path=lock_path, protocol_path=protocol_path)
     identity = {
         "schema_version": 1,
         "reference_kind": REFERENCE_KIND,
         "human_reviewed": False,
-        "input_file_sha256": _sha(CASES.read_bytes()),
-        "input_lock_sha256": _sha(LOCK.read_bytes()),
-        "protocol_sha256": _sha(PROTOCOL.read_bytes()),
+        "input_file_sha256": _sha(source.read_bytes()),
+        "input_lock_sha256": _sha(lock.read_bytes()),
+        "protocol_sha256": _sha(protocol_file.read_bytes()),
         "reference_file_sha256": _sha(reference_bytes),
         "knowledge_sha256": _sha(knowledge.read_bytes()),
         "mode": mode,
@@ -261,6 +306,9 @@ def evaluate(reference_path: Path, out_dir: Path, *, mode: str = "baseline",
             for folder in ("rolelens", "project_core") for path in sorted((ROOT / folder).glob("*.py"))
         },
     }
+    if custom:
+        protocol = json.loads(protocol_file.read_text(encoding="utf-8"))
+        identity.update({"phase_id": protocol["phase_id"], "case_count": len(cases)})
     out_dir.mkdir(parents=True, exist_ok=True)
     with _exclusive_run(out_dir):
         manifest_path = out_dir / "manifest.json"
@@ -270,7 +318,7 @@ def evaluate(reference_path: Path, out_dir: Path, *, mode: str = "baseline",
             if manifest.get("identity") != identity or not snapshot_path.exists() or snapshot_path.read_bytes() != reference_bytes:
                 raise ValueError("Run inputs, labels or code changed; use a new exploratory output directory")
         else:
-            if list(out_dir.glob("RLV2F-*.json")):
+            if any(path.name != "reference_snapshot.json" for path in out_dir.glob("*.json")):
                 raise ValueError("Per-case outputs exist without a manifest; refusing to adopt them")
             if snapshot_path.exists() and snapshot_path.read_bytes() != reference_bytes:
                 raise ValueError("Existing frozen reference snapshot differs")
@@ -322,9 +370,13 @@ def main() -> None:
     parser.add_argument("--knowledge", type=Path, default=ROOT / "data" / "knowledge_notes.jsonl")
     parser.add_argument("--allow-external-processing", action="store_true")
     parser.add_argument("--model", default=DEFAULT_MODEL)
+    parser.add_argument("--cases", type=Path, help="Custom frozen JSONL; requires --case-lock and --protocol")
+    parser.add_argument("--case-lock", type=Path)
+    parser.add_argument("--protocol", type=Path)
     args = parser.parse_args()
     summary = evaluate(args.references, args.out_dir, mode=args.mode, knowledge=args.knowledge,
-                       allow_external_processing=args.allow_external_processing, model=args.model)
+                       allow_external_processing=args.allow_external_processing, model=args.model,
+                       cases_path=args.cases, lock_path=args.case_lock, protocol_path=args.protocol)
     print(json.dumps(summary, ensure_ascii=False, indent=2))
 
 
