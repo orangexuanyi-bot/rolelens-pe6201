@@ -1,0 +1,175 @@
+{
+  "case_id": "RLV2F-08",
+  "manifest_sha256": "d82db21fc913b82e1ac2aa79acf2eff9a6a5fdf3525584b215110bf1fcd8a3cb",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 9139.98,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [],
+      "capabilities": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "The PM will work with design, marketing, research, finance, and regional teams on a small set of experience and messaging experiments.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Commercial Product Manager — Subscription Value and Conversion",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Commercial Product Manager — Subscription Value and Conversion",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION",
+        "MONETIZATION_PRICING"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 11.80222
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 7.868352
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 7.691609
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 9123.95,
+      "usage": {
+        "prompt_tokens": 1038,
+        "completion_tokens": 2443,
+        "total_tokens": 3481
+      },
+      "billed_cost_usd": 0.00993975,
+      "estimated_cost_usd": 0.00993975,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate demonstrates early-stage product coordination experience in support ticket triage, interview scheduling, and copy updates, but lacks demonstrated ownership in subscription monetization, experimentation design, cross-market prioritization, and quantitative funnel analysis required for the Commercial Product Manager role.",
+      "responsibilities": [
+        {
+          "statement": "Investigate user journeys and conduct discovery to clarify the paid subscription value proposition.",
+          "jd_quote": "The product manager will examine the journey from first use to consideration, interview free users who did and did not subscribe, and decide how to make the paid value clear at relevant moments."
+        },
+        {
+          "statement": "Design experimentation frameworks and track lifecycle cohort metrics to sustainably optimize conversions.",
+          "jd_quote": "They will set a baseline, design A/B tests, and monitor conversion, retained subscribers, lifetime value, cancellation reasons, and satisfaction by cohort."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "interview free users who did and did not subscribe, and decide how to make the paid value clear at relevant moments.",
+          "profile_status": "partial",
+          "profile_quote": "arrange user interviews for the product manager"
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will set a baseline, design A/B tests, and monitor conversion, retained subscribers, lifetime value, cancellation reasons, and satisfaction by cohort.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "A strong candidate can reason about willingness to pay, prioritize across markets, and explain how product changes differ from marketing claims.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "The PM will work with design, marketing, research, finance, and regional teams on a small set of experience and messaging experiments.",
+          "profile_status": "partial",
+          "profile_quote": "A cross-team project reduced the number of billing questions, but my work was limited to updating help copy and checking that links worked"
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "prioritize across markets, and explain how product changes differ from marketing claims.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The role requires defining baseline metrics and running A/B tests to monitor downstream retention and lifetime value rather than short-term conversion spikes.",
+          "prep_action": "Practice designing an A/B test plan for an upgrade paywall, including hypothesis formulation, sample sizing, primary conversion metrics, and guardrail retention metrics."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The core problem is communicating paid value and evaluating willingness to pay across free and subscriber cohorts.",
+          "prep_action": "Review subscription packaging frameworks and prepare a case study analyzing value drivers, feature gating, and upgrade triggers for a freemium digital media service."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "why_now": "The PM must decide among multi-region messaging opportunities and feature enhancements without relying on misleading conversion tactics.",
+          "prep_action": "Develop a structured prioritization model balancing projected LTV impact, implementation effort, regional demand, and user cancellation risk."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK09",
+          "quote": "Covers subscription packaging, retention, customer experience, and experiments as revenue levers.",
+          "title": "How to grow subscription revenue",
+          "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK07",
+          "quote": "Outlines flat-rate, per-seat, tiered, and usage-based recurring pricing structures.",
+          "title": "Recurring pricing models",
+          "url": "https://docs.stripe.com/products-prices/pricing-models",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The candidate profile contains no direct evidence of managing subscription metrics, designing A/B tests, or leading commercial product strategy."
+      ]
+    }
+  },
+  "payload_sha256": "db7cded2209ee77f1ea0e7bee3778e46f093f9ac5a921549269825fc649f7408"
+}

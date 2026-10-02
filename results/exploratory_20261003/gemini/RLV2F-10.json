@@ -1,0 +1,188 @@
+{
+  "case_id": "RLV2F-10",
+  "manifest_sha256": "d82db21fc913b82e1ac2aa79acf2eff9a6a5fdf3525584b215110bf1fcd8a3cb",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7792.71,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "A fictional AI service sells usage-based access to organizations through direct accounts and partner channels.",
+        "They will define a roadmap for spend visibility, understandable limits, partner attribution, and pricing packages that support new industries without creating hidden costs or billing disputes.",
+        "Success measures include billing disputes, time to first paid use, partner activation, revenue retention, customer support effort, and forecast error."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "They will define a roadmap for spend visibility, understandable limits, partner attribution, and pricing packages that support new industries without creating hidden costs or billing disputes.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Success measures include billing disputes, time to first paid use, partner activation, revenue retention, customer support effort, and forecast error.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "My slides mention conversion optimisation, segmentation, personalisation, and experimentation, but those terms refer to campaign operations rather than controlled product tests.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Commercial Product Manager — AI Service Monetization",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Success measures include billing disputes, time to first paid use, partner activation, revenue retention, customer support effort, and forecast error.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Candidate RL-P25 | Growth Project Lead",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE",
+        "PRIORITIZATION"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 10.419328
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 35.112079
+      },
+      {
+        "id": "CK08",
+        "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+        "url": "https://stripe.com/resources/more/strategy-of-pricing",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 21.406843
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7764.43,
+      "usage": {
+        "prompt_tokens": 1042,
+        "completion_tokens": 2182,
+        "total_tokens": 3224
+      },
+      "billed_cost_usd": 0.008964,
+      "estimated_cost_usd": 0.008964,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate has marketing and growth project experience with qualitative user interviewing, but lacks demonstrated ownership in usage-based monetization, B2B commercial pricing, partner billing reconciliation, and formal product experimentation.",
+      "responsibilities": [
+        {
+          "statement": "Investigate spend and billing friction across customer segments and partner channels to inform commercial roadmaps.",
+          "jd_quote": "The product manager will study buyers, finance teams, and resellers to find the most costly sources of confusion."
+        },
+        {
+          "statement": "Define product requirements and roadmaps for spend controls, packaging, and partner attribution.",
+          "jd_quote": "They will define a roadmap for spend visibility, understandable limits, partner attribution, and pricing packages that support new industries without creating hidden costs or billing disputes."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The product manager will study buyers, finance teams, and resellers to find the most costly sources of confusion.",
+          "profile_status": "partial",
+          "profile_quote": "My strongest work is interviewing prospective customers about why they hesitate to finish registration. I coded 25 interviews and shared three themes with designers"
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "The PM will write commercial product requirements and work with finance, legal, sales, design, analytics, and engineering on release decisions.",
+          "profile_status": "partial",
+          "profile_quote": "I can write clearly and work across teams"
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They should distinguish a pricing policy change from a product feature and explain the consequences of both.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "A fictional AI service sells usage-based access to organizations through direct accounts and partner channels.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Success measures include billing disputes, time to first paid use, partner activation, revenue retention, customer support effort, and forecast error.",
+          "profile_status": "partial",
+          "profile_quote": "My slides mention conversion optimisation, segmentation, personalisation, and experimentation, but those terms refer to campaign operations rather than controlled product tests."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role centers on defining usage limits, packaging, and commercial pricing structures for AI access.",
+          "prep_action": "Study recurring and usage-based monetization models, analyzing trade-offs between tiered, metered, and overage pricing structures."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "The role requires addressing reseller attribution and partner billing reconciliation friction.",
+          "prep_action": "Review partner channel billing workflows and practice drafting partner attribution specifications and reconciliation reporting flows."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "Evaluating commercial outcomes requires rigorous measurement across billing disputes, retention, and forecast errors.",
+          "prep_action": "Build familiarity with B2B SaaS commercial metrics, cohort analysis, and controlled pricing test methodologies."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK07",
+          "quote": "Outlines flat-rate, per-seat, tiered, and usage-based recurring pricing structures.",
+          "title": "Recurring pricing models",
+          "url": "https://docs.stripe.com/products-prices/pricing-models",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK08",
+          "quote": "Surveys different bases for setting a price and stresses customer value, costs, competition, and model fit.",
+          "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+          "url": "https://stripe.com/resources/more/strategy-of-pricing",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile does not provide evidence of managing commercial monetization, usage-based pricing, or B2B partner billing.",
+        "Candidate notes growth campaign tracking but lacks formal experience owning technical product roadmaps and causal experimentation."
+      ]
+    }
+  },
+  "payload_sha256": "a7095ded0771c208d213f74e8a0ad978f6dfc66f768514b4c7a9f854338b0997"
+}

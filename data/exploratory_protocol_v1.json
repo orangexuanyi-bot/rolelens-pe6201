@@ -1,0 +1,28 @@
+{
+  "protocol_date": "2026-10-03",
+  "evaluation_type": "ai_generated_reference_exploratory_comparison",
+  "human_reviewed": false,
+  "reason_for_change": "The student requested simulated judgments. Codex generated the reference suggestions and is credited as their author. The instructor-recommended personal hand-check is not recorded as completed.",
+  "original_input_file": "data/primary_cases_v2.jsonl",
+  "original_input_sha256": "0943cbe3daa2c348082553acc3b3ab47c49aa85bc8679868317ffe5814f68a2e",
+  "reference_file": "data/ai_reference_exploratory_v1.json",
+  "reference_sha256": "11afd47863c48bcdf6358c16062b27ac28792343b01fdda02063bac988911f29",
+  "case_composition": "Ten fictional pairs in pre-existing order: five AI PM and five commercial PM roles.",
+  "label_rule": "Three distinct, role-relevant preparation capabilities with comparatively weak profile evidence; exact source excerpts, reasons, alternatives and qualitative confidence recorded before predictions.",
+  "run_rule": "One attempt per case per mode, with unchanged production prompt and validators. No outcome-driven label changes, prompt tuning or successful-only reruns. Any later revised run must use a separate version and preserve this run.",
+  "metrics": {
+    "mean_top3_overlap_all_cases": "Sum of matched gap IDs divided by 3 times all ten cases; abstentions contribute zero.",
+    "case_agreement_at_least_two": "Number of cases sharing at least two of three reference IDs divided by all ten cases.",
+    "coverage": "Accepted complete three-gap responses divided by all ten cases.",
+    "conditional_agreement": "Agreement among accepted cases only, reported alongside all-case results and coverage.",
+    "cost": "Sum of response-reported usage.cost including rejected responses; missing costs remain unknown, not zero. This is not an invoice.",
+    "latency": "Measured end-to-end pipeline time per attempted case. Sequential small-sample timing is not a production latency benchmark."
+  },
+  "limitations": [
+    "Model-to-model reference agreement is not correctness, hiring suitability, user value or an achieved human-reference target.",
+    "One assistant family contributed fictional inputs, taxonomy and labels, creating shared framing bias.",
+    "No human-verified labels or independent semantic evaluation are supplied by this exploratory study.",
+    "After suggestions are viewed, a later review of these cases is AI-assisted; fresh blind validation requires unseen cases or an independent unexposed reviewer.",
+    "Original pending human decision files and the original evaluator's human-reference gate remain unchanged."
+  ]
+}

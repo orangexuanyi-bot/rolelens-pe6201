@@ -1,0 +1,188 @@
+{
+  "case_id": "RLV2F-05",
+  "manifest_sha256": "d82db21fc913b82e1ac2aa79acf2eff9a6a5fdf3525584b215110bf1fcd8a3cb",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8051.1,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will partner with security, operations, design, and engineering to define consent, audit, and escalation behavior."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "label": "Product strategy",
+          "jd_quote": "The PM owns the product vision, a short roadmap, and measurable outcomes.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "The PM owns the product vision, a short roadmap, and measurable outcomes.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager — Team Knowledge Workspace",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "PRIORITIZATION",
+        "AI_PRODUCT_LITERACY",
+        "PRODUCT_STRATEGY"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 12.259734
+      },
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.591998
+      },
+      {
+        "id": "DOC20",
+        "title": "Prompt design strategies",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.981224
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8037.67,
+      "usage": {
+        "prompt_tokens": 961,
+        "completion_tokens": 1905,
+        "total_tokens": 2866
+      },
+      "billed_cost_usd": 0.0078645,
+      "estimated_cost_usd": 0.0078645,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P15 brings relevant experience in operational workflows, safety controls, and pilot evaluation from community moderation products. The primary growth areas for this role center on enterprise product strategy, generative AI assistant evaluations, and roadmap prioritization across multi-departmental workspace constraints.",
+      "responsibilities": [
+        {
+          "statement": "Define workplace knowledge assistant workflows while maintaining permission boundaries and auditability.",
+          "jd_quote": "choose an initial workflow where an assistant can summarize context and propose actions without crossing document permissions or obscuring who made a decision."
+        },
+        {
+          "statement": "Lead discovery across departments to uncover friction, access rules, and sharing boundaries.",
+          "jd_quote": "Research with different departments should reveal what can be shared, what must stay restricted, and where the current workflow breaks down."
+        },
+        {
+          "statement": "Collaborate across cross-functional partners to set safety, escalation, and governance standards.",
+          "jd_quote": "They will partner with security, operations, design, and engineering to define consent, audit, and escalation behavior."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "Research with different departments should reveal what can be shared, what must stay restricted, and where the current workflow breaks down.",
+          "profile_status": "strong",
+          "profile_quote": "I observed moderators working through busy weekend queues and redesigned the evidence summary so they could see context before acting."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "They will partner with security, operations, design, and engineering to define consent, audit, and escalation behavior.",
+          "profile_status": "strong",
+          "profile_quote": "My role was defining routing thresholds, escalation rules, and feedback from moderators."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "compare actual task success with satisfaction surveys and support tickets.",
+          "profile_status": "partial",
+          "profile_quote": "In a six-week pilot, median review time fell, while overturn rates remained similar. I checked a sample of decisions because speed alone would have been a poor measure of success."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "choose an initial workflow where an assistant can summarize context and propose actions without crossing document permissions or obscuring who made a decision.",
+          "profile_status": "partial",
+          "profile_quote": "An early generative reply draft was withdrawn after it suggested actions moderators were not authorised to take."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "The PM owns the product vision, a short roadmap, and measurable outcomes.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "prioritization under limited capacity",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The JD requires evaluating summarization and action proposals across sensitive organizational context and document permissions.",
+          "prep_action": "Design an evaluation framework specifying golden test sets, permission boundary checks, and automated trace review criteria for assistant responses."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "The role requires owning a clear product vision and short roadmap for replacing fragmented internal documents.",
+          "prep_action": "Draft a phased roadmap and target-state vision for enterprise knowledge collaboration, balancing phased team rollouts with risk mitigations."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "why_now": "The PM must select initial use cases and features under constrained capacity while addressing competing department requirements.",
+          "prep_action": "Structure a prioritization matrix comparing workplace workflow candidates based on business impact, technical complexity, and access-control risks."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC07",
+          "quote": "Describes evaluating multi-step agent behavior with traces and test cases.",
+          "title": "Evaluate agent workflows",
+          "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile contains limited evidence regarding multi-department B2B roadmap ownership.",
+        "No hiring decision is made; assessment reflects only explicit profile evidence against the provided job description."
+      ]
+    }
+  },
+  "payload_sha256": "928eaa7b11ed8ba365315659461f3a0d9ae3de62dfbb4994105a2a2c5804f19a"
+}

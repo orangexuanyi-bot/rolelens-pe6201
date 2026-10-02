@@ -1,0 +1,182 @@
+{
+  "case_id": "RLV2F-07",
+  "manifest_sha256": "d82db21fc913b82e1ac2aa79acf2eff9a6a5fdf3525584b215110bf1fcd8a3cb",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5700.51,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The role requires the ability to combine funnel data with interviews, define experiments, and adapt a global ads product to local merchant needs without fragmenting the experience."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Success measures include activation, retained advertisers, meaningful spend, advertiser return, merchant support contacts, and shopper relevance.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 3
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Commercial Product Manager — Regional Advertiser Growth",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 7
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Commercial Product Manager — Regional Advertiser Growth",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 3
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK02",
+        "title": "About the Experiments page",
+        "url": "https://support.google.com/google-ads/answer/10682377?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 14.881313
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 13.09578
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.795046
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 5682.92,
+      "usage": {
+        "prompt_tokens": 1054,
+        "completion_tokens": 973,
+        "total_tokens": 2027
+      },
+      "billed_cost_usd": 0.00443925,
+      "estimated_cost_usd": 0.00443925,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate has business development experience organizing sales demos and gathering customer feedback, but lacks demonstrated product management experience in advertising ecosystems, experimentation, and cross-functional product delivery.",
+      "responsibilities": [
+        {
+          "statement": "Interview merchants and internal teams to identify drop-off causes and segment merchants by maturity.",
+          "jd_quote": "The product manager will interview advertisers and account teams to learn whether budget risk, setup effort, weak measurement, or unclear value causes these drop-offs."
+        },
+        {
+          "statement": "Own advertiser onboarding, budget guidance, and campaign feedback across the merchant lifecycle.",
+          "jd_quote": "The PM owns advertiser onboarding, budget guidance, campaign feedback, and launch coordination with sales and marketing."
+        },
+        {
+          "statement": "Define experiments and partner with analytics and engineering on requirements while balancing customer outcomes.",
+          "jd_quote": "The role requires the ability to combine funnel data with interviews, define experiments, and adapt a global ads product to local merchant needs without fragmenting the experience."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "interview advertisers and account teams to learn whether budget risk, setup effort, weak measurement, or unclear value causes these drop-offs",
+          "profile_status": "partial",
+          "profile_quote": "collect customer questions after sales calls"
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "expanding self-service advertising to smaller merchants across several regional markets",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "jd_quote": "Many merchants create an account but never launch a campaign, and some who do spend once without returning.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "choose an initial product change that can be tested in one market before rollout.",
+          "profile_status": "partial",
+          "profile_quote": "would need support to run an experiment or design a product requirement."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will work with analytics and engineering on product requirements but are accountable for customer outcomes and tradeoffs, not model training or coding.",
+          "profile_status": "partial",
+          "profile_quote": "I do not own a software backlog or meet with engineers."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role requires managing advertiser onboarding and budget guidance across self-service ad products.",
+          "prep_action": "Study ad campaign structures, budgeting dynamics, and standard metrics such as impressions, clicks, conversions, and ROAS across platforms."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The JD calls for testing regional product changes and tracking activation, retention, and advertiser return metrics before full rollout.",
+          "prep_action": "Practice structuring controlled A/B test hypotheses, setting up primary and guardrail metrics, and determining rollout criteria."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "why_now": "The position demands translating merchant discovery into technical product requirements and collaborating with engineering and analytics.",
+          "prep_action": "Draft sample PRDs specifying feature requirements, edge cases, and tracking specs to practice engineering and analytics handoffs."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK02",
+          "quote": "Describes controlled campaign experiments that split traffic or budget between an original and a proposed change. Supports PM decisions about hypotheses, comparison periods, and whether a measured change justifies rollout.",
+          "title": "About the Experiments page",
+          "url": "https://support.google.com/google-ads/answer/10682377?hl=en",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK05",
+          "quote": "Defines reach, impressions, frequency, clicks, conversions, conversion rates, and cost measures for an ads dashboard. Helps keep similar-looking commercial metrics distinct in requirements and evaluations.",
+          "title": "Basic metrics and definitions in TikTok Ads Manager",
+          "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Profile evidence consists primarily of business development coordination and course interests rather than delivered product management work.",
+        "No formal evaluation of candidate fit, hiring decisions, or unevidenced personal characteristics is made."
+      ]
+    }
+  },
+  "payload_sha256": "20f00b96af8630725251f7b796a358d673ddfce98ead95cee044afb2d2a10a38"
+}

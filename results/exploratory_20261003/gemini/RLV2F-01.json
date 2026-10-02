@@ -1,0 +1,212 @@
+{
+  "case_id": "RLV2F-01",
+  "manifest_sha256": "d82db21fc913b82e1ac2aa79acf2eff9a6a5fdf3525584b215110bf1fcd8a3cb",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 10083.69,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will define age-appropriate interaction rules, consent and escalation paths, and a clear way for users to report troubling answers."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "label": "User and customer discovery",
+          "jd_quote": "A strong candidate can translate conflicting user needs into explicit tradeoffs, test a feature with a small cohort, explain its limitations, and use qualitative feedback alongside numbers.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "The role calls for a roadmap that improves useful learning without encouraging over-reliance or exposing private information.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Success measures include meaningful learning sessions, repeat use, complaints, safety escalations, and user comprehension of controls.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager — Youth AI Learning Experience",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "The product manager will interview students, caregivers, and educators, then decide which learning and safety problems deserve the next release.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "They will work with design, policy, trust, and engineering partners to decide where a human response is necessary.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY",
+        "SAFETY_PRIVACY",
+        "CROSS_FUNCTIONAL"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 9.908359
+      },
+      {
+        "id": "DOC08",
+        "title": "Safety best practices",
+        "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 9.627312
+      },
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.578433
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 10031.13,
+      "usage": {
+        "prompt_tokens": 978,
+        "completion_tokens": 2192,
+        "total_tokens": 3170
+      },
+      "billed_cost_usd": 0.0089535,
+      "estimated_cost_usd": 0.0089535,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P11 shows foundational product management experience in user discovery, small-scale pilot experiments, and identifying AI-generated copy inaccuracies in a B2B ads context. However, they lack demonstrated experience in youth safety policies, guardian consent workflows, and consumer education roadmap strategy.",
+      "responsibilities": [
+        {
+          "statement": "Lead user research with students, parents, and educators to prioritize upcoming learning and safety features.",
+          "jd_quote": "The product manager will interview students, caregivers, and educators, then decide which learning and safety problems deserve the next release."
+        },
+        {
+          "statement": "Establish age-appropriate guardrails, safety escalation mechanisms, and reporting flows alongside cross-functional partners.",
+          "jd_quote": "They will define age-appropriate interaction rules, consent and escalation paths, and a clear way for users to report troubling answers."
+        },
+        {
+          "statement": "Collaborate across design, policy, trust, and engineering teams to determine when human intervention is required.",
+          "jd_quote": "They will work with design, policy, trust, and engineering partners to decide where a human response is necessary."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The product manager will interview students, caregivers, and educators, then decide which learning and safety problems deserve the next release.",
+          "profile_status": "partial",
+          "profile_quote": "Interviews with sellers showed that the dashboard used agency terminology they did not recognise."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "They will define age-appropriate interaction rules, consent and escalation paths, and a clear way for users to report troubling answers.",
+          "profile_status": "partial",
+          "profile_quote": "I collected cases in which the generated copy implied discounts that did not exist. We kept the feature in an opt-in internal tool while the review process matured."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "test a feature with a small cohort, explain its limitations, and use qualitative feedback alongside numbers.",
+          "profile_status": "partial",
+          "profile_quote": "The creative team wrote the review criteria, and I collected cases in which the generated copy implied discounts that did not exist."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Success measures include meaningful learning sessions, repeat use, complaints, safety escalations, and user comprehension of controls.",
+          "profile_status": "partial",
+          "profile_quote": "The new report was used more often in the pilot group, but I cannot claim it improved return on ad spend; budgets shifted during the test."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will work with design, policy, trust, and engineering partners to decide where a human response is necessary.",
+          "profile_status": "partial",
+          "profile_quote": "My day-to-day work includes backlog refinement, stakeholder updates, customer calls, and checking data definitions before release."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "The role calls for a roadmap that improves useful learning without encouraging over-reliance or exposing private information.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "The role centers on sensitive youth interactions, requiring robust child safety, parental oversight, and escalation workflows beyond standard copy moderation.",
+          "prep_action": "Study child online safety frameworks (such as COPPA and age-appropriate design codes) and create a structured case study detailing escalation triggers and guardian notification flows for generative AI."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "The candidate must formulate an end-to-end product vision that balances pedagogical engagement against risks of over-reliance and privacy loss.",
+          "prep_action": "Draft a sample product roadmap and north-star metric hierarchy for an educational AI companion, explicitly addressing student agency versus parental oversight tradeoffs."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "Evaluating open-ended generative responses for teenage learners requires formal evaluation rubrics, edge-case benchmarking, and qualitative safety thresholds.",
+          "prep_action": "Develop a formal test suite structure and rubric for evaluating conversational model responses across educational accuracy, age appropriateness, and prompt injection defense."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC08",
+          "quote": "Lists practical safeguards for building applications that use model outputs.",
+          "title": "Safety best practices",
+          "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The evaluation is restricted solely to the provided profile and job description without inferring external background.",
+        "Assessment reflects product management competence indicators rather than a hiring determination."
+      ]
+    }
+  },
+  "payload_sha256": "8da3a457394129419f7d8869088479e8594828f10822a667a2db34fc94450737"
+}

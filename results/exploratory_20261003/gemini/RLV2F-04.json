@@ -1,0 +1,163 @@
+{
+  "case_id": "RLV2F-04",
+  "manifest_sha256": "d82db21fc913b82e1ac2aa79acf2eff9a6a5fdf3525584b215110bf1fcd8a3cb",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 9061.46,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The product manager will interview operations leaders and frontline agents, define the highest-cost failure types, and prioritize a product that lets customers create realistic test scenarios, review evidence, and decide when a release is safe enough to deploy.",
+        "The PM will own a roadmap covering setup, test coverage, issue triage, and reporting."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "The PM will own a roadmap covering setup, test coverage, issue triage, and reporting.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager — Conversational Service Assurance",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY",
+        "PRIORITIZATION"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 19.643664
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 16.435303
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 16.056629
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 9046.53,
+      "usage": {
+        "prompt_tokens": 1015,
+        "completion_tokens": 2188,
+        "total_tokens": 3203
+      },
+      "billed_cost_usd": 0.00896625,
+      "estimated_cost_usd": 0.00896625,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate demonstrates transferable product skills in user research, discovery workshops, and early AI prototype review within internal enterprise HR tooling. However, they lack demonstrated experience with external B2B commercial go-to-market workflows, multi-turn conversational AI evaluation frameworks, and formal evaluation metric tracking.",
+      "responsibilities": [
+        {
+          "statement": "Interview stakeholders, define failure types, and prioritize realistic testing and deployment assurance capabilities.",
+          "jd_quote": "The product manager will interview operations leaders and frontline agents, define the highest-cost failure types, and prioritize a product that lets customers create realistic test scenarios, review evidence, and decide when a release is safe enough to deploy."
+        },
+        {
+          "statement": "Collaborate across multidisciplinary and commercial functions to embed assurance workflows into enterprise operations.",
+          "jd_quote": "They will coordinate with sales, customer success, design, engineering, and legal so the product fits real approval workflows."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The product manager will interview operations leaders and frontline agents",
+          "profile_status": "strong",
+          "profile_quote": "I set up a workshop with employees from non-traditional career paths and found that job titles were a poor proxy for experience."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "They will distinguish automated test signals from cases that still need a human reviewer.",
+          "profile_status": "partial",
+          "profile_quote": "A data-science team built a prototype; I reviewed examples of false positives and missing experience."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will coordinate with sales, customer success, design, engineering, and legal so the product fits real approval workflows.",
+          "profile_status": "partial",
+          "profile_quote": "I mapped the content with human-resources partners, redesigned filters, and ran task-based usability sessions."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Measures include defect discovery before launch, false alarms, time to resolve, customer adoption, renewal, and evaluator agreement on sampled cases.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "run structured pilots, and give commercial teams an honest product narrative.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The core product involves benchmarking multi-turn conversational AI systems, balancing automated test signals with human grading, and quantifying uncertainty.",
+          "prep_action": "Design a sample multi-turn conversational test suite specifying pass/fail criteria, edge-case categories, and escalation workflows for human reviewers."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The role requires defining operational metrics such as defect discovery rates, false alarm ratios, and inter-evaluator agreement.",
+          "prep_action": "Review statistical reliability metrics for evaluation (e.g., Cohen's Kappa for evaluator agreement) and draft a metric scorecard for release gates."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "why_now": "The PM must partner with sales and customer success to run pilots and communicate product capabilities transparently to buyers.",
+          "prep_action": "Create a pilot framework outlining customer onboarding milestones, evaluation criteria, and narrative templates for communicating risk to buyers."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Candidate experience is limited to internal employee tools rather than commercial B2B products.",
+        "No demonstrated background in conversational AI or speech systems evaluation."
+      ]
+    }
+  },
+  "payload_sha256": "085a1eeb4781331f13e8e5e067e519e899e992643333cc29f19e674a3ccd8df4"
+}

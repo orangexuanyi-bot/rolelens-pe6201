@@ -1,0 +1,9 @@
+{
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "source_file_sha256": "11afd47863c48bcdf6358c16062b27ac28792343b01fdda02063bac988911f29",
+  "input_file_sha256": "0943cbe3daa2c348082553acc3b3ab47c49aa85bc8679868317ffe5814f68a2e",
+  "frozen_before_predictions": true,
+  "frozen_at_utc": "2026-10-02T17:27:18.561839+00:00",
+  "case_count": 10
+}

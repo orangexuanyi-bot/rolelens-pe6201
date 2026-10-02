@@ -1,0 +1,92 @@
+{
+  "case_id": "RLV2F-10",
+  "manifest_sha256": "1479dd08370c47fb315773612df811f09eebdcbe1bf9e97dff68aa13e68afe1f",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 12.99,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "A fictional AI service sells usage-based access to organizations through direct accounts and partner channels.",
+        "They will define a roadmap for spend visibility, understandable limits, partner attribution, and pricing packages that support new industries without creating hidden costs or billing disputes.",
+        "Success measures include billing disputes, time to first paid use, partner activation, revenue retention, customer support effort, and forecast error."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "They will define a roadmap for spend visibility, understandable limits, partner attribution, and pricing packages that support new industries without creating hidden costs or billing disputes.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Success measures include billing disputes, time to first paid use, partner activation, revenue retention, customer support effort, and forecast error.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "My slides mention conversion optimisation, segmentation, personalisation, and experimentation, but those terms refer to campaign operations rather than controlled product tests.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Commercial Product Manager — AI Service Monetization",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Success measures include billing disputes, time to first paid use, partner activation, revenue retention, customer support effort, and forecast error.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Candidate RL-P25 | Growth Project Lead",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE",
+        "PRIORITIZATION"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 10.419328
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 35.112079
+      },
+      {
+        "id": "CK08",
+        "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+        "url": "https://stripe.com/resources/more/strategy-of-pricing",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 21.406843
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "a15ec50f22bb7adb4749e1d643be51f17125c0f59e571c2c9746de616f2c2e24"
+}

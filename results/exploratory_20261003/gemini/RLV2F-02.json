@@ -1,0 +1,194 @@
+{
+  "case_id": "RLV2F-02",
+  "manifest_sha256": "d82db21fc913b82e1ac2aa79acf2eff9a6a5fdf3525584b215110bf1fcd8a3cb",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7579.41,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The product manager will study how teams hand off work, identify moments where an agent genuinely saves time, and define interaction rules for asking permission before consequential actions.",
+        "They will shape onboarding for early customers and work with partner platforms on integration requirements and launch plans.",
+        "The candidate should be able to run customer discovery, prioritize a roadmap across different team sizes, and coordinate design, security, engineering, and partner teams."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "label": "User and customer discovery",
+          "jd_quote": "The candidate should be able to run customer discovery, prioritize a roadmap across different team sizes, and coordinate design, security, engineering, and partner teams.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "The candidate should be able to run customer discovery, prioritize a roadmap across different team sizes, and coordinate design, security, engineering, and partner teams.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager — Shared Workplace Assistant",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "They will shape onboarding for early customers and work with partner platforms on integration requirements and launch plans.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "USER_DISCOVERY",
+        "AI_PRODUCT_LITERACY",
+        "GROWTH_LIFECYCLE"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.3326
+      },
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.927135
+      },
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.297285
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7563.81,
+      "usage": {
+        "prompt_tokens": 956,
+        "completion_tokens": 1869,
+        "total_tokens": 2825
+      },
+      "billed_cost_usd": 0.00772575,
+      "estimated_cost_usd": 0.00772575,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P12 brings strong IoT product experience in handling uncertainty display, telemetry data analysis, and reliability tradeoffs, but lacks direct experience in multi-user workplace collaboration tools, LLM/agent permissions, and platform partner integrations.",
+      "responsibilities": [
+        {
+          "statement": "Define workplace assistant interaction rules, user handoffs, and permission gates for consequential shared actions.",
+          "jd_quote": "The product manager will study how teams hand off work, identify moments where an agent genuinely saves time, and define interaction rules for asking permission before consequential actions."
+        },
+        {
+          "statement": "Determine surface roadmap, uncertainty/source attribution UX, and privacy boundaries for reading and sharing workspace context.",
+          "jd_quote": "The PM will choose which surfaces to support first, how to show uncertainty and source context, and how permissions should limit what the assistant can read or share."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "run customer discovery",
+          "profile_status": "partial",
+          "profile_quote": "I visited installation partners, analysed event timestamps, and proposed a shorter alert path plus clearer explanations of uncertainty."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "how to show uncertainty and source context",
+          "profile_status": "partial",
+          "profile_quote": "I defined the customer-facing interval and made sure the interface did not display a false precision."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "prioritize a roadmap across different team sizes",
+          "profile_status": "partial",
+          "profile_quote": "I often choose reliability fixes ahead of a new feature when home conditions vary from a demo."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "how permissions should limit what the assistant can read or share.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "work with partner platforms on integration requirements and launch plans.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Product measures could include activated teams, completed collaborative tasks, repeated use, correction rates, and support incidents.",
+          "profile_status": "partial",
+          "profile_quote": "comparing model outputs with actual meter readings for different home types."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "Shared workplace agents handle sensitive corporate threads and need strict permissioning before accessing or posting shared data.",
+          "prep_action": "Design role-based access control (RBAC) and explicit approval flows for agent actions in collaborative chat environments."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "The role requires launching integrations across partner chat and document platforms.",
+          "prep_action": "Draft an integration requirements document detailing API boundaries, platform webhooks, and co-marketing launch criteria."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "why_now": "Managing shared agent interactions requires moving beyond numerical forecast models to language-model retrieval and collaborative agent workflows.",
+          "prep_action": "Study LLM context window management, citation sourcing UX, and agent trace evaluation methods."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC07",
+          "quote": "Describes evaluating multi-step agent behavior with traces and test cases.",
+          "title": "Evaluate agent workflows",
+          "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile contains no evidence regarding enterprise security, access control lists, or privacy frameworks.",
+        "The profile does not show prior experience building integrations with third-party software platforms."
+      ]
+    }
+  },
+  "payload_sha256": "1109a93a9308d09facf96431bb8b1df13e89fa79f335e20be3e744e6c1d73bd8"
+}

@@ -1,0 +1,202 @@
+{
+  "case_id": "RLV2F-03",
+  "manifest_sha256": "d82db21fc913b82e1ac2aa79acf2eff9a6a5fdf3525584b215110bf1fcd8a3cb",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 15477.57,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will partner with design, marketing, finance, analytics, and engineering to test onboarding and subscription changes."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "label": "Product strategy",
+          "jd_quote": "The PM owns the product direction from early validation through launch.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "The candidate needs evidence-led prioritization, sound consumer product judgment, and the ability to explain tradeoffs between growth, user trust, and AI operating cost.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Success measures include task completion, week-four retention, conversion, cancellation reasons, refunds, and customer support load.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager — Consumer Agent Subscription",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "AI Product Manager — Consumer Agent Subscription",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "They will speak with new and retained users, map the activation journey, and propose a focused experiment rather than adding a long list of features.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I have also written marketplace rules for dispute escalation and worked with trust staff when a simple conversion target conflicted with guest safety.",
+          "keyword_priority_score": 6
+        }
+      ],
+      "top_gaps": [
+        "GROWTH_LIFECYCLE",
+        "MONETIZATION_PRICING",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 12.898496
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 27.121649
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 18.79664
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 15460.79,
+      "usage": {
+        "prompt_tokens": 996,
+        "completion_tokens": 1913,
+        "total_tokens": 2909
+      },
+      "billed_cost_usd": 0.00792075,
+      "estimated_cost_usd": 0.00792075,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P13 shows strong experience in qualitative user discovery, human-in-the-loop safety boundaries, and workflow troubleshooting, but lacks evidenced experience with subscription monetization, pricing tiers, and recurring retention metrics for AI consumer agents.",
+      "responsibilities": [
+        {
+          "statement": "Investigate drop-off drivers and map user activation through customer interviews and structured experimentation.",
+          "jd_quote": "investigate whether the problem is weak task value, confusing setup, poor reliability, or unclear pricing."
+        },
+        {
+          "statement": "Define agent interaction guardrails, tier packaging, and unit economics across cross-functional partners.",
+          "jd_quote": "decide which agent actions need user approval, how to communicate failures, which benefits belong in a free or paid tier, and how to compare acquisition cost with recurring value."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "speak with new and retained users, map the activation journey, and propose a focused experiment rather than adding a long list of features.",
+          "profile_status": "strong",
+          "profile_quote": "spoke with hosts in three regions."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "decide which agent actions need user approval, how to communicate failures",
+          "profile_status": "strong",
+          "profile_quote": "My contribution was deciding which communications were safe to automate and which needed confirmation."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "which benefits belong in a free or paid tier, and how to compare acquisition cost with recurring value.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Success measures include task completion, week-four retention, conversion, cancellation reasons, refunds, and customer support load.",
+          "profile_status": "partial",
+          "profile_quote": "Contact volume per booking declined in the trial, but travel mix changed between the comparison periods. I recorded that caveat in the launch note."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "partner with design, marketing, finance, analytics, and engineering to test onboarding and subscription changes.",
+          "profile_status": "partial",
+          "profile_quote": "worked with trust staff when a simple conversion target conflicted with guest safety."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The JD centers on evaluating a paid plan and balancing recurring value with acquisition cost, which the profile does not demonstrate.",
+          "prep_action": "Study subscription packaging frameworks, evaluate free versus paid feature gates for AI tools, and practice modeling tier economics against customer willingness to pay."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The role specifically requires tracking week-four retention, conversion, and cancellation metrics for a recurring consumer subscription.",
+          "prep_action": "Design an activation cohort analysis framework measuring week-one to week-four agent task completion and subscription conversion funnels."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "why_now": "The role requires tight collaboration across marketing, finance, analytics, and design to align commercial launch requirements.",
+          "prep_action": "Prepare case studies highlighting cross-functional alignment across financial modeling, growth marketing, and product analytics."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK07",
+          "quote": "Outlines flat-rate, per-seat, tiered, and usage-based recurring pricing structures. Supports product choices about how value, usage, and customer understanding map to a plan design.",
+          "title": "Recurring pricing models",
+          "url": "https://docs.stripe.com/products-prices/pricing-models",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK09",
+          "quote": "Covers subscription packaging, retention, customer experience, and experiments as revenue levers. Provides broad commercial context for a PM balancing conversion with sustained customer value.",
+          "title": "How to grow subscription revenue",
+          "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "No evidence of subscription monetization or paid tier packaging in the provided profile.",
+        "Evaluation is limited strictly to provided text snippets without inferring outside expertise."
+      ]
+    }
+  },
+  "payload_sha256": "37f635630d0d4928b40ec7f05fc9546d87d9695289c5f825ff49d60690f60be4"
+}

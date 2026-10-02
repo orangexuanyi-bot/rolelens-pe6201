@@ -1,0 +1,194 @@
+{
+  "case_id": "RLV2F-06",
+  "manifest_sha256": "d82db21fc913b82e1ac2aa79acf2eff9a6a5fdf3525584b215110bf1fcd8a3cb",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8087.47,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will define the product requirements for new placements, advertiser controls, and reporting, then coordinate experiments with design, sales, analytics, and engineering."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "They will define the product requirements for new placements, advertiser controls, and reporting, then coordinate experiments with design, sales, analytics, and engineering.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "The PM must choose guardrails before launch: relevance thresholds, disclosure, frequency limits, and ways to investigate complaints.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "A strong candidate can write a concise business case, make tradeoffs among stakeholders, and interpret A/B results without claiming that every revenue increase is beneficial.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "They will define the product requirements for new placements, advertiser controls, and reporting, then coordinate experiments with design, sales, analytics, and engineering.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 3
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "They will compare revenue and advertiser return with shopper engagement and long-term trust.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 25.751501
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 16.595599
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 13.630769
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8060.39,
+      "usage": {
+        "prompt_tokens": 1049,
+        "completion_tokens": 2200,
+        "total_tokens": 3249
+      },
+      "billed_cost_usd": 0.00903675,
+      "estimated_cost_usd": 0.00903675,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "RoleLens assessment for the Commercial Product Manager — Sponsored Retail Discovery position. The candidate demonstrates user listening, quality evaluation, and cross-functional coordination in service operations, but lacks direct experience in commercial ads ecosystems, sponsored marketplace monetization, and A/B experimentation.",
+      "responsibilities": [
+        {
+          "statement": "Balance marketplace discovery by defining placement specifications, advertiser reporting, and control requirements alongside organic search results.",
+          "jd_quote": "The product manager will research both sides of the marketplace and decide where ads can create useful discovery without overwhelming organic results."
+        },
+        {
+          "statement": "Design and enforce pre-launch guardrails and quality thresholds to preserve long-term shopper trust and resolve ad-related friction.",
+          "jd_quote": "The PM must choose guardrails before launch: relevance thresholds, disclosure, frequency limits, and ways to investigate complaints."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The product manager will research both sides of the marketplace and decide where ads can create useful discovery without overwhelming organic results.",
+          "profile_status": "partial",
+          "profile_quote": "I listened to call recordings, collected examples where written guidance disagreed with the product, and made a single review queue with named owners."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "then coordinate experiments with design, sales, analytics, and engineering.",
+          "profile_status": "partial",
+          "profile_quote": "When the tool combined two policies, I asked engineers to show the passage it used and to pause instead of guessing."
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "Familiarity with ads products and customer research matters more than writing the ranking algorithm.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare revenue and advertiser return with shopper engagement and long-term trust.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "interpret A/B results without claiming that every revenue increase is beneficial.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role requires managing sponsored retail placements, advertiser controls, and reporting dashboards.",
+          "prep_action": "Study foundational retail ad formats, bidding constructs, and campaign reporting mechanics across leading sponsored product platforms."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The PM must balance direct advertiser revenue with shopper conversion and long-term platform health.",
+          "prep_action": "Practice framing trade-offs between short-term monetization gains and user retention, including setting up guardrail metrics."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The PM must coordinate and evaluate A/B test results across multifaceted engagement and commercial metrics.",
+          "prep_action": "Review A/B testing frameworks focusing on marketplace balance, statistical significance, and counter-metric analysis."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK03",
+          "quote": "Introduces sponsored retail placements and the advertiser controls around targets, bids, and budgets.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK04",
+          "quote": "Connects brand discovery goals with impressions, new-to-brand purchases, and return on ad spend.",
+          "title": "Your complete guide to Sponsored Brands",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Profile does not contain formal product management titles or direct commercial advertising experience.",
+        "No evidence provided regarding statistical A/B testing or ad revenue optimization methodologies."
+      ]
+    }
+  },
+  "payload_sha256": "dad6c615ef63d0dc43c54f50f1ae0940a848bfaf6edf0d80785d4d09baaffa12"
+}

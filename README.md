@@ -1,21 +1,35 @@
-# RoleLens v2 — AI and Commercial Product Manager Role Analysis
+# RoleLens — AI and Commercial Product Manager Preparation
 
-RoleLens is an English-language PM career-preparation prototype. It accepts a job description with the **product manager title on the first line** and a fictional or properly authorized anonymized profile. It maps role-relevant product capabilities, highlights three preparation gaps, and links evidence. Its two supported role families are **AI product management** and **commercialization, monetization, subscriptions or ads product management**. It does not assess hiring suitability or require PMs to personally write model, retrieval, backend or algorithm code.
+RoleLens compares one product manager job description and one fictional or properly authorized anonymized profile. It links role requirements and profile evidence, then suggests three preparation gaps. Supported target roles are **AI PM and commercialization, monetization, subscription or advertising PM**. A gap means limited evidence for an important requirement; it does not prove missing ability or determine hiring suitability.
 
-The local comparison is a deliberately simple keyword baseline. An optional Gemini path retrieves three short, author-written notes linked to official documentation, requests structured JSON through OpenRouter, then rejects outputs with invalid IDs or non-exact evidence quotations. This exact-text check cannot establish that an interpretation, profile status or gap ranking is semantically correct. Role scope is a first-line title and topic heuristic; it may reject valid JDs with unusual headings or miss a misleading title. Non-English JDs are outside this prototype's tested scope.
+The product has a transparent keyword baseline and an optional single-call Gemini path. The AI route retrieves three short author-written source notes, requests structured JSON through OpenRouter, and validates IDs and exact quotations. Literal quotation checks do not establish that the interpretation or ranking is correct. The first-line PM-title scope heuristic can reject unusual valid headings; only English JDs were tested.
 
-## Current evidence status
+## Evidence as of 3 October 2026
 
-| Item | Verified status |
-|---|---|
-| Code | CLI, Streamlit UI, baseline, PM scope guard, two-family lexical retrieval, optional OpenRouter adapter and deterministic validator implemented. Thirteen offline tests passed on Python 3.12.14 with Streamlit 1.64.0 and pypdf 6.19.0. |
-| Primary v2.1 inputs | Ten **new** original fictional JD cards (five AI PM, five commercial PM), paired with ten fictional CVs. Case IDs `RLV2F-01`–`RLV2F-10`, source hashes and taxonomy code hash frozen before any primary prediction. |
-| Student reference labels | **PENDING.** The blind packet has full inputs, source URLs and a general taxonomy; all ten `decisions.csv` rows have empty gap, reason, date and reviewer fields. No baseline or model answer is shown. |
-| Primary Top-3 agreement, coverage, model comparison | **NOT_RUN / NOT_EVALUABLE** until the student independently completes all ten references and the finalizer locks them. No 80% target or 20-point improvement is claimed as achieved. |
-| Independent synthetic API smoke | An AI PM demo call passed structured evidence validation: 635 input tokens, 1,501 output tokens, 15.591 s and OpenRouter response-reported cost US$0.006105. A later commercial PM UI demo returned a validated answer in 6.064 s with response-reported cost US$0.005778. An earlier separate AI demo call was correctly rejected for a nonempty quote under `not_evidenced` despite HTTP success. These are demo observations, not a ten-case benchmark. The latest response-length cap and concision prompt were changed after these demo calls and have not been retested on a public synthetic demo. |
-| Real CV sanity slice | **Private, excluded from this repository.** Real personal materials and derived case outputs remain outside Git; `--private-cv` is local baseline only. Sending a real CV to OpenRouter needs separate, specific permission for third-party AI processing. Any findings belong in a private submission appendix, separate from synthetic metrics. |
+| Item | Observed status |
+| --- | --- |
+| Implementation | CLI, Streamlit interface, two-family lexical retrieval, PM scope guard, structured model adapter, deterministic validation, and reproducible evaluation. **18 offline tests passed**. |
+| Ten fictional input pairs | Five AI PM and five commercial PM pairs fixed by IDs and hashes on 26 September. Inputs and taxonomy have not changed. |
+| Reference judgments | **Codex AI-generated exploratory references**, fixed on 3 October before predictions. Includes reasons, input excerpts, alternatives, and subjective confidence. `human_reviewed=false`. |
+| Instructor-recommended personal check | **Not completed.** The student decision sheet remains blank. No AI judgment is signed as student work. |
+| Live exploratory comparison | One attempt per case and mode. Results below are **agreement with AI references, not correctness**. Ten Gemini responses passed schema/quote validation; one baseline case abstained. |
+| Private CV sanity slice | Three permissioned de-identified summaries processed separately; source CVs, summaries and derived outputs remain outside this repository. |
+| Student narration/submission | Local report and silent video are review artifacts pending personal review and narration. Course submission is not certified. |
 
-The submitted problem statement proposed 80% Top-3 Gap Agreement and a 20 percentage-point improvement over a keyword baseline. Those remain targets. The previously exposed AI-only pilot cases and their baseline suggestions were archived outside this repository and are not the primary v2 reference set.
+### Exploratory results
+
+| Measure, all ten cases | Keyword baseline | Gemini path |
+| --- | ---: | ---: |
+| Coverage | 9/10 (90%) | 10/10 (100%) |
+| Matched reference IDs, abstention = 0 | 18/30 (60%) | 19/30 (63.3%) |
+| Cases matching at least 2 of 3 IDs | 7/10 (70%) | 8/10 (80%) |
+| Mean overlap among accepted cases | 2.0/3 | 1.9/3 |
+| Median end-to-end latency | 12.985 ms | 8,069.285 ms |
+| Response-reported API cost | No external model call | US$0.08174175 total; US$0.008174175/case |
+
+Gemini recovered the baseline abstention but matched fewer reference IDs on three other cases. The case-agreement difference is **10 percentage points**, below the proposal's 20-point improvement target even in this exploratory study. Human-reference targets are not validated by these figures. The assistant family helped generate the fixtures, taxonomy and references; shared assumptions can inflate agreement. Ten subjective cases and one run provide weak evidence of generalization or user value.
+
+See [`data/exploratory_protocol_v1.json`](data/exploratory_protocol_v1.json), [`data/ai_reference_exploratory_v1.json`](data/ai_reference_exploratory_v1.json), and [`results/exploratory_20261003/`](results/exploratory_20261003/). The archive includes manifests, frozen reference snapshots, per-case pipeline results, and summaries. Saved outputs contain **fictional evidence excerpts only**. Rejected calls remain in coverage and cost calculations; missing costs remain unknown. Response-reported costs are not invoices.
 
 ## Run locally
 
@@ -30,59 +44,44 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m streamlit run streamlit_app.py
 ```
 
-The app runs on localhost; use its fictional example for an offline demonstration. The core CLI uses the Python standard library. Streamlit is for the interface and pypdf is only for text-layer local PDF input. `requirements.txt` gives supported dependency ranges; the versions above are the environment in which this snapshot was tested.
+The interface runs on localhost. The core CLI uses Python's standard library. Streamlit powers the UI; pypdf supports text-layer PDF input. Tested environment: Python 3.12.14, Streamlit 1.64.0, pypdf 6.19.0. Dependency ranges are in `requirements.txt`.
 
-For an **independent synthetic-only** OpenRouter demo, set `OPENROUTER_API_KEY` in the process environment using a local secret manager, then run:
+### Reproduce the exploratory comparison
+
+An independent local baseline run needs no credentials:
 
 ```powershell
-.\.venv\Scripts\python.exe -m rolelens.cli analyze --jd demo\jd.txt --profile demo\profile.txt --knowledge data\knowledge_notes.jsonl --mode ai --allow-external-processing
+.\.venv\Scripts\python.exe -m rolelens.exploratory --references data\ai_reference_exploratory_v1.json --out-dir private\my_baseline_run
+```
+
+For an authorized **fictional-input** model run, load `OPENROUTER_API_KEY` into the process environment using a private secret manager, then enable external processing:
+
+```powershell
+.\.venv\Scripts\python.exe -m rolelens.exploratory --references data\ai_reference_exploratory_v1.json --out-dir private\my_gemini_run --mode ai --allow-external-processing
 Remove-Item Env:OPENROUTER_API_KEY
 ```
 
-The explicit flag and the Streamlit checkbox authorize the specific API call. A basic contact-detail detector blocks obvious email and phone strings but cannot guarantee anonymity. The program does not write raw profile text, prompts, keys or model responses to disk. OpenRouter and its model provider may process transmitted text under their own policies. Never put a key in source, command arguments, a report, or Git.
+The runner freezes label bytes, input/code/knowledge hashes and settings before predictions. Completed case files are reused on resume. An interrupted request with unknown outcome blocks automatic retry to prevent duplicate charges. Never change labels or code to improve a reported result; use a new version and disclose later iterations. See [`scripts/EXPLORATORY_EVALUATION.md`](scripts/EXPLORATORY_EVALUATION.md).
 
-The adapter requests `google/gemini-3.7-flash` JSON-schema output. It records token usage, response-reported `usage.cost` when present, and a separately calculated listed-rate estimate. Response cost is preferred for observed spend, but it is not an invoice. Standard listed prices checked 2026-09-26 were US$0.75/M input and US$3.75/M output tokens; the older proposal's US$0.375/M and US$1.875/M figures were batch rates. Failed validation may still incur a provider charge, so usage and cost are retained for such responses.
+The provider is `google/gemini-3.7-flash`: structured JSON, temperature 0, 4,000-token output cap. Standard listed rates checked 3 October 2026 were US$0.75/M input and US$3.75/M output. A 10,000/2,000-token scenario is US$0.015 before other costs. Recorded response cost is preferred to the estimate. A paid answer can still fail validation.
 
-## Blinded ten-case student review
+## Reference provenance and human validation
 
-The primary input file is `data/primary_cases_v2.jsonl`; `data/primary_cases_v2_lock.json` fixes every byte and record hash. `data/primary_protocol_v2.json` records the 5+5 composition, pairing, source-file hashes and taxonomy code hash. The first, pre-evaluation v2.0 freeze was revised for two scope reasons before any prediction or student label: a source role title was corrected to a clear PM posting, and one engineer profile was replaced by an unused product-coordinator profile. Final case IDs are new. Running the build command now only verifies the existing freeze:
+`data/primary_cases_v2.jsonl` retains its historical filename and pending human-review fields so the original byte lock remains intact. New AI labels occupy a **separate** artifact. The original `rolelens.cli evaluate` and student finalizer still reject missing human review; neither was relaxed or used to certify this run.
 
-```powershell
-.\.venv\Scripts\python.exe scripts\build_primary_cases_v2.py
-.\.venv\Scripts\python.exe scripts\build_blind_review_v2.py
-```
+The initial protocol intended independent student labels. The student requested simulated judgments, so this study uses explicitly AI-authored references and discloses the missing personal check. After viewing these suggestions, reviewing the same cases is AI-assisted. A new blind study needs unseen cases or an independent unexposed reviewer. Do not mislabel AI-generated decisions as independent student review. Older v1 pilot suggestions are excluded.
 
-The second command creates `private\review_packet_v2\review_packet.md`, `decisions.csv`, and `packet_manifest.json` on a fresh checkout. It refuses to overwrite an existing decisions file. The packet includes each complete fictional JD and CV, the linked official source role, and the shared 14-ID product capability taxonomy. **It contains no proposed gap answers.** The student must open each source, read all ten input pairs, independently enter three distinct IDs plus an evidence-based reason, their name, and a `YYYY-MM-DD` date. No row is premarked reviewed.
+## Data, sources and privacy
 
-After the student personally completes the ten rows, validate and freeze the private reference:
+- `data/synthetic_jds_v2.json`: ten original fictional PM cards informed by official role links, not employer wording or live vacancies.
+- `data/synthetic_profiles/profiles.json`: thirty fictional profiles with generation instructions; ten used in this study. No real candidate text.
+- `data/source_manifests/pm_v2_source_candidates.json`: eighteen checked PM links informing ten cards. Older manifests contain broader source metadata, not collected JD bodies.
+- `data/knowledge_notes.jsonl`: thirty short **author-written** summaries linked to official documents (twenty AI, ten commercial), not official passages. Retrieval filters role family then ranks lexical matches; hybrid roles reserve notes from both families when possible.
+- `demo/`: fictional integration examples outside this ten-case study.
+- `private/`: ignored local outputs and personal materials. Never commit CVs, summaries, keys or personal model responses.
 
-```powershell
-.\.venv\Scripts\python.exe scripts\finalize_blind_review_v2.py --decisions private\review_packet_v2\decisions.csv --packet-manifest private\review_packet_v2\packet_manifest.json
-New-Item -ItemType Directory private\results -Force | Out-Null
-.\.venv\Scripts\python.exe -m rolelens.cli evaluate --cases private\reviewed_reference_v2\human_reference_cases_v2.jsonl --lock private\reviewed_reference_v2\human_reference_cases_v2_lock.json --knowledge data\knowledge_notes.jsonl --mode baseline > private\results\baseline_v2.json
-```
+The explicit CLI flag and UI checkbox control external processing. Email/phone detection is a partial contact-detail guard, not proof of anonymity. Real CV processing requires specific permission for OpenRouter and its provider. The `--private-cv` CLI path permits only the local baseline and prints aggregate counts. The ordinary application does not save inputs; the exploratory harness intentionally saves fictional evidence-bearing results for audit.
 
-The finalizer checks IDs, blank fields, dates, reasons and frozen input hashes. The evaluator also checks finalizer metadata and exact JD/profile identity before producing predictions. These structural checks **cannot prove** who made the review judgments; the student must attest authorship truthfully. Evaluation on pending `data/primary_cases_v2.jsonl` is blocked in both modes. Do not run generic `analyze` on primary cases before finishing blind review.
+This educational prototype, fictional data, AI judgments, tests, evaluation, documentation and draft presentation were prepared with **GPT-6 Codex assistance**. The student remains responsible for reviewing, understanding and attributing the work. There is no measured hiring benefit, semantic correctness rate or deployment readiness claim.
 
-If synthetic-input external processing is authorized after reference freeze, the matching AI run is:
-
-```powershell
-.\.venv\Scripts\python.exe -m rolelens.cli evaluate --cases private\reviewed_reference_v2\human_reference_cases_v2.jsonl --lock private\reviewed_reference_v2\human_reference_cases_v2_lock.json --knowledge data\knowledge_notes.jsonl --mode ai --allow-external-processing > private\results\ai_v2.json
-```
-
-Both modes then use the same ten fictional inputs. The output reports Top-3 set overlap (a case passes with at least two of three IDs matching the student-entered reference), coverage, abstentions, latency and, for model runs, usage and cost. This is **agreement with a limited human-reviewed synthetic reference**, not proof of candidate benefit, skill, job fit or real-world generalization. Ten cases and one reviewer are too small for a robust performance claim.
-
-For a consented and de-identified real CV local sanity check, use `analyze --jd <local PM JD.txt> --private-cv <local CV.txt or PDF> --knowledge data\knowledge_notes.jsonl --mode baseline`. This path prints only aggregate counts, cannot invoke the model and never writes the CV. Image-only PDFs/JPGs require local OCR and careful human redaction first. Do not put CVs or derived text in this repository.
-
-## Data and provenance
-
-- `data/synthetic_jds_v2.json`: ten original fictional PM cards informed by linked public job pages. These are not employer text or live vacancies.
-- `data/synthetic_profiles/profiles.json`: 30 original fictional CV-style profiles with generation prompt and deterministic builder; ten are used in the primary set. No real candidate text is included.
-- `data/source_manifests/pm_v2_source_candidates.json`: 18 checked official PM posting links (five AI PM and 13 commercial PM possibilities), of which ten inform the cards. The older `jd_sources.json` contains 30 broader PM links; these are URL metadata, **not** 30 collected full JD texts. The four Perplexity links in that older file were API-listed rather than detail-page verified.
-- `data/source_manifests/ai_docs.json` and `commercial_knowledge_sources.json`: 20 official AI documentation links and ten official commercial/ads/pricing/measurement links. `data/knowledge_notes.jsonl` indexes **30 author-written short summaries**, not official passages or copied pages. Retrieval filters AI and commercial role families before lexical ranking; a hybrid role reserves a note from each family when matching notes exist.
-- `demo/`: separate fictional examples for smoke tests, never primary reference cases.
-- `private/`: generated review decisions, finalized reference, outputs and any local personal material; ignored by Git.
-
-This implementation, documentation and fictional fixtures were prepared with GPT-6 Codex assistance. The student must review, explain and attribute the work and personally supply the ten independent reference decisions. Provider observations, offline tests, synthetic reference agreement and any real-CV sanity findings must be reported separately. The repository contains no CapCut App Store review text, real CVs, API credentials, or copied employer JD/article bodies.
-
-Implementation references: [OpenRouter Chat Completions](https://openrouter.ai/docs/api/api-reference/chat/send-chat-completion-request), [OpenRouter structured outputs](https://openrouter.ai/docs/guides/features/structured-outputs), [OpenRouter Gemini 3.7 Flash](https://openrouter.ai/google/gemini-3.7-flash).
+Implementation sources: [OpenRouter Chat Completions](https://openrouter.ai/docs/api/api-reference/chat/send-chat-completion-request), [structured outputs](https://openrouter.ai/docs/guides/features/structured-outputs), [Gemini 3.7 Flash listing](https://openrouter.ai/google/gemini-3.7-flash).
