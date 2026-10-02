@@ -1,0 +1,131 @@
+{
+  "record_kind": "student_post_run_review_confirmation",
+  "reviewer": "Wen Xuanyi",
+  "confirmation_date_local": "2026-10-03",
+  "timezone": "Asia/Shanghai",
+  "record_created_at": "2026-10-03T02:05:07.520186+08:00",
+  "recorded_by": "Codex",
+  "evidence_basis": "Student's explicit chat confirmation; not independently observed",
+  "confirmation_question_zh": "你刚才的认可是否包括逐例阅读十例判断稿，并核对每例的岗位要求、履历证据和三个能力 ID？",
+  "student_confirmation_verbatim_zh": "我已逐例核对十例，并认可全部判断",
+  "review_mode": "AI-assisted post-run personal review",
+  "review_completed_at": null,
+  "review_time_note": "The student confirmed completion on the stated date; an exact completion time was not supplied.",
+  "chronology": "Confirmed after AI references were frozen and exploratory predictions completed; AI suggestions and results were already available.",
+  "reference_artifact": "data/ai_reference_exploratory_v1.json",
+  "reference_file_sha256": "11afd47863c48bcdf6358c16062b27ac28792343b01fdda02063bac988911f29",
+  "input_file_sha256": "0943cbe3daa2c348082553acc3b3ab47c49aa85bc8679868317ffe5814f68a2e",
+  "case_count": 10,
+  "label_changes": 0,
+  "is_independent_blind_review": false,
+  "changes_original_run": false,
+  "report_and_disclosure_accepted": true,
+  "limitations": [
+    "This documents personal checking and acceptance after AI assistance, not independent pre-run human labels.",
+    "Frozen references, locks, run records and their at-run human_reviewed=false fields remain unchanged.",
+    "No new performance run or human correctness estimate is created by this confirmation.",
+    "No case-specific student rationale or signature is invented; the student confirmed all ten collectively."
+  ],
+  "cases": [
+    {
+      "case_id": "RLV2F-01",
+      "accepted_gap_ids": [
+        "SAFETY_PRIVACY",
+        "PRIORITIZATION",
+        "AI_EVALUATION"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    },
+    {
+      "case_id": "RLV2F-02",
+      "accepted_gap_ids": [
+        "SAFETY_PRIVACY",
+        "AI_PRODUCT_LITERACY",
+        "GROWTH_LIFECYCLE"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    },
+    {
+      "case_id": "RLV2F-03",
+      "accepted_gap_ids": [
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    },
+    {
+      "case_id": "RLV2F-04",
+      "accepted_gap_ids": [
+        "AI_EVALUATION",
+        "METRICS_EXPERIMENTATION",
+        "GO_TO_MARKET"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    },
+    {
+      "case_id": "RLV2F-05",
+      "accepted_gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "PRODUCT_STRATEGY",
+        "GROWTH_LIFECYCLE"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    },
+    {
+      "case_id": "RLV2F-06",
+      "accepted_gap_ids": [
+        "ADS_ECOSYSTEM",
+        "METRICS_EXPERIMENTATION",
+        "PRODUCT_STRATEGY"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    },
+    {
+      "case_id": "RLV2F-07",
+      "accepted_gap_ids": [
+        "GROWTH_LIFECYCLE",
+        "ADS_ECOSYSTEM",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    },
+    {
+      "case_id": "RLV2F-08",
+      "accepted_gap_ids": [
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    },
+    {
+      "case_id": "RLV2F-09",
+      "accepted_gap_ids": [
+        "MONETIZATION_PRICING",
+        "PRIORITIZATION",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    },
+    {
+      "case_id": "RLV2F-10",
+      "accepted_gap_ids": [
+        "MONETIZATION_PRICING",
+        "PRIORITIZATION",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "decision": "accepted_without_changes",
+      "confirmation_basis": "explicit_all_ten_confirmation"
+    }
+  ]
+}

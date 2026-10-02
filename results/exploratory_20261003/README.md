@@ -1,6 +1,6 @@
 # Exploratory comparison, 3 October 2026
 
-Ten fictional PM JD/profile pairs were compared against frozen Codex AI-generated references. This is **AI-reference agreement**, not human accuracy. No student review is certified.
+Ten fictional PM JD/profile pairs were compared against frozen Codex AI-generated references. This is **AI-reference agreement**, not human accuracy. At prediction time there was no student review. The student later confirmed checking all ten AI-drafted reference judgments and accepting them unchanged; see [the separate post-run confirmation](../../data/student_review_confirmation_20261003.json). Historical JSON records remain unchanged, and the comparison is still exploratory AI-reference agreement.
 
 Each mode has the exact reference snapshot, code/input/knowledge hash manifest, ten per-case pipeline records and summary. Outcomes are from one attempt per case; no primary-case prompt tuning or reruns were used. All records contain fictional materials only. Private CVs and credentials are excluded. Original full inputs remain under data; saved per-case records include synthetic evidence excerpts.
 

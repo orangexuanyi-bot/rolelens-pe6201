@@ -10,11 +10,11 @@ The product has a transparent keyword baseline and an optional single-call Gemin
 | --- | --- |
 | Implementation | CLI, Streamlit interface, two-family lexical retrieval, PM scope guard, structured model adapter, deterministic validation, and reproducible evaluation. **18 offline tests passed**. |
 | Ten fictional input pairs | Five AI PM and five commercial PM pairs fixed by IDs and hashes on 26 September. Inputs and taxonomy have not changed. |
-| Reference judgments | **Codex AI-generated exploratory references**, fixed on 3 October before predictions. Includes reasons, input excerpts, alternatives, and subjective confidence. `human_reviewed=false`. |
-| Instructor-recommended personal check | **Not completed.** The student decision sheet remains blank. No AI judgment is signed as student work. |
+| Reference judgments | **Codex AI-generated exploratory references**, fixed on 3 October before predictions. Includes reasons, input excerpts, alternatives, and subjective confidence. `human_reviewed=false` records their state at prediction time; see the later review below. |
+| Personal ten-case check | **Student confirmed completion on 3 October**, checking role requirements, profile evidence and three capability IDs for each case, and accepting all ten sets unchanged. This was AI-assisted review after the exploratory run. [Dated confirmation](data/student_review_confirmation_20261003.json). |
 | Live exploratory comparison | One attempt per case and mode. Results below are **agreement with AI references, not correctness**. Ten Gemini responses passed schema/quote validation; one baseline case abstained. |
 | Private CV sanity slice | Three permissioned de-identified summaries processed separately; source CVs, summaries and derived outputs remain outside this repository. |
-| Student narration/submission | Local report and silent video are review artifacts pending personal review and narration. Course submission is not certified. |
+| Student narration/submission | Student accepted the report and disclosure. Personal narration, final package checking and course submission remain pending. |
 
 ### Exploratory results
 
@@ -69,7 +69,7 @@ The provider is `google/gemini-3.7-flash`: structured JSON, temperature 0, 4,000
 
 `data/primary_cases_v2.jsonl` retains its historical filename and pending human-review fields so the original byte lock remains intact. New AI labels occupy a **separate** artifact. The original `rolelens.cli evaluate` and student finalizer still reject missing human review; neither was relaxed or used to certify this run.
 
-The initial protocol intended independent student labels. The student requested simulated judgments, so this study uses explicitly AI-authored references and discloses the missing personal check. After viewing these suggestions, reviewing the same cases is AI-assisted. A new blind study needs unseen cases or an independent unexposed reviewer. Do not mislabel AI-generated decisions as independent student review. Older v1 pilot suggestions are excluded.
+The initial protocol intended independent student labels. At the student's request, AI-drafted references were frozen before prediction. After the exploratory run, the student explicitly confirmed personally checking all ten cases against their role requirements, profile evidence and three capability IDs, accepting every set unchanged. This confirmation is recorded separately in `data/student_review_confirmation_20261003.json`; it is self-reported AI-assisted review after exposure to the suggestions. It does not turn the earlier run into an independently human-labeled blind experiment. Historical pending fields and the original blank blind-review sheet preserve the original chronology. A new independent blind study needs unseen cases or an unexposed reviewer. Older v1 pilot suggestions are excluded.
 
 ## Data, sources and privacy
 
