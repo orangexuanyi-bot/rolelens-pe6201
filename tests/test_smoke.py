@@ -21,7 +21,7 @@ sys.path.insert(0, str(ROOT))
 from project_core.evidence import verify_lock, write_lock  # noqa: E402
 from rolelens.cli import _evaluate  # noqa: E402
 from rolelens.pipeline import analyze  # noqa: E402
-from rolelens.provider import call_openrouter  # noqa: E402
+from rolelens.provider import DEFAULT_MODEL, call_openrouter  # noqa: E402
 from rolelens.retrieval import load_knowledge  # noqa: E402
 from rolelens.taxonomy import BY_ID, evidence_for  # noqa: E402
 from rolelens.validation import validate_analysis  # noqa: E402
@@ -219,6 +219,38 @@ class RoleLensV2Test(unittest.TestCase):
                 self.assertIsNone(answer)
                 self.assertEqual(meta["provider_error"], "OPENROUTER_INVALID_RESPONSE")
 
+    def test_provider_estimates_only_a_model_with_verified_rates(self) -> None:
+        class FakeResponse:
+            def __init__(self, returned_model):
+                self.returned_model = returned_model
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self):
+                return json.dumps({
+                    "model": self.returned_model,
+                    "choices": [{"message": {"content": "{}"}, "finish_reason": "stop"}],
+                    "usage": {"prompt_tokens": 100, "completion_tokens": 20, "cost": 0.0123},
+                }).encode("utf-8")
+
+        for requested, returned, expected in (
+            (DEFAULT_MODEL, DEFAULT_MODEL, 0.00015),
+            ("another/model", "another/model", None),
+            (DEFAULT_MODEL, "another/model", None),
+        ):
+            with self.subTest(requested=requested, returned=returned):
+                with patch.dict(os.environ, {"OPENROUTER_API_KEY": "offline-test-key"}):
+                    with patch("rolelens.provider.urllib.request.urlopen", return_value=FakeResponse(returned)):
+                        _, meta = call_openrouter(self.ai_jd, self.ai_profile, load_knowledge(self.knowledge)[:3], model=requested)
+                self.assertEqual(meta["estimated_cost_usd"], expected)
+                self.assertEqual(meta["billed_cost_usd"], 0.0123)
+                if expected is None:
+                    self.assertIn("estimate unavailable", meta["price_basis"])
+
     @unittest.skipUnless(importlib.util.find_spec("streamlit"), "Streamlit optional dependency not installed")
     def test_streamlit_demo_path(self) -> None:
         from streamlit.testing.v1 import AppTest
@@ -229,6 +261,29 @@ class RoleLensV2Test(unittest.TestCase):
         app.button[1].click().run()
         self.assertEqual(len(app.exception), 0)
         self.assertEqual(len(app.warning), 0)
+
+    @unittest.skipUnless(importlib.util.find_spec("streamlit"), "Streamlit optional dependency not installed")
+    def test_streamlit_rejected_paid_answer_still_shows_cost(self) -> None:
+        from streamlit.testing.v1 import AppTest
+
+        app = AppTest.from_file(str(ROOT / "streamlit_app.py"), default_timeout=20).run()
+        app.button[0].click().run()
+        app.radio[0].set_value("Gemini semantic analysis").run()
+        app.checkbox[0].check().run()
+        metadata = {
+            "model_requested": "offline-mock",
+            "model_returned": "offline-mock",
+            "latency_ms": 123.0,
+            "billed_cost_usd": 0.0123,
+            "estimated_cost_usd": None,
+            "provider_error": "OPENROUTER_INVALID_JSON_RESPONSE",
+        }
+        with patch("rolelens.pipeline.call_openrouter", return_value=(None, metadata)) as provider:
+            app.button[1].click().run()
+        self.assertEqual(provider.call_count, 1)
+        self.assertEqual(len(app.exception), 0)
+        self.assertIn("OPENROUTER_INVALID_JSON_RESPONSE", app.warning[0].value)
+        self.assertTrue(any("response-reported cost USD 0.0123" in item.value for item in app.caption))
 
 
 if __name__ == "__main__":

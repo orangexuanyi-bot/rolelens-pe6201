@@ -45,12 +45,20 @@ def _schema() -> dict:
     }
 
 
-def estimated_cost_usd(usage: dict) -> float | None:
+def estimated_cost_usd(usage: dict, *, model: str | None = DEFAULT_MODEL) -> float | None:
+    if model != DEFAULT_MODEL:
+        return None
     prompt = usage.get("prompt_tokens")
     completion = usage.get("completion_tokens")
     if not isinstance(prompt, int) or not isinstance(completion, int):
         return None
     return round((prompt * STANDARD_INPUT_USD_PER_M + completion * STANDARD_OUTPUT_USD_PER_M) / 1_000_000, 8)
+
+
+def _price_basis(model: str | None) -> str:
+    if model != DEFAULT_MODEL:
+        return "No verified listed rates for this model; estimate unavailable"
+    return f"OpenRouter standard listed rate for {DEFAULT_MODEL} checked {PRICE_CHECKED_ON}; estimate, not invoice"
 
 
 def response_reported_cost_usd(usage: dict) -> float | None:
@@ -117,20 +125,23 @@ def call_openrouter(jd: str, profile: str, retrieved: list[dict], *, model: str 
             "estimated_cost_usd": None,
             "finish_reason": None,
             "provider_error": "OPENROUTER_INVALID_RESPONSE",
-            "price_basis": f"OpenRouter standard listed rate checked {PRICE_CHECKED_ON}; estimate, not invoice",
+            "price_basis": _price_basis(model),
         }
     usage = body.get("usage") if isinstance(body.get("usage"), dict) else {}
     choices = body.get("choices") if isinstance(body.get("choices"), list) else []
     choice = choices[0] if choices and isinstance(choices[0], dict) else {}
+    # A provider may route the request to a different model. Its returned ID,
+    # when present, determines whether our one known price table applies.
+    pricing_model = body.get("model", model)
     metadata = {
         "model_requested": model,
         "model_returned": body.get("model"),
         "latency_ms": round(elapsed_ms, 2),
         "usage": {key: usage.get(key) for key in ("prompt_tokens", "completion_tokens", "total_tokens")},
         "billed_cost_usd": response_reported_cost_usd(usage),
-        "estimated_cost_usd": estimated_cost_usd(usage),
+        "estimated_cost_usd": estimated_cost_usd(usage, model=pricing_model),
         "finish_reason": choice.get("finish_reason"),
-        "price_basis": f"OpenRouter standard listed rate checked {PRICE_CHECKED_ON}; estimate, not invoice",
+        "price_basis": _price_basis(pricing_model),
     }
     content = choice.get("message", {}).get("content") if isinstance(choice.get("message"), dict) else None
     try:

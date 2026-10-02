@@ -72,8 +72,14 @@ if st.button("Analyze role", type="primary"):
                 st.caption("Curated note: " + item["quote"])
         st.caption("Limitations: " + " ".join(report["limitations"]))
         st.caption("Quote validation checks exact text occurrence, not whether the interpretation or ranking is correct.")
-        metadata = result.get("model_run", {})
-        if metadata:
-            cost = metadata.get("billed_cost_usd")
-            cost_label = f"response-reported cost USD {cost}" if cost is not None else f"listed-rate estimate USD {metadata.get('estimated_cost_usd')}"
-            st.caption(f"Model: {metadata.get('model_returned') or metadata['model_requested']} · latency {metadata['latency_ms']} ms · {cost_label}")
+    # A rejected model answer can still incur a charge. Keep its usage visible.
+    metadata = result.get("model_run", {})
+    if metadata:
+        cost = metadata.get("billed_cost_usd")
+        estimate = metadata.get("estimated_cost_usd")
+        cost_label = (
+            f"response-reported cost USD {cost}" if cost is not None
+            else f"listed-rate estimate USD {estimate}" if estimate is not None
+            else "cost unavailable"
+        )
+        st.caption(f"Model: {metadata.get('model_returned') or metadata['model_requested']} · latency {metadata['latency_ms']} ms · {cost_label}")

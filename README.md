@@ -4,17 +4,23 @@ RoleLens compares one product manager job description and one fictional or prope
 
 The product has a transparent keyword baseline and an optional single-call Gemini path. The AI route retrieves three short author-written source notes, requests structured JSON through OpenRouter, and validates IDs and exact quotations. Literal quotation checks do not establish that the interpretation or ranking is correct. The first-line PM-title scope heuristic can reject unusual valid headings; only English JDs were tested.
 
+## Documentation map
+
+- [Product documentation](PRODUCT_DOCUMENTATION.md): persona, input/output contracts, architecture, design alternatives, module guide, target metrics and observed results.
+- [Data and evaluation](DATA_AND_EVALUATION.md): public fixtures, private-data boundaries, reference method, metric definitions, saved results and reproduction.
+- [Evaluation runner](scripts/EXPLORATORY_EVALUATION.md): command options, frozen evidence and interrupted-run handling.
+
 ## Evidence as of 3 October 2026
 
 | Item | Observed status |
 | --- | --- |
-| Implementation | CLI, Streamlit interface, two-family lexical retrieval, PM scope guard, structured model adapter, deterministic validation, and reproducible evaluation. **18 offline tests passed**. |
+| Implementation | CLI, Streamlit interface, two-family lexical retrieval, PM scope guard, structured model adapter, deterministic validation, and reproducible evaluation. **20 offline tests passed** after the final cost-reporting fixes. |
 | Ten fictional input pairs | Five AI PM and five commercial PM pairs fixed by IDs and hashes on 26 September. Inputs and taxonomy have not changed. |
 | Reference judgments | **Codex AI-generated exploratory references**, fixed on 3 October before predictions. Includes reasons, input excerpts, alternatives, and subjective confidence. `human_reviewed=false` records their state at prediction time; see the later review below. |
-| Personal ten-case check | **Student confirmed completion on 3 October**, checking role requirements, profile evidence and three capability IDs for each case, and accepting all ten sets unchanged. This was AI-assisted review after the exploratory run. [Dated confirmation](data/student_review_confirmation_20261003.json). |
+| Personal ten-case check | **Completed:** I checked all ten cases and accepted the judgments unchanged. The check followed the exploratory run. [Review record](data/student_review_confirmation_20261003.json). |
 | Live exploratory comparison | One attempt per case and mode. Results below are **agreement with AI references, not correctness**. Ten Gemini responses passed schema/quote validation; one baseline case abstained. |
 | Private CV sanity slice | Three permissioned de-identified summaries processed separately; source CVs, summaries and derived outputs remain outside this repository. |
-| Student narration/submission | Student accepted the report and disclosure. Personal narration, final package checking and course submission remain pending. |
+| Presentation/submission | Report and disclosure accepted. The final 2–8 minute video must show the student's face and screen. Its recording and final course submission remain pending. |
 
 ### Exploratory results
 
@@ -69,7 +75,13 @@ The provider is `google/gemini-3.7-flash`: structured JSON, temperature 0, 4,000
 
 `data/primary_cases_v2.jsonl` retains its historical filename and pending human-review fields so the original byte lock remains intact. New AI labels occupy a **separate** artifact. The original `rolelens.cli evaluate` and student finalizer still reject missing human review; neither was relaxed or used to certify this run.
 
-The initial protocol intended independent student labels. At the student's request, AI-drafted references were frozen before prediction. After the exploratory run, the student explicitly confirmed personally checking all ten cases against their role requirements, profile evidence and three capability IDs, accepting every set unchanged. This confirmation is recorded separately in `data/student_review_confirmation_20261003.json`; it is self-reported AI-assisted review after exposure to the suggestions. It does not turn the earlier run into an independently human-labeled blind experiment. Historical pending fields and the original blank blind-review sheet preserve the original chronology. A new independent blind study needs unseen cases or an unexposed reviewer. Older v1 pilot suggestions are excluded.
+AI-drafted references were fixed before prediction and personally checked by the student afterward, without label changes. The separate review record preserves that chronology; the study does not establish an independent human correctness benchmark. Historical input fields remain intact, and the exposed older v1 pilot is excluded.
+
+## Final audit changes
+
+The recorded model study used core code at commit `5c42db7ef5ef0953799fc9b2ed9459631f2097a9`. The final audit made two later fixes: rejected model answers still display available charges/latency, and models without a verified price table return an unknown estimate instead of inheriting Gemini rates. Twenty offline tests pass. All ten saved AI reports revalidate; all twenty saved result checksums match; the local baseline reproduces the recorded gap sets. No additional paid model run was made for these fixes.
+
+The old manifests intentionally retain the original `rolelens/provider.py` hash. Current code has a different provider hash because of the price-estimation fix; input/reference locks and original result bytes are unchanged. Inspect the named commit for the exact original core code, or use the current commands in a new output directory for a new run.
 
 ## Data, sources and privacy
 
