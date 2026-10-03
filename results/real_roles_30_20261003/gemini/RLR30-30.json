@@ -1,0 +1,155 @@
+{
+  "case_id": "RLR30-30",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7016.71,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Understand markets, competitors and user requirements for advertising products.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.609374
+      },
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 4.876888
+      },
+      {
+        "id": "CK01",
+        "title": "Understand your conversion tracking data",
+        "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 4.591138
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7013.08,
+      "usage": {
+        "prompt_tokens": 934,
+        "completion_tokens": 2011,
+        "total_tokens": 2945
+      },
+      "billed_cost_usd": 0.00824175,
+      "estimated_cost_usd": 0.00824175,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "This role requires an experienced Product Manager II to lead advertising products across search, display, and video formats by balancing shopper, publisher, and advertiser needs and running iterative tests. The candidate is a recent graduate with a 10-week internship focused on investor demo preparation and basic assistance, showing significant gaps against the multi-sided ads domain and full lifecycle requirements.",
+      "responsibilities": [
+        {
+          "statement": "Lead advertising products end-to-end from concept through launch, evaluating impact via testing and iteration.",
+          "jd_quote": "Take products from conception through launch, assess performance with tests and iterate."
+        },
+        {
+          "statement": "Balance multi-sided stakeholder needs across advertisers, publishers, and consumers across diverse ad formats.",
+          "jd_quote": "Consider the interests of shoppers, publishers and advertisers across advertising experiences such as search, display and video."
+        },
+        {
+          "statement": "Coordinate cross-functional and cross-regional partners across engineering, legal, marketing, and design.",
+          "jd_quote": "Work across engineering, marketing, legal and user experience in different functions and regions."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "Consider the interests of shoppers, publishers and advertisers across advertising experiences such as search, display and video.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "assess performance with tests and iterate.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "Understand markets, competitors and user requirements for advertising products.",
+          "profile_status": "partial",
+          "profile_quote": "taking notes in two customer calls and writing one user story for an export button."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "Work across engineering, marketing, legal and user experience in different functions and regions.",
+          "profile_status": "partial",
+          "profile_quote": "assisted a product manager by taking notes in two customer calls and writing one user story for an export button."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role requires managing trade-offs across advertisers, publishers, and shoppers across search, display, and video surfaces.",
+          "prep_action": "Study multi-sided ad platforms, sponsored product ad formats, auction dynamics, and advertiser dashboard controls."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The JD mandates driving product iteration and measuring post-launch success via rigorous performance testing.",
+          "prep_action": "Review key advertising performance metrics such as CTR, conversion rates, ROAS, and basic A/B testing methodologies for ad ranking and layout."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "why_now": "The position demands driving alignment across regional and functional teams including legal, UX, marketing, and engineering.",
+          "prep_action": "Prepare examples structuring complex stakeholder alignments, focusing on resolving trade-offs between commercial, user experience, and legal requirements."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK05",
+          "quote": "Defines reach, impressions, frequency, clicks, conversions, conversion rates, and cost measures for an ads dashboard.",
+          "title": "Basic metrics and definitions in TikTok Ads Manager",
+          "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK03",
+          "quote": "Introduces sponsored retail placements and the advertiser controls around targets, bids, and budgets.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile reflects internship and university project experience rather than the five years of product management experience specified in the role minimum qualifications."
+      ]
+    }
+  },
+  "payload_sha256": "c9b74037c74f3883c28308b2bf508f1e9bf2d9fe05c64db4ff9763e2d40b7a22"
+}

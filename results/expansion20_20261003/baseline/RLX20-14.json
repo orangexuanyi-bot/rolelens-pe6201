@@ -1,0 +1,67 @@
+{
+  "case_id": "RLX20-14",
+  "manifest_sha256": "20ad8864c77357248c7d0a9e22c2863bca868c2065e7343b5049d2ced953aee8",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 6.06,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will develop the launch proposition, onboarding materials, and field-sales demonstration for one city before expanding.",
+        "They will agree integration ownership, lead attribution, and support escalation with commerce-platform partners that introduce merchants to the service."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "They will develop the launch proposition, onboarding materials, and field-sales demonstration for one city before expanding.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "GROWTH_LIFECYCLE"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK08",
+        "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+        "url": "https://stripe.com/resources/more/strategy-of-pricing",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.839106
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.553725
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.14826
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "fb798007c214b10002e8a3266ff4b6db501ee2d8588e7a89eb01f0cc4ba9b4b7"
+}

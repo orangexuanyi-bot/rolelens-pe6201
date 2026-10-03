@@ -257,8 +257,8 @@ class RoleLensV2Test(unittest.TestCase):
 
         app = AppTest.from_file(str(ROOT / "streamlit_app.py"), default_timeout=20).run()
         self.assertEqual(len(app.exception), 0)
-        app.button[0].click().run()
-        app.button[1].click().run()
+        next(button for button in app.button if button.label == "Use synthetic example").click().run()
+        next(button for button in app.button if button.label == "Analyze role").click().run()
         self.assertEqual(len(app.exception), 0)
         self.assertEqual(len(app.warning), 0)
 
@@ -267,7 +267,7 @@ class RoleLensV2Test(unittest.TestCase):
         from streamlit.testing.v1 import AppTest
 
         app = AppTest.from_file(str(ROOT / "streamlit_app.py"), default_timeout=20).run()
-        app.button[0].click().run()
+        next(button for button in app.button if button.label == "Use real role example").click().run()
         app.radio[0].set_value("Gemini semantic analysis").run()
         app.checkbox[0].check().run()
         metadata = {
@@ -279,7 +279,7 @@ class RoleLensV2Test(unittest.TestCase):
             "provider_error": "OPENROUTER_INVALID_JSON_RESPONSE",
         }
         with patch("rolelens.pipeline.call_openrouter", return_value=(None, metadata)) as provider:
-            app.button[1].click().run()
+            next(button for button in app.button if button.label == "Analyze role").click().run()
         self.assertEqual(provider.call_count, 1)
         self.assertEqual(len(app.exception), 0)
         self.assertIn("OPENROUTER_INVALID_JSON_RESPONSE", app.warning[0].value)

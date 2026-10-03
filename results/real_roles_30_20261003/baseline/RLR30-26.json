@@ -1,0 +1,92 @@
+{
+  "case_id": "RLR30-26",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 4.25,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Develop new markets and monetization for Claude.",
+        "Work on partner-platform usage measurement, attribution, billing and commercial terms, enterprise spending controls, and a consistent account and wallet across API and subscription use.",
+        "Own revenue and activation measurement and negotiate pricing, revenue sharing and contractual choices with finance, legal and business development."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "The role values developer API products, shipped LLM experiences, SQL and complete product ownership.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Summary: Interested in AI product management, generative AI, agents, RAG, prompt engineering, responsible AI, machine learning, A/B testing, SQL, Python, strategy, roadmaps, OKRs, and stakeholder management.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Product Manager, New Markets and Monetization",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Own revenue and activation measurement and negotiate pricing, revenue sharing and contractual choices with finance, legal and business development.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "label": "Commercial partnerships",
+          "jd_quote": "Own revenue and activation measurement and negotiate pricing, revenue sharing and contractual choices with finance, legal and business development.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Candidate RL-P22 | Business Development Coordinator",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.80242
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 18.300362
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 16.650933
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "ab4b57fd2c82dcee0dfde3bb34d3695225ca2d8d8274cf12fe34da75e6ef0233"
+}

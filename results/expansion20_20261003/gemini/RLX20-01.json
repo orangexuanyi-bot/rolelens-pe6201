@@ -1,0 +1,157 @@
+{
+  "case_id": "RLX20-01",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8370.26,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They must define a test collection of ordinary and difficult agreements, decide what counts as an unsupported warning, and set a release threshold with reviewers."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager - Contract Review Assistant",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I am looking for an AI product role where I can build deeper evaluation skills.",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 11.257161
+      },
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.102336
+      },
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.98256
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8339.47,
+      "usage": {
+        "prompt_tokens": 978,
+        "completion_tokens": 1919,
+        "total_tokens": 2897
+      },
+      "billed_cost_usd": 0.00792975,
+      "estimated_cost_usd": 0.00792975,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P02 brings relevant B2B procurement domain experience, search retrieval triage familiarity, and strong cross-functional stakeholder alignment. Key preparation gaps lie in defining systematic evaluation suites with hallucination release criteria, structuring rigorous causal measurement experiments, and designing pricing/cost models for AI-driven workflows.",
+      "responsibilities": [
+        {
+          "statement": "Define evaluation datasets and release thresholds for agreement contract review.",
+          "jd_quote": "They must define a test collection of ordinary and difficult agreements, decide what counts as an unsupported warning, and set a release threshold with reviewers."
+        },
+        {
+          "statement": "Measure workflow time savings and evaluate causal impact against baseline review processes.",
+          "jd_quote": "They will compare assisted and existing review workflows, measure missed clauses as well as time saved, and explain whether the pilot supports a causal benefit claim."
+        },
+        {
+          "statement": "Evaluate monetization structures while accounting for inference and model rejection costs.",
+          "jd_quote": "They will test seat-based versus document-based paid packages with buyers and account for the cost of rejected model responses."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "They must define a test collection of ordinary and difficult agreements, decide what counts as an unsupported warning, and set a release threshold with reviewers.",
+          "profile_status": "partial",
+          "profile_quote": "I partnered with a data engineer to inspect retrieval misses and wrote clearer empty-state copy."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will compare assisted and existing review workflows, measure missed clauses as well as time saved, and explain whether the pilot supports a causal benefit claim.",
+          "profile_status": "partial",
+          "profile_quote": "A pilot with six customers reduced repeated support requests, but we have not isolated which part of the release made the difference."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will test seat-based versus document-based paid packages with buyers and account for the cost of rejected model responses.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will work with legal, design, customer success, and engineering to keep document access and escalation understandable.",
+          "profile_status": "strong",
+          "profile_quote": "I have facilitated trade-off meetings where legal staff wanted complete traceability and sales wanted fewer clicks."
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will observe purchasing teams and choose the first document workflow to serve.",
+          "profile_status": "partial",
+          "profile_quote": "I gathered examples of rejected requests, translated them into decision tables, and worked with engineering on audit-log behaviour."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The JD requires validating seat-based versus usage-based packaging while budgeting for the operational unit cost of failed or rejected model calls.",
+          "prep_action": "Draft a unit-economics model comparing per-seat and per-document pricing structures against token costs, human-in-the-loop review overhead, and rejected inference waste."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The role must establish whether pilot results prove causal efficiency gains and lower clause omission rates relative to baseline reviews.",
+          "prep_action": "Outline a paired or randomized A/B pilot methodology measuring task completion time, missed-clause error rates, and counterfactual baseline comparisons."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "Setting objective release thresholds for unsupported warnings requires standardizing a multi-tier test set with clear error taxonomy.",
+          "prep_action": "Develop an evaluation rubric specifying precision/recall expectations for contract clause extraction and clear criteria for flagging unsupported warnings."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Analysis is strictly limited to provided text snippets from the fictional role card and candidate profile.",
+        "No inference of candidate capability beyond supplied text evidence was made."
+      ]
+    }
+  },
+  "payload_sha256": "8e6857e4ceb4721c4259ee383da90d7c801de15beddc14569d514769dfe9a0e7"
+}

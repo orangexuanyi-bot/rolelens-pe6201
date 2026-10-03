@@ -1,0 +1,166 @@
+{
+  "case_id": "RLX20-12",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 10211.34,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The PM will define a small promotion product before the sales team promises capabilities the marketplace cannot reliably deliver."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "They will specify advertiser controls, placement eligibility, spend limits, and reporting rules so campaign results are not confused with normal repeat purchases.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 20.248651
+      },
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 16.579426
+      },
+      {
+        "id": "CK10",
+        "title": "Measure results with Spotify Ad Analytics",
+        "url": "https://ads.spotify.com/en-US/ad-analytics/",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.891486
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 10205.0,
+      "usage": {
+        "prompt_tokens": 1037,
+        "completion_tokens": 3075,
+        "total_tokens": 4112
+      },
+      "billed_cost_usd": 0.012309,
+      "estimated_cost_usd": 0.012309,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P03 shows strong quantitative analysis, experimentation hygiene, and qualitative discovery experience in a grocery marketplace setting. However, the profile shows no direct evidence in ads monetization models, advertiser-facing controls, or partner operational agreements.",
+      "responsibilities": [
+        {
+          "statement": "Define promotion controls, eligibility rules, and measurement criteria to separate incremental advertising lift from organic purchases.",
+          "jd_quote": "They will specify advertiser controls, placement eligibility, spend limits, and reporting rules so campaign results are not confused with normal repeat purchases."
+        },
+        {
+          "statement": "Evaluate pricing structures and commercial trade-offs between impression, click, and flat-fee promotion models.",
+          "jd_quote": "They will compare charging for views, clicks, or a fixed promotional package and explain the incentives and risk each creates for buyers."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will work with design, sales, analytics, and engineering to test incremental sales and shopper complaints together.",
+          "profile_status": "strong",
+          "profile_quote": "I planned an A/B test of a new substitution notice, checked sample-ratio balance with the analyst, and reported both conversion and cancellation effects."
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will research shopper and brand needs and keep organic choices understandable.",
+          "profile_status": "partial",
+          "profile_quote": "I also ran monthly calls with shoppers who used assistive technologies."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "The PM will define a small promotion product before the sales team promises capabilities the marketplace cannot reliably deliver.",
+          "profile_status": "partial",
+          "profile_quote": "I recommended another iteration instead of a broad rollout and documented the decision in a one-page memo."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare charging for views, clicks, or a fixed promotional package and explain the incentives and risk each creates for buyers.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "They will specify advertiser controls, placement eligibility, spend limits, and reporting rules so campaign results are not confused with normal repeat purchases.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will agree data-sharing, reporting responsibilities, and support handoffs with brand agencies and retailer partners before opening a joint pilot.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role requires comparing CPM, CPC, and flat package monetization mechanics to balance revenue potential against brand risk.",
+          "prep_action": "Draft a structured comparison matrix evaluating CPM, CPC, and fixed packages across buyer incentives, revenue predictability, and marketplace inventory risk."
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The PM must design advertiser controls and baseline reporting metrics that clearly distinguish sponsored lift from baseline organic demand.",
+          "prep_action": "Review retail media reporting frameworks to define standard advertiser dashboard metrics, such as attributed sales, return on ad spend, and spend caps."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "Launching a joint pilot requires aligning data sharing, operational reporting boundaries, and SLA support between agencies and retailers.",
+          "prep_action": "Prepare a mock pilot alignment checklist outlining data-sharing boundaries, reporting cadence, and issue escalation workflows for commercial partners."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK03",
+          "quote": "Introduces sponsored retail placements and the advertiser controls around targets, bids, and budgets. Its reporting section distinguishes exposure, clicks, attributed sales, and cost, which helps specify advertiser-facing metrics.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK04",
+          "quote": "Connects brand discovery goals with impressions, new-to-brand purchases, and return on ad spend.",
+          "title": "Your complete guide to Sponsored Brands",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Analysis is strictly limited to the provided text and does not reflect unstated past experience or live interview performance.",
+        "Lack of evidence in the candidate profile indicates absent documentation in the text, not necessarily a lack of underlying capability."
+      ]
+    }
+  },
+  "payload_sha256": "444aaeff0ddd377ea52dfbf29e579f6b2838b631d947a3812f6de04d22b20727"
+}

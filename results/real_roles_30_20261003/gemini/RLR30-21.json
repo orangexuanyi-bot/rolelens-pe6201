@@ -1,0 +1,180 @@
+{
+  "case_id": "RLR30-21",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7931.02,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Understand auction and latency constraints and develop business cases for investment.",
+        "Define packages, prices and launch plans with sales, and specify product requirements with engineers."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Principal Product Manager - Tech, Live Events Advertising",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 3
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "label": "Commercial partnerships",
+          "jd_quote": "Work with commercial partners and executives and use business measures in regular reviews.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.000634
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 6.413527
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.890421
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7926.37,
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 1947,
+        "total_tokens": 2846
+      },
+      "billed_cost_usd": 0.0079755,
+      "estimated_cost_usd": 0.0079755,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate brings relevant technical product experience in managing latency, data analysis, and cross-functional engineering delivery for connected hardware, but lacks demonstrated experience in ad-tech ecosystems, pricing and monetization models, multi-year product strategy, and commercial partner management required for live-event advertising.",
+      "responsibilities": [
+        {
+          "statement": "Define multi-year advertising product strategy and business cases for monetizing live-event content under strict auction and latency constraints.",
+          "jd_quote": "Set a multi-year direction for live-event advertising products that help publishers monetize premium content such as sports. Understand auction and latency constraints and develop business cases for investment."
+        },
+        {
+          "statement": "Define packaging, pricing, and launch plans in collaboration with sales and deliver product requirements with engineering teams.",
+          "jd_quote": "Define packages, prices and launch plans with sales, and specify product requirements with engineers."
+        },
+        {
+          "statement": "Collaborate with commercial partners and senior leadership while tracking business metrics in operational reviews.",
+          "jd_quote": "Work with commercial partners and executives and use business measures in regular reviews."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "specify product requirements with engineers.",
+          "profile_status": "strong",
+          "profile_quote": "Engineers improved device buffering while I changed notification rules."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "develop business cases for investment.",
+          "profile_status": "partial",
+          "profile_quote": "I often choose reliability fixes ahead of a new feature when home conditions vary from a demo."
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "Grow revenue by connecting publisher supply and advertiser demand and by bringing publishers onto the platform.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "Define packages, prices and launch plans with sales",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "Work with commercial partners and executives and use business measures in regular reviews.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Set a multi-year direction for live-event advertising products that help publishers monetize premium content such as sports.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role centers on matching supply and demand during live broadcast events, requiring strong fluency in ad tech auction dynamics, latency budgets, and inventory management.",
+          "prep_action": "Study ad exchange mechanics, real-time bidding protocols, and latency constraints specific to server-side ad insertion in live streaming environments."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role requires packaging and pricing premium live-event ad placements alongside sales teams to maximize publisher revenue.",
+          "prep_action": "Prepare case studies evaluating CPM versus floor-price models and packaging strategies for high-demand, bursty live content."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "Securing publisher supply and aligning with external sales and publisher executives is critical for growing platform adoption.",
+          "prep_action": "Structure a framework for partner onboarding, commercial alignment, and executive reviews covering shared monetization goals."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK05",
+          "quote": "Defines reach, impressions, frequency, clicks, conversions, conversion rates, and cost measures for an ads dashboard.",
+          "title": "Basic metrics and definitions in TikTok Ads Manager",
+          "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK03",
+          "quote": "Introduces sponsored retail placements and the advertiser controls around targets, bids, and budgets.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile contains no evidence of working in digital advertising, media monetization, or auction-based marketplace systems.",
+        "The profile shows no prior experience defining commercial pricing packages, go-to-market motions with sales, or managing executive-level external partner relationships."
+      ]
+    }
+  },
+  "payload_sha256": "80a6b86d8eb83d255bf2dcf73e287180d709652a3ca86c8f740edf2f5c3be121"
+}

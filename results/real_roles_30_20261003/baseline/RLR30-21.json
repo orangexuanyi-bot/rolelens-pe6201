@@ -1,0 +1,76 @@
+{
+  "case_id": "RLR30-21",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 3.46,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Understand auction and latency constraints and develop business cases for investment.",
+        "Define packages, prices and launch plans with sales, and specify product requirements with engineers."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Principal Product Manager - Tech, Live Events Advertising",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 3
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "label": "Commercial partnerships",
+          "jd_quote": "Work with commercial partners and executives and use business measures in regular reviews.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.000634
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 6.413527
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.890421
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "f096193117533074cc53c1689339ba662e6b3352659bf76aaa3c7e9747550af8"
+}

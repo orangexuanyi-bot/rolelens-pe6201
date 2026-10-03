@@ -1,0 +1,174 @@
+{
+  "case_id": "RLX20-08",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5868.09,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "A senior PM will mentor the associate, but the associate must deliver evidence for a small pilot.",
+        "They will collect representative and deliberately difficult examples, check unsupported entries with a reviewer, and define when the system must leave a field blank."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "Associate AI Product Manager - Supplier Form Assistant",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "They will work with design and engineering to keep source details visible and avoid sending forms automatically.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY",
+        "CROSS_FUNCTIONAL"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 8.683975
+      },
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.646088
+      },
+      {
+        "id": "DOC11",
+        "title": "Prompt engineering overview",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.240622
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 5861.21,
+      "usage": {
+        "prompt_tokens": 996,
+        "completion_tokens": 1389,
+        "total_tokens": 2385
+      },
+      "billed_cost_usd": 0.00595575,
+      "estimated_cost_usd": 0.00595575,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P27 brings direct domain experience in facilities operations and supplier forms, but currently lacks hands-on product management experience in AI evaluation, metric tracking, and cross-functional software delivery.",
+      "responsibilities": [
+        {
+          "statement": "Conduct user discovery with administrators and form reviewers to identify core workflow pain points.",
+          "jd_quote": "The associate will watch administrators complete real tasks, interview people who reject forms, and separate repeated pain points from one team's preference."
+        },
+        {
+          "statement": "Define pilot scope, write acceptance criteria, and determine feature phasing.",
+          "jd_quote": "They will choose a small first scope, write acceptance criteria, and explain which requested fields or document types should wait."
+        },
+        {
+          "statement": "Establish test cases, fallback behavior, and evaluation standards for the AI assistant.",
+          "jd_quote": "They will collect representative and deliberately difficult examples, check unsupported entries with a reviewer, and define when the system must leave a field blank."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The associate will watch administrators complete real tasks, interview people who reject forms, and separate repeated pain points from one team's preference.",
+          "profile_status": "partial",
+          "profile_quote": "I noticed that staff copied the same vendor information into multiple spreadsheets and proposed one shared template."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "They will choose a small first scope, write acceptance criteria, and explain which requested fields or document types should wait.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "They will collect representative and deliberately difficult examples, check unsupported entries with a reviewer, and define when the system must leave a field blank.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will work with design and engineering to keep source details visible and avoid sending forms automatically.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will record task completion, corrections, and staff time for both successful and failed attempts.",
+          "profile_status": "partial",
+          "profile_quote": "Operations adopted it in my team, saving some manual re-entry, though we did not time the work formally."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The role requires curating representative test cases and setting quality thresholds to prevent incorrect entries in supplier forms.",
+          "prep_action": "Design a 20-example evaluation benchmark featuring edge cases and explicit criteria for when a field should remain blank."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "why_now": "The associate must translate user requirements and transparency needs into clear specifications for design and engineering.",
+          "prep_action": "Draft a mock product specification and user story map for a form-filling assistant detailing UX preview and guardrail behaviors."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "Demonstrating pilot viability depends on measuring task completion rates, correction effort, and time saved.",
+          "prep_action": "Construct a pilot measurement plan defining baseline metrics, task completion tracking methods, and operational error logging."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC11",
+          "quote": "Introduces a process for improving Claude prompts using explicit goals and examples.",
+          "title": "Prompt engineering overview",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile does not provide evidence of prior software product release management or collaboration with engineering teams.",
+        "The profile does not show practical application of AI prompt evaluation or formal performance benchmarking beyond coursework."
+      ]
+    }
+  },
+  "payload_sha256": "d423d0d19749b77e0a73b20c6b8e0dadaec3457a12c3ce5a5ac46386f852d813"
+}

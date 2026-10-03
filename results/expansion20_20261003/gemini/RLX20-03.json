@@ -1,0 +1,171 @@
+{
+  "case_id": "RLX20-03",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7173.76,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager - Paid Language Practice Coach",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "They will test which benefits belong in a paid plan and choose usage limits that customers understand and that can cover service costs.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY",
+        "MONETIZATION_PRICING"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC10",
+        "title": "Cost optimization",
+        "url": "https://developers.openai.com/api/docs/guides/cost-optimization",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 11.090775
+      },
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.388025
+      },
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.646088
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7167.31,
+      "usage": {
+        "prompt_tokens": 960,
+        "completion_tokens": 1755,
+        "total_tokens": 2715
+      },
+      "billed_cost_usd": 0.00730125,
+      "estimated_cost_usd": 0.00730125,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P06 brings relevant experience in adult language-learning apps, educator collaboration, and qualitative evaluation of AI feedback across proficiency levels. However, the candidate needs preparation in monetization, model selection and latency/cost trade-offs, and driving sustained retention beyond initial novelty.",
+      "responsibilities": [
+        {
+          "statement": "Evaluate speech and language model options while balancing quality, latency, and per-session unit economics.",
+          "jd_quote": "They will compare speech and language-model options, decide which tasks need generation, and explain the quality, response-time, and per-session cost tradeoff."
+        },
+        {
+          "statement": "Define paid tier packaging and implement transparent usage limits to cover generative AI costs.",
+          "jd_quote": "They will test which benefits belong in a paid plan and choose usage limits that customers understand and that can cover service costs."
+        },
+        {
+          "statement": "Diagnose drop-off after onboarding and design loops that drive sustained learner retention.",
+          "jd_quote": "They will diagnose why learners stop after initial practice, redesign the return journey, and measure sustained use after novelty fades."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "The PM will work with teachers to keep feedback constructive and test errors across proficiency groups.",
+          "profile_status": "strong",
+          "profile_quote": "I selected a set of responses from different proficiency levels and compared model comments with teacher comments, looking for fabricated grammar rules and discouraging language."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "They will compare speech and language-model options, decide which tasks need generation, and explain the quality, response-time, and per-session cost tradeoff.",
+          "profile_status": "partial",
+          "profile_quote": "I did not own the model selection, and the trial was not released to all learners."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will test which benefits belong in a paid plan and choose usage limits that customers understand and that can cover service costs.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "jd_quote": "They will diagnose why learners stop after initial practice, redesign the return journey, and measure sustained use after novelty fades.",
+          "profile_status": "partial",
+          "profile_quote": "retention did not change clearly over the observation window."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "They will prioritise one language and one learner segment with design, research, finance, and engineering.",
+          "profile_status": "partial",
+          "profile_quote": "turning observations into prioritised product changes."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The core mandate is establishing whether spoken practice warrants a paid tier and structuring usage limits that protect unit economics.",
+          "prep_action": "Design a tiered packaging framework modeling per-minute/per-token voice costs against subscription pricing and user-friendly capping mechanisms."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "why_now": "The role requires actively comparing speech/LLM architectures and evaluating trade-offs across latency, cost, and generation quality.",
+          "prep_action": "Study latency and token-cost benchmarks for speech-to-text, LLM generation, and text-to-speech pipelines to formulate clear decision matrices."
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "why_now": "The business faces drop-off after early sessions, making return loops and habit formation critical before scaling.",
+          "prep_action": "Develop a case study on re-engagement mechanics and post-novelty retention metrics tailored to spoken conversational practice."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC10",
+          "quote": "Outlines ways to measure and reduce token and model usage costs.",
+          "title": "Cost optimization",
+          "url": "https://developers.openai.com/api/docs/guides/cost-optimization",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Profile lacks evidence of paid subscription design, packaging, and commercial pricing models.",
+        "Candidate's previous AI trial was limited in scope without ownership of model architecture selection or production scaling."
+      ]
+    }
+  },
+  "payload_sha256": "fc58023917e2d941cbe1a2c6acc4b408132dac32b52c22d52383dd5da8ea4c3e"
+}

@@ -1,0 +1,75 @@
+{
+  "case_id": "RLR30-01",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 23.56,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Decide which capabilities to build and how to balance quality, usability and safety."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "This is an AI product management role focused on developer workflows.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "Decide which capabilities to build and how to balance quality, usability and safety.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY",
+        "SAFETY_PRIVACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC08",
+        "title": "Safety best practices",
+        "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.054126
+      },
+      {
+        "id": "DOC17",
+        "title": "Function calling with Gemini API",
+        "url": "https://ai.google.dev/gemini-api/docs/function-calling",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.927135
+      },
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.981224
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "29a410026c1f756ceeb12a51a402bf7a218b12d6e0ef5d08947d5032eab85321"
+}

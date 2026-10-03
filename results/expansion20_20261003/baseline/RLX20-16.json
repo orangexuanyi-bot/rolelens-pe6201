@@ -1,0 +1,66 @@
+{
+  "case_id": "RLX20-16",
+  "manifest_sha256": "20ad8864c77357248c7d0a9e22c2863bca868c2065e7343b5049d2ced953aee8",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5.93,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The PM will build a commercial offer around safe, useful maintenance work."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "The decision to expand should use repeated service use, renewal, downtime, support effort, and safety incidents together.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I previously worked as a process engineer and can interpret sensor readings, maintenance records, and safety procedures.",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "SAFETY_PRIVACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 10.529307
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 10.034178
+      },
+      {
+        "id": "CK02",
+        "title": "About the Experiments page",
+        "url": "https://support.google.com/google-ads/answer/10682377?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.000634
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "e2fe18b7b445e2029675960fe49becd2f830bdb7d5732768dcd9bbb095d82dd8"
+}

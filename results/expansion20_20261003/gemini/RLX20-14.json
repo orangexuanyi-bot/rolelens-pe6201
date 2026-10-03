@@ -1,0 +1,171 @@
+{
+  "case_id": "RLX20-14",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 6504.44,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will develop the launch proposition, onboarding materials, and field-sales demonstration for one city before expanding.",
+        "They will agree integration ownership, lead attribution, and support escalation with commerce-platform partners that introduce merchants to the service."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "They will develop the launch proposition, onboarding materials, and field-sales demonstration for one city before expanding.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "GROWTH_LIFECYCLE"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK08",
+        "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+        "url": "https://stripe.com/resources/more/strategy-of-pricing",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.839106
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.553725
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.14826
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 6497.91,
+      "usage": {
+        "prompt_tokens": 1054,
+        "completion_tokens": 1615,
+        "total_tokens": 2669
+      },
+      "billed_cost_usd": 0.00684675,
+      "estimated_cost_usd": 0.00684675,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate brings relevant last-mile operations PM experience, including depot workflow research, operational prioritization, and cross-functional planning. However, this commercial PM role requires pricing model definition, go-to-market execution, and partner channel management, which are not evidenced in the candidate profile.",
+      "responsibilities": [
+        {
+          "statement": "Determine packaging and pricing structure for merchant add-on capabilities.",
+          "jd_quote": "They will select a paid allowance or per-order charge, test it with different merchant sizes, and make expected spending visible before purchase."
+        },
+        {
+          "statement": "Design and execute the launch materials, field enablement, and partner alignment.",
+          "jd_quote": "They will develop the launch proposition, onboarding materials, and field-sales demonstration for one city before expanding."
+        },
+        {
+          "statement": "Partner with cross-functional teams to define minimum viable release and measure business impact.",
+          "jd_quote": "They will work with design, finance, operations, and engineering to sequence the smallest commercially useful release."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "observe merchants and dispatch teams and compare where failures create the greatest avoidable cost.",
+          "profile_status": "strong",
+          "profile_quote": "I spent shifts at two depots, logged repeated handoffs, and proposed a shared queue with explicit ownership."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "sequence the smallest commercially useful release.",
+          "profile_status": "strong",
+          "profile_quote": "A proposed chatbot for drivers was postponed because offline access and multilingual instructions were more urgent."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "work with design, finance, operations, and engineering to sequence the smallest commercially useful release.",
+          "profile_status": "partial",
+          "profile_quote": "I have led cross-functional planning"
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "select a paid allowance or per-order charge, test it with different merchant sizes, and make expected spending visible before purchase.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "develop the launch proposition, onboarding materials, and field-sales demonstration for one city before expanding.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "agree integration ownership, lead attribution, and support escalation with commerce-platform partners that introduce merchants to the service.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role requires defining pricing models that balance merchant willingness to pay with delivery unit economics.",
+          "prep_action": "Draft a pricing strategy proposal evaluating flat allowances versus per-order transaction fees, outlining testing criteria across merchant tiers."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "why_now": "The position requires creating launch collateral, onboarding journeys, and sales enablement before pilot expansion.",
+          "prep_action": "Create a sample one-city GTM plan including merchant onboarding documentation, sales talk tracks, and activation metrics."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "Distribution relies on commerce-platform partners for lead attribution, integrations, and operational escalations.",
+          "prep_action": "Prepare a partner collaboration framework defining shared responsibilities for API integration, attribution rules, and tier-1 support escalation."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK08",
+          "quote": "Surveys different bases for setting a price and stresses customer value, costs, competition, and model fit.",
+          "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+          "url": "https://stripe.com/resources/more/strategy-of-pricing",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK07",
+          "quote": "Outlines flat-rate, per-seat, tiered, and usage-based recurring pricing structures.",
+          "title": "Recurring pricing models",
+          "url": "https://docs.stripe.com/products-prices/pricing-models",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The candidate profile does not provide details on commercial business models, pricing experiments, or external partner agreements.",
+        "Assessment is limited to the supplied profile text and fictional job description."
+      ]
+    }
+  },
+  "payload_sha256": "81581e4f813339f339e8c1706d46919e3a66d7b0c81f0ecd755f0c0fc002a87a"
+}

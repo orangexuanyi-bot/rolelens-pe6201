@@ -1,0 +1,66 @@
+{
+  "case_id": "RLX20-04",
+  "manifest_sha256": "20ad8864c77357248c7d0a9e22c2863bca868c2065e7343b5049d2ced953aee8",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5.87,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will define who may see each source, how sensitive fields are removed, and what happens when an answer combines material from different access groups."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager - Enterprise Incident Briefing",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.997463
+      },
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.929808
+      },
+      {
+        "id": "DOC15",
+        "title": "Citations",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/citations",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.3326
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "1debea60c888fe7f450e2483603d279d967b37be3d9c33e43978f4059175abfd"
+}

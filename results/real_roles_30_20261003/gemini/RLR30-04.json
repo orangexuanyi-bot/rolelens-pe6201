@@ -1,0 +1,155 @@
+{
+  "case_id": "RLR30-04",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7136.7,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own the direction of an enterprise product for strategy execution, including planning, reporting, insights, collaboration, administration and integrations."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "Own the direction of an enterprise product for strategy execution, including planning, reporting, insights, collaboration, administration and integrations.",
+          "profile_status": "strong_keyword_evidence",
+          "profile_quote": "I am comfortable explaining that priority decision to stakeholders who expected an AI feature.",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC20",
+        "title": "Prompt design strategies",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.954133
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.95596
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.313732
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7132.83,
+      "usage": {
+        "prompt_tokens": 875,
+        "completion_tokens": 1899,
+        "total_tokens": 2774
+      },
+      "billed_cost_usd": 0.0077775,
+      "estimated_cost_usd": 0.0077775,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P07 demonstrates strong user discovery and prioritization skills within operational software workflows, but shows limited evidence in enterprise LLM product delivery, generative AI evaluation frameworks, and enterprise-grade governance.",
+      "responsibilities": [
+        {
+          "statement": "Identify, prototype, experiment with, evaluate, and launch valuable AI capabilities.",
+          "jd_quote": "Find valuable AI opportunities, prototype and experiment, evaluate quality and launch them."
+        },
+        {
+          "statement": "Establish enterprise governance, oversight, permissions, and transparent system design.",
+          "jd_quote": "Design for human oversight, permissions, transparency and governance."
+        },
+        {
+          "statement": "Drive product strategy and investments using customer telemetry to increase adoption and revenue.",
+          "jd_quote": "Use customer evidence and telemetry to choose investments that improve adoption and revenue."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "Use customer evidence and telemetry to choose investments that improve adoption and revenue.",
+          "profile_status": "strong",
+          "profile_quote": "I spent shifts at two depots, logged repeated handoffs, and proposed a shared queue with explicit ownership."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "Find valuable AI opportunities, prototype and experiment, evaluate quality and launch them.",
+          "profile_status": "strong",
+          "profile_quote": "A proposed chatbot for drivers was postponed because offline access and multilingual instructions were more urgent."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "Design for human oversight, permissions, transparency and governance.",
+          "profile_status": "partial",
+          "profile_quote": "My role was to define which errors mattered to customers and which needed manual override."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "evaluate quality and launch them.",
+          "profile_status": "partial",
+          "profile_quote": "I compared predicted and actual arrival windows by route type"
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "fluency in LLMs, agents, retrieval and evaluation",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "why_now": "The role specifically requires technical fluency in LLMs, retrieval systems, and agent architectures to identify high-value opportunities.",
+          "prep_action": "Study foundational LLM application patterns, prompt engineering architectures, and retrieval-augmented generation concepts to articulate product trade-offs."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The candidate has evaluated classic statistical prediction errors but lacks experience defining evaluation benchmarks for generative foundation models.",
+          "prep_action": "Develop a framework for evaluating LLM outputs using offline golden datasets, human-in-the-loop review, and automated domain metrics."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "Enterprise strategy execution platforms require robust enterprise role-based access control, transparency, and data governance policies.",
+          "prep_action": "Create a spec outlining human oversight mechanisms, tenant data isolation, and permission-aware retrieval boundaries for enterprise AI features."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC20",
+          "quote": "Collects practical prompt design methods for clearer model instructions.",
+          "title": "Prompt design strategies",
+          "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Candidate profile lacks explicit experience with enterprise B2B SaaS pricing, sales-assisted go-to-market, or executive customer advisory boards.",
+        "No direct evidence provided regarding managing foundation model lifecycle or retrieval-augmented generation systems."
+      ]
+    }
+  },
+  "payload_sha256": "a20d29c086719de862b00367833ca596067919514f1fbdc810531fc6b7714f94"
+}

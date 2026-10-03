@@ -1,0 +1,182 @@
+{
+  "case_id": "RLR30-12",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7284.84,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own a major part of an AI workbench for scientific research from discovery to delivery."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Select domains, data sources and integrations for the roadmap.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Product exposure: A product manager supplied the user problem, success definition, and roadmap.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "Work on enterprise security, administration, compliance and procurement, and support launch and adoption.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Measure retention, time to useful scientific results and trust.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "GROWTH_LIFECYCLE",
+        "SAFETY_PRIVACY",
+        "PRIORITIZATION"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.240622
+      },
+      {
+        "id": "DOC08",
+        "title": "Safety best practices",
+        "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.633758
+      },
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.297285
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7278.29,
+      "usage": {
+        "prompt_tokens": 841,
+        "completion_tokens": 2305,
+        "total_tokens": 3146
+      },
+      "billed_cost_usd": 0.0092745,
+      "estimated_cost_usd": 0.0092745,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P23 brings solid machine learning engineering experience in offline evaluation and model deployment, but lacks end-to-end product management experience in user discovery, product roadmapping, and business metrics.",
+      "responsibilities": [
+        {
+          "statement": "Lead user research with domain experts and define model requirements and evaluations.",
+          "jd_quote": "Interview scientists in their actual workflows and translate needs into model behavior and evaluations."
+        },
+        {
+          "statement": "Define the product roadmap for domains, datasets, and technical integrations.",
+          "jd_quote": "Select domains, data sources and integrations for the roadmap."
+        },
+        {
+          "statement": "Define and track product success metrics including user retention, trust, and speed to insights.",
+          "jd_quote": "Measure retention, time to useful scientific results and trust."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "Interview scientists in their actual workflows and translate needs into model behavior and evaluations.",
+          "profile_status": "partial",
+          "profile_quote": "I joined two planner interviews to explain model limitations and suggested displaying uncertainty bands, but I did not decide which segment to serve or whether the feature should ship."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "Use failures and early-access feedback to decide readiness and improvements.",
+          "profile_status": "partial",
+          "profile_quote": "I owned feature checks, offline evaluation, a Python inference service, and alerts for missing upstream data."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Select domains, data sources and integrations for the roadmap.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Measure retention, time to useful scientific results and trust.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "Work on enterprise security, administration, compliance and procurement, and support launch and adoption.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "why_now": "The role requires independently interviewing scientists to uncover workflow bottlenecks and convert insights into AI requirements.",
+          "prep_action": "Practice structuring generative user research interviews and translating qualitative researcher workflows into explicit product specs."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "Owning an AI workbench requires setting strategic domain priorities, data integrations, and roadmap milestones.",
+          "prep_action": "Draft a sample product strategy framework for prioritizing scientific data sources and domain-specific AI tooling."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The position demands measuring user adoption, trust, and time to valuable scientific output rather than purely technical ML loss metrics.",
+          "prep_action": "Design a product metrics framework defining leading and lagging indicators for scientific trust and user retention."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC07",
+          "quote": "Describes evaluating multi-step agent behavior with traces and test cases.",
+          "title": "Evaluate agent workflows",
+          "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC13",
+          "quote": "Describes the tool-use loop between Claude, the application, and external functions.",
+          "title": "How tool use works",
+          "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Analysis is based exclusively on the supplied profile and job description.",
+        "No protected characteristics or hiring decisions were inferred or evaluated."
+      ]
+    }
+  },
+  "payload_sha256": "16777f1994b47dc1b93f039d5e141816b76e6533126c7f579f5b40c48f47a021"
+}

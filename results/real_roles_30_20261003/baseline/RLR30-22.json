@@ -1,0 +1,75 @@
+{
+  "case_id": "RLR30-22",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 3.69,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own supply-side advertising technology for Prime Video, from vision and roadmap to feature requirements."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Own supply-side advertising technology for Prime Video, from vision and roadmap to feature requirements.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Senior Product Manager - Tech, Prime Video Advertising",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "PRIORITIZATION"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 4.591138
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 3.738292
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 3.417537
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "52ddb93b92e949d01b878ed0138afb5e60009fb12d30650cbe14f0272b7e9512"
+}

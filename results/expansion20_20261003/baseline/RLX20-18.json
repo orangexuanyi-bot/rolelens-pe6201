@@ -1,0 +1,56 @@
+{
+  "case_id": "RLX20-18",
+  "manifest_sha256": "20ad8864c77357248c7d0a9e22c2863bca868c2065e7343b5049d2ced953aee8",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 6.17,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The PM will own the commercial experience from trial to recurring use.",
+        "They will agree account attribution, invoice responsibility, and support escalation with service resellers before offering a partner channel."
+      ],
+      "capabilities": [],
+      "top_gaps": [],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 13.621756
+      },
+      {
+        "id": "CK08",
+        "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+        "url": "https://stripe.com/resources/more/strategy-of-pricing",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 11.220153
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.32943
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "723bd6cc80200c59d51c03b2a1c98b7ab7f641471f11fbdf8544e5c900accba4"
+}

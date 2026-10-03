@@ -1,0 +1,171 @@
+{
+  "case_id": "RLX20-17",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 9677.84,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The PM will speak with disabled users and community hosts and define which features remain essential and free.",
+        "They will define sponsor controls, disclosure, frequency limits, and reporting that respects member privacy and does not reward intrusive placements."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "They will define sponsor controls, disclosure, frequency limits, and reporting that respects member privacy and does not reward intrusive placements.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I balanced requests from users, privacy reviewers, and the infrastructure team, and I wrote a decision memo for transcript retention.",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "SAFETY_PRIVACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 12.505189
+      },
+      {
+        "id": "CK01",
+        "title": "Understand your conversion tracking data",
+        "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 10.887023
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.628713
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 9671.4,
+      "usage": {
+        "prompt_tokens": 1048,
+        "completion_tokens": 2986,
+        "total_tokens": 4034
+      },
+      "billed_cost_usd": 0.0119835,
+      "estimated_cost_usd": 0.0119835,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P17 brings strong accessibility discovery, cross-functional collaboration, and privacy-sensitive design experience from prior social app roles. However, transitioning to this commercial PM role requires bridging gaps in monetization packaging, ad/sponsorship controls, and longitudinal pilot experimentation.",
+      "responsibilities": [
+        {
+          "statement": "Engage with disabled users and community hosts to establish essential free features versus paid convenience benefits.",
+          "jd_quote": "The PM will speak with disabled users and community hosts and define which features remain essential and free."
+        },
+        {
+          "statement": "Structure sponsorship controls, frequency caps, and privacy-preserving disclosures for community placements.",
+          "jd_quote": "They will define sponsor controls, disclosure, frequency limits, and reporting that respects member privacy and does not reward intrusive placements."
+        },
+        {
+          "statement": "Run a controlled pilot measuring revenue, repeat usage, complaints, and guardrail metrics against accessibility degradation.",
+          "jd_quote": "They will design a controlled pilot tracking repeat use, revenue, complaints, and access failures over time, including people who leave the experience."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will speak with disabled users and community hosts and define which features remain essential and free.",
+          "profile_status": "strong",
+          "profile_quote": "I tested revised flows with a paid accessibility panel, wrote detailed interaction notes, and worked with engineers through release."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare paid benefit packages, test willingness to pay without pressure, and set cancellation and refund terms that are easy to understand.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "They will define sponsor controls, disclosure, frequency limits, and reporting that respects member privacy and does not reward intrusive placements.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will design a controlled pilot tracking repeat use, revenue, complaints, and access failures over time, including people who leave the experience.",
+          "profile_status": "partial",
+          "profile_quote": "Task completion improved in moderated testing, but we did not measure long-term messaging behaviour."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will work with accessibility specialists, community teams, finance, design, and engineering to sequence the first release.",
+          "profile_status": "strong",
+          "profile_quote": "I balanced requests from users, privacy reviewers, and the infrastructure team, and I wrote a decision memo for transcript retention."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "reporting that respects member privacy and does not reward intrusive placements.",
+          "profile_status": "strong",
+          "profile_quote": "I balanced requests from users, privacy reviewers, and the infrastructure team, and I wrote a decision memo for transcript retention."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role requires defining paid convenience packages and transparent cancellation terms without turning essential access into a paid barrier.",
+          "prep_action": "Draft a packaging framework that clearly separates free core access from paid convenience features and specifies ethical cancellation and refund terms."
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role demands establishing sponsor disclosure standards, frequency caps, and privacy-respecting reporting for community sponsorships.",
+          "prep_action": "Develop a sponsorship policy card detailing explicit disclosure badges, daily impression caps per user, and privacy-preserving aggregate metrics."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The position requires running longitudinal pilots tracking commercial metrics alongside guardrails for task completion and churn among disabled users.",
+          "prep_action": "Formulate a pilot experiment dashboard layout defining leading revenue metrics alongside explicit guardrail metrics for drop-off and accessibility complaints."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK09",
+          "quote": "Covers subscription packaging, retention, customer experience, and experiments as revenue levers.",
+          "title": "How to grow subscription revenue",
+          "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK07",
+          "quote": "Supports product choices about how value, usage, and customer understanding map to a plan design.",
+          "title": "Recurring pricing models",
+          "url": "https://docs.stripe.com/products-prices/pricing-models",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Analysis is based on a fictional JD card and self-reported candidate profile summary.",
+        "Candidate verification is limited to provided textual claims without live evaluation or work sample inspection."
+      ]
+    }
+  },
+  "payload_sha256": "1d1f66a5c44bd4d18b825b69f4d89d9bcf70f17e672664f9e3ca7c18fff99abe"
+}

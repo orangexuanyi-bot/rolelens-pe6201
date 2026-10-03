@@ -10,32 +10,27 @@ The product has a transparent keyword baseline and an optional single-call Gemin
 - [Data and evaluation](DATA_AND_EVALUATION.md): public fixtures, private-data boundaries, reference method, metric definitions, saved results and reproduction.
 - [Evaluation runner](scripts/EXPLORATORY_EVALUATION.md): command options, frozen evidence and interrupted-run handling.
 
-## Evidence as of 3 October 2026
+## Final evidence as of 3 October 2026
 
-| Item | Observed status |
-| --- | --- |
-| Implementation | CLI, Streamlit interface, two-family lexical retrieval, PM scope guard, structured model adapter, deterministic validation, and reproducible evaluation. **20 offline tests passed** after the final cost-reporting fixes. |
-| Ten fictional input pairs | Five AI PM and five commercial PM pairs fixed by IDs and hashes on 26 September. Inputs and taxonomy have not changed. |
-| Reference judgments | **Codex AI-generated exploratory references**, fixed on 3 October before predictions. Includes reasons, input excerpts, alternatives, and subjective confidence. `human_reviewed=false` records their state at prediction time; see the later review below. |
-| Personal ten-case check | **Completed:** I checked all ten cases and accepted the judgments unchanged. The check followed the exploratory run. [Review record](data/student_review_confirmation_20261003.json). |
-| Live exploratory comparison | One attempt per case and mode. Results below are **agreement with AI references, not correctness**. Ten Gemini responses passed schema/quote validation; one baseline case abstained. |
-| Private CV sanity slice | Three permissioned de-identified summaries processed separately; source CVs, summaries and derived outputs remain outside this repository. |
-| Presentation/submission | Report and disclosure accepted. The final 2–8 minute video must show the student's face and screen. Its recording and final course submission remain pending. |
+The final experiment uses **30 real employer requirement summaries + 30 synthetic profiles**, 15 AI PM and 15 commercial PM. [Browse all thirty official sources](data/REAL_ROLE_SOURCES.md). The UI can load each source-linked role and its fictional candidate.
 
-### Exploratory results
-
-| Measure, all ten cases | Keyword baseline | Gemini path |
+| Measure, all 30 real-role pairs | Keyword baseline | Gemini |
 | --- | ---: | ---: |
-| Coverage | 9/10 (90%) | 10/10 (100%) |
-| Matched reference IDs, abstention = 0 | 18/30 (60%) | 19/30 (63.3%) |
-| Cases matching at least 2 of 3 IDs | 7/10 (70%) | 8/10 (80%) |
-| Mean overlap among accepted cases | 2.0/3 | 1.9/3 |
-| Median end-to-end latency | 12.985 ms | 8,069.285 ms |
-| Response-reported API cost | No external model call | US$0.08174175 total; US$0.008174175/case |
+| Accepted / attempted | 13/30 (43.3%) | 30/30 (100.0%) |
+| Cases matching at least 2 of 3 reference IDs | 7/30 (23.3%) | 19/30 (63.3%) |
+| Matched reference IDs, abstention = 0 | 17/90 (18.9%) | 55/90 (61.1%) |
+| Median end-to-end latency | 3.865 ms | 7.157 s |
+| Response-reported API cost | No external call | US$0.24741375 total; $0.008247/attempt |
 
-Gemini recovered the baseline abstention but matched fewer reference IDs on three other cases. The case-agreement difference is **10 percentage points**, below the proposal's 20-point improvement target even in this exploratory study. Human-reference targets are not validated by these figures. The assistant family helped generate the fixtures, taxonomy and references; shared assumptions can inflate agreement. Ten subjective cases and one run provide weak evidence of generalization or user value.
+Difference: **40.0 percentage points**. The 80% case-agreement threshold was not reached; the +20 percentage-point difference was reached on this AI-reference dataset. Neither establishes an independent correctness target. These figures are **agreement with AI-authored references, not correctness**. The weak alias baseline abstains frequently on natural phrasing. See [complete results and limitations](results/real_roles_30_20261003/README.md).
 
-See [`data/exploratory_protocol_v1.json`](data/exploratory_protocol_v1.json), [`data/ai_reference_exploratory_v1.json`](data/ai_reference_exploratory_v1.json), and [`results/exploratory_20261003/`](results/exploratory_20261003/). The archive includes manifests, frozen reference snapshots, per-case pipeline results, and summaries. Saved outputs contain **fictional evidence excerpts only**. Rejected calls remain in coverage and cost calculations; missing costs remain unknown. Response-reported costs are not invoices.
+- **Software:** 23 offline tests; CLI and Streamlit; lexical retrieval; structured output and quote validation. Tests check behavior, not advice quality.
+- **Reference chronology:** new real-role inputs and references frozen at `98997be` before prediction; profiles reused from older tests, so this is not an original unseen holdout.
+- **Personal ten-case check:** I checked the original ten reference cases and accepted the judgments unchanged. That check followed the earlier run. [Record](data/student_review_confirmation_20261003.json). It does not apply to the thirty new real-role references.
+- **Private sanity slice:** three consented de-identified CV summaries, stored separately and not public.
+- **Course handoff:** repository, report and recording materials prepared. Student face-and-screen video and final NTULearn submission remain pending. GitHub publication is not course submission.
+
+Historical fictional-role experiments remain in `results/exploratory_20261003/`, `results/expansion20_20261003/` and `results/evaluation_30_20261003/`; do not combine them with this real-role phase.
 
 ## Run locally
 
@@ -52,41 +47,29 @@ python -m venv .venv
 
 The interface runs on localhost. The core CLI uses Python's standard library. Streamlit powers the UI; pypdf supports text-layer PDF input. Tested environment: Python 3.12.14, Streamlit 1.64.0, pypdf 6.19.0. Dependency ranges are in `requirements.txt`.
 
-### Reproduce the exploratory comparison
+### Reproduce the final comparison
 
-An independent local baseline run needs no credentials:
-
-```powershell
-.\.venv\Scripts\python.exe -m rolelens.exploratory --references data\ai_reference_exploratory_v1.json --out-dir private\my_baseline_run
-```
-
-For an authorized **fictional-input** model run, load `OPENROUTER_API_KEY` into the process environment using a private secret manager, then enable external processing:
+No credentials are needed for a new baseline run:
 
 ```powershell
-.\.venv\Scripts\python.exe -m rolelens.exploratory --references data\ai_reference_exploratory_v1.json --out-dir private\my_gemini_run --mode ai --allow-external-processing
-Remove-Item Env:OPENROUTER_API_KEY
+.\.venv\Scripts\python.exe -m rolelens.exploratory --references data\ai_reference_real_roles_30.json --cases data\real_role_cases_30.jsonl --case-lock data\real_role_cases_30_lock.json --protocol data\real_role_protocol_30.json --out-dir private\new_real30_baseline
 ```
 
-The runner freezes label bytes, input/code/knowledge hashes and settings before predictions. Completed case files are reused on resume. An interrupted request with unknown outcome blocks automatic retry to prevent duplicate charges. Never change labels or code to improve a reported result; use a new version and disclose later iterations. See [`scripts/EXPLORATORY_EVALUATION.md`](scripts/EXPLORATORY_EVALUATION.md).
+For Gemini, load `OPENROUTER_API_KEY` privately into the process environment, use a new output directory and append `--mode ai --allow-external-processing`. The model receives requirement summaries, synthetic profile text and selected notes, never reference labels. No new call is needed to inspect saved results. Interrupted unknown outcomes block automatic retries. See [runner instructions](scripts/EXPLORATORY_EVALUATION.md).
 
 The provider is `google/gemini-3.7-flash`: structured JSON, temperature 0, 4,000-token output cap. Standard listed rates checked 3 October 2026 were US$0.75/M input and US$3.75/M output. A 10,000/2,000-token scenario is US$0.015 before other costs. Recorded response cost is preferred to the estimate. A paid answer can still fail validation.
 
-## Reference provenance and human validation
+## Reference provenance and version history
 
-`data/primary_cases_v2.jsonl` retains its historical filename and pending human-review fields so the original byte lock remains intact. New AI labels occupy a **separate** artifact. The original `rolelens.cli evaluate` and student finalizer still reject missing human review; neither was relaxed or used to certify this run.
+The final real-role run uses code at commit `98997be`, with relevant module hashes stored in each manifest. Later UI/document changes do not change that evidence. Original ten-case core code is preserved at `5c42db7ef5ef0953799fc9b2ed9459631f2097a9`; later provider cost handling and flexible case-count support explain its different code hashes. Original input/reference/result bytes remain intact.
 
-AI-drafted references were fixed before prediction and personally checked by the student afterward, without label changes. The separate review record preserves that chronology; the study does not establish an independent human correctness benchmark. Historical input fields remain intact, and the exposed older v1 pilot is excluded.
-
-## Final audit changes
-
-The recorded model study used core code at commit `5c42db7ef5ef0953799fc9b2ed9459631f2097a9`. The final audit made two later fixes: rejected model answers still display available charges/latency, and models without a verified price table return an unknown estimate instead of inheriting Gemini rates. Twenty offline tests pass. All ten saved AI reports revalidate; all twenty saved result checksums match; the local baseline reproduces the recorded gap sets. No additional paid model run was made for these fixes.
-
-The old manifests intentionally retain the original `rolelens/provider.py` hash. Current code has a different provider hash because of the price-estimation fix; input/reference locks and original result bytes are unchanged. Inspect the named commit for the exact original core code, or use the current commands in a new output directory for a new run.
+The original human-reference evaluator and finalizer still reject missing human-review fields. They were not relaxed to certify an independent human benchmark. New experiments use the explicitly AI-reference runner. Hashes establish integrity, not independent proof of authorship or time.
 
 ## Data, sources and privacy
 
-- `data/synthetic_jds_v2.json`: ten original fictional PM cards informed by official role links, not employer wording or live vacancies.
-- `data/synthetic_profiles/profiles.json`: thirty fictional profiles with generation instructions; ten used in this study. No real candidate text.
+- `data/real_role_sources_30.json` and `real_role_cases_30.jsonl`: final source-linked official requirement summaries and thirty input pairs. Employer wording is paraphrased; check full listings for all qualifications.
+- `data/synthetic_jds_v2.json`: historical fictional cards, excluded from the final real-role phase.
+- `data/synthetic_profiles/profiles.json`: thirty fictional profiles with generation instructions; all thirty used in the final study. No real candidate text.
 - `data/source_manifests/pm_v2_source_candidates.json`: eighteen checked PM links informing ten cards. Older manifests contain broader source metadata, not collected JD bodies.
 - `data/knowledge_notes.jsonl`: thirty short **author-written** summaries linked to official documents (twenty AI, ten commercial), not official passages. Retrieval filters role family then ranks lexical matches; hybrid roles reserve notes from both families when possible.
 - `demo/`: fictional integration examples outside this ten-case study.

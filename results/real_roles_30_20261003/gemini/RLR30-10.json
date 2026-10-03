@@ -1,0 +1,177 @@
+{
+  "case_id": "RLR30-10",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7105.48,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [],
+      "capabilities": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "label": "AI quality and evaluation",
+          "jd_quote": "The role emphasizes taking products from an early idea to delivery, direct user observation, influence across teams and fluency with AI evaluation.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "Navigate public-sector compliance and collaborate with cloud and integration partners.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_EVALUATION",
+        "SAFETY_PRIVACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC06",
+        "title": "Getting started with datasets",
+        "url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 2.351375
+      },
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 2.351375
+      },
+      {
+        "id": "DOC15",
+        "title": "Citations",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/citations",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 2.351375
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7101.12,
+      "usage": {
+        "prompt_tokens": 825,
+        "completion_tokens": 1725,
+        "total_tokens": 2550
+      },
+      "billed_cost_usd": 0.0070875,
+      "estimated_cost_usd": 0.0070875,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate has solid hands-on product discovery and workflow analysis experience for internal AI/support tooling, but lacks evidenced experience with public-sector compliance, cloud/integration partner collaboration, and broad portfolio prioritization.",
+      "responsibilities": [
+        {
+          "statement": "Discover user workflows and determine AI product applications.",
+          "jd_quote": "Discover real workflows inside government agencies and decide where AI models and products can help."
+        },
+        {
+          "statement": "Prioritize specific agency requirements to support broader product strategy.",
+          "jd_quote": "Prioritize agency needs that can also inform a broader product portfolio."
+        },
+        {
+          "statement": "Navigate regulatory compliance and work with external ecosystem partners.",
+          "jd_quote": "Navigate public-sector compliance and collaborate with cloud and integration partners."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "direct user observation",
+          "profile_status": "strong",
+          "profile_quote": "I am strongest at workflow observation, content governance, and bringing support agents into release decisions."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "fluency with AI evaluation.",
+          "profile_status": "partial",
+          "profile_quote": "wrote test questions from anonymised tickets, and asked reviewers to flag unsupported commitments."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "Navigate public-sector compliance",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "collaborate with cloud and integration partners.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "Work with customer-facing teams while retaining ownership of product choices.",
+          "profile_status": "strong",
+          "profile_quote": "cleaned up duplicated content with policy owners, and redesigned the search screen."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "taking products from an early idea to delivery",
+          "profile_status": "partial",
+          "profile_quote": "I led product discovery for an answer-drafting assistant."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "Public sector deployments require navigating strict compliance, data handling standards, and public sector constraints.",
+          "prep_action": "Review public-sector AI compliance frameworks and draft sample data governance protocols for sensitive government agency deployments."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "Delivering public sector software relies on working with cloud vendors and integration system integrators.",
+          "prep_action": "Prepare case studies on structuring partner integrations and defining API/cloud boundary requirements for enterprise or public-sector rollouts."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The role requires rigorous AI evaluation to ensure model outputs meet government agency accuracy and reliability benchmarks.",
+          "prep_action": "Formalize knowledge on systematic dataset evaluation, retrieval metrics, and multi-step trace testing based on industry standards."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC06",
+          "quote": "Introduces creating evaluation datasets and checking model behavior against examples.",
+          "title": "Getting started with datasets",
+          "url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC15",
+          "quote": "Shows how to connect an answer to supporting source passages.",
+          "title": "Citations",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/citations",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The candidate profile does not contain evidence regarding public-sector experience, eligibility constraints, or partner management.",
+        "Evaluation of past impact is limited to internal support tools in a subscription-software company."
+      ]
+    }
+  },
+  "payload_sha256": "9404d0b9ff25bb0d84bfcf7a91285c92f63865fd4ea6be75b6675891d39bef87"
+}

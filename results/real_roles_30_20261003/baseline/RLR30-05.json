@@ -1,0 +1,84 @@
+{
+  "case_id": "RLR30-05",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 4.26,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Build controls for AI deployment in government, regulated and other high-trust environments.",
+        "Own the roadmap for deployment readiness and integrity, including misuse of agents that take several steps and constraints on access to private information.",
+        "Define indicators of residual risk, investigation quality and mitigation effectiveness."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Own the roadmap for deployment readiness and integrity, including misuse of agents that take several steps and constraints on access to private information.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "Develop investigation workflows and repeatable deployment guidance with policy, legal, privacy, research and engineering partners.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I have also attended privacy and retention reviews, where I learned to ask which fields are necessary before collecting them.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "Develop investigation workflows and repeatable deployment guidance with policy, legal, privacy, research and engineering partners.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "CROSS_FUNCTIONAL",
+        "PRIORITIZATION",
+        "SAFETY_PRIVACY"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.962449
+      },
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.297285
+      },
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 1.94591
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "4154c5f727bff375a4fa1300d233600bd80158736fa3a92c316ebe0f09b9f19e"
+}

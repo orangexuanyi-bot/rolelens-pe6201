@@ -1,0 +1,192 @@
+{
+  "case_id": "RLR30-13",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7709.17,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Lead Product Manager - AI Agents & Emerging Products",
+        "Lead consumer AI agent products on mobile and web from an early concept to commercial scale.",
+        "Own subscription choices, prices, retention and churn alongside profit and loss."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Run growth experiments and collaborate with engineering, design and marketing.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "My slides mention conversion optimisation, segmentation, personalisation, and experimentation, but those terms refer to campaign operations rather than controlled product tests.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "The listing seeks extensive product experience and prior delivery of LLM or agent products.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Own subscription choices, prices, retention and churn alongside profit and loss.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Own subscription choices, prices, retention and churn alongside profit and loss.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Candidate RL-P25 | Growth Project Lead",
+          "keyword_priority_score": 3
+        }
+      ],
+      "top_gaps": [
+        "GROWTH_LIFECYCLE",
+        "AI_PRODUCT_LITERACY",
+        "MONETIZATION_PRICING"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 9.738916
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 24.725316
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 12.902591
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7702.88,
+      "usage": {
+        "prompt_tokens": 890,
+        "completion_tokens": 2477,
+        "total_tokens": 3367
+      },
+      "billed_cost_usd": 0.00995625,
+      "estimated_cost_usd": 0.00995625,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P25 brings growth campaign and qualitative user research experience, but lacks required product ownership, commercial subscription management, and hands-on AI agent product experience for this Lead Product Manager role.",
+      "responsibilities": [
+        {
+          "statement": "Lead consumer AI agent products from concept to commercial scale across web and mobile platforms.",
+          "jd_quote": "Lead consumer AI agent products on mobile and web from an early concept to commercial scale."
+        },
+        {
+          "statement": "Own recurring revenue, pricing, churn, customer lifetime value, and commercial P&L metrics.",
+          "jd_quote": "Own subscription choices, prices, retention and churn alongside profit and loss."
+        },
+        {
+          "statement": "Translate LLMs, retrieval, and agent capabilities into functional consumer product experiences.",
+          "jd_quote": "Translate LLMs, retrieval, embeddings and agent capabilities into usable experiences, including rapid prototypes."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "Translate LLMs, retrieval, embeddings and agent capabilities into usable experiences, including rapid prototypes.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "Own subscription choices, prices, retention and churn alongside profit and loss.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Run growth experiments and collaborate with engineering, design and marketing.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "collaborate with engineering, design and marketing.",
+          "profile_status": "partial",
+          "profile_quote": "interviewing prospective customers about why they hesitate to finish registration. I coded 25 interviews and shared three themes with designers, who changed a disclosure screen."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "collaborate with engineering, design and marketing.",
+          "profile_status": "partial",
+          "profile_quote": "I can write clearly and work across teams"
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "why_now": "The role requires translating LLMs, embeddings, and agent workflows into consumer product features.",
+          "prep_action": "Study AI agent architectures, prompting patterns, and RAG fundamentals, then draft a sample PRD detailing user interactions and fallback mechanisms for an AI agent."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The position demands owning subscription choices, pricing strategies, and profit-and-loss tradeoffs.",
+          "prep_action": "Review recurring subscription and usage-based pricing models to build a business case balancing serving costs against customer retention."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The role requires executing controlled growth experiments and evaluating causal product metrics.",
+          "prep_action": "Learn A/B testing methodologies for digital products, distinguishing causal experimentation frameworks from multi-channel marketing campaigns."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC07",
+          "quote": "Describes evaluating multi-step agent behavior with traces and test cases.",
+          "title": "Evaluate agent workflows",
+          "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK09",
+          "quote": "Covers subscription packaging, retention, customer experience, and experiments as revenue levers. Provides broad commercial context for a PM balancing conversion with sustained customer value.",
+          "title": "How to grow subscription revenue",
+          "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The analysis is based strictly on the provided profile text; unlisted skills or achievements were not assumed.",
+        "Evaluation covers product management readiness and does not constitute a formal hiring recommendation."
+      ]
+    }
+  },
+  "payload_sha256": "64d12189c276277a2dd8256831ecf8435efa6b86d0cdb81212804052264bebf0"
+}

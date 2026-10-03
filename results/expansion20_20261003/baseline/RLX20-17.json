@@ -1,0 +1,67 @@
+{
+  "case_id": "RLX20-17",
+  "manifest_sha256": "20ad8864c77357248c7d0a9e22c2863bca868c2065e7343b5049d2ced953aee8",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 6.24,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The PM will speak with disabled users and community hosts and define which features remain essential and free.",
+        "They will define sponsor controls, disclosure, frequency limits, and reporting that respects member privacy and does not reward intrusive placements."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "They will define sponsor controls, disclosure, frequency limits, and reporting that respects member privacy and does not reward intrusive placements.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I balanced requests from users, privacy reviewers, and the infrastructure team, and I wrote a decision memo for transcript retention.",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "SAFETY_PRIVACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 12.505189
+      },
+      {
+        "id": "CK01",
+        "title": "Understand your conversion tracking data",
+        "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 10.887023
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.628713
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "91afcb42e4d85961534fd21c8738cd5927ea677383da08fb17e0462df85754d8"
+}

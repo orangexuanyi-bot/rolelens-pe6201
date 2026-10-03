@@ -1,0 +1,75 @@
+{
+  "case_id": "RLR30-03",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 3.54,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Develop evaluations that can scale and measure safety outcomes."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "Product Manager, Multimodal Safety",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 5
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "Make the collaboration between research and product delivery repeatable.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "SAFETY_PRIVACY",
+        "CROSS_FUNCTIONAL"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC08",
+        "title": "Safety best practices",
+        "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.611074
+      },
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.297285
+      },
+      {
+        "id": "DOC11",
+        "title": "Prompt engineering overview",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.297285
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "9ca140c27ab87ea11377747654d3a653abc20eb0b6ddcf2d63cc782617a21ebb"
+}

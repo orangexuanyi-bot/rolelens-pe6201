@@ -1,0 +1,91 @@
+{
+  "case_id": "RLR30-23",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 4.53,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Develop subscription experiences that help free listeners understand and adopt Premium.",
+        "Own direction and product priorities across awareness, acquisition and activation before purchase."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Use experiments, funnel behavior, cohorts and segmentation, including differences across markets.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Develop subscription experiences that help free listeners understand and adopt Premium.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "label": "Go-to-market and positioning",
+          "jd_quote": "Work with research, marketing and regional teams on positioning and execution.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Own direction and product priorities across awareness, acquisition and activation before purchase.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 3
+        }
+      ],
+      "top_gaps": [
+        "GROWTH_LIFECYCLE",
+        "GO_TO_MARKET",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 12.112477
+      },
+      {
+        "id": "CK01",
+        "title": "Understand your conversion tracking data",
+        "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 7.225395
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 6.538883
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "851e20989ec1a8a4852f8e4d57efb79f88ce2be19ab208ac6047781f7164ed10"
+}

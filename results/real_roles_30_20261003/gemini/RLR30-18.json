@@ -1,0 +1,205 @@
+{
+  "case_id": "RLR30-18",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 6386.1,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Determine what to build and why for Alexa advertising and monetization.",
+        "Develop product positioning, messaging and enablement for advertising sales and agencies."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "label": "Product strategy",
+          "jd_quote": "Research customers, set product direction and priorities, and specify the measures and instrumentation needed to assess outcomes.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "Generative AI, commerce and advertising knowledge are relevant.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Determine what to build and why for Alexa advertising and monetization.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Determine what to build and why for Alexa advertising and monetization.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 3
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "label": "Go-to-market and positioning",
+          "jd_quote": "Develop product positioning, messaging and enablement for advertising sales and agencies.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "AI_PRODUCT_LITERACY",
+        "GO_TO_MARKET"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC04",
+        "title": "File search",
+        "url": "https://developers.openai.com/api/docs/guides/tools-file-search",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.640646
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.435814
+      },
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 7.817055
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 6380.66,
+      "usage": {
+        "prompt_tokens": 875,
+        "completion_tokens": 1804,
+        "total_tokens": 2679
+      },
+      "billed_cost_usd": 0.00742125,
+      "estimated_cost_usd": 0.00742125,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate has demonstrated qualitative user discovery, basic experiment evaluation, and qualitative AI output evaluation in an edtech context, but lacks evidenced experience in advertising ecosystems, monetization, and sales/agency enablement required for the Alexa Ads Senior PM role.",
+      "responsibilities": [
+        {
+          "statement": "Define product roadmap, direction, and customer-driven priorities for Alexa advertising and monetization initiatives.",
+          "jd_quote": "Determine what to build and why for Alexa advertising and monetization."
+        },
+        {
+          "statement": "Define technical instrumentation and metric frameworks to measure advertising performance and business outcomes.",
+          "jd_quote": "specify the measures and instrumentation needed to assess outcomes."
+        },
+        {
+          "statement": "Enable advertising sales and agency channels through product positioning and clear commercial messaging.",
+          "jd_quote": "Develop product positioning, messaging and enablement for advertising sales and agencies."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "Research customers, set product direction and priorities",
+          "profile_status": "strong",
+          "profile_quote": "Learner interviews revealed that people wanted feedback on specific mistakes, rather than a generic score."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "Generative AI, commerce and advertising knowledge are relevant.",
+          "profile_status": "partial",
+          "profile_quote": "I selected a set of responses from different proficiency levels and compared model comments with teacher comments, looking for fabricated grammar rules and discouraging language."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "specify the measures and instrumentation needed to assess outcomes.",
+          "profile_status": "partial",
+          "profile_quote": "In a limited rollout, learners attempted more corrections; retention did not change clearly over the observation window."
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "Determine what to build and why for Alexa advertising and monetization.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "Develop product positioning, messaging and enablement for advertising sales and agencies.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "Determine what to build and why for Alexa advertising and monetization.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role specifically focuses on Alexa advertising, requiring familiarity with ad formats, targeting, and advertiser workflows.",
+          "prep_action": "Study foundational digital advertising frameworks, including ad serving pipelines, auction mechanics, and ad reporting metrics like impressions, CTR, and ROAS."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "why_now": "The role explicitly requires creating positioning, packaging, and enablement assets for ad sales teams and media agencies.",
+          "prep_action": "Practice structuring GTM collateral, agency one-pagers, and sales narrative decks detailing value proposition, ad specs, and measurement options."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "Monetization strategy is a core responsibility for determining pricing, inventory valuation, and commercial viability.",
+          "prep_action": "Review pricing models (CPM, CPC, CPA) and sponsored placement bidding dynamics to articulate trade-offs between user experience and monetization."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK03",
+          "quote": "Introduces sponsored retail placements and the advertiser controls around targets, bids, and budgets.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK05",
+          "quote": "Defines reach, impressions, frequency, clicks, conversions, conversion rates, and cost measures for an ads dashboard.",
+          "title": "Basic metrics and definitions in TikTok Ads Manager",
+          "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile contains no evidence regarding advertising tech, bidding systems, or publisher monetization experience.",
+        "Evaluation is restricted to the provided resume excerpt and does not account for unlisted commercial or technical background."
+      ]
+    }
+  },
+  "payload_sha256": "ef78e200ae6674529dcf614063d0eab91fca07f20363c5e90dcb0a3b4b0ac6d8"
+}

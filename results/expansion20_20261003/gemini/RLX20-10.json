@@ -1,0 +1,171 @@
+{
+  "case_id": "RLX20-10",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8957.32,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "A junior PM, supported by a lead, will establish whether the feature works on ordinary meetings and what must be ready before a pilot.",
+        "The PM will gather permissioned examples with unclear speakers, corrections, and background noise, define what a wrong commitment means, and compare outputs using a written rubric.",
+        "They will interview users with the lead PM and write one focused pilot scope with design and engineering."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "Junior AI Product Manager - Meeting Follow-Through",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Candidate RL-P30 | AI Product Manager (internship title)",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "A fictional collaboration startup wants an assistant that turns meeting notes into a reviewable list of commitments.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "CROSS_FUNCTIONAL",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC11",
+        "title": "Prompt engineering overview",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 8.9408
+      },
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.962449
+      },
+      {
+        "id": "DOC02",
+        "title": "Structured model outputs",
+        "url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.211723
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8950.48,
+      "usage": {
+        "prompt_tokens": 1017,
+        "completion_tokens": 1988,
+        "total_tokens": 3005
+      },
+      "billed_cost_usd": 0.00821775,
+      "estimated_cost_usd": 0.00821775,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P30 has foundational familiarity with AI prompt prototyping and note-taking product demos from an internship, but lacks demonstrated experience in systematic AI evaluation, safety controls, user discovery synthesis, and pilot metrics analysis.",
+      "responsibilities": [
+        {
+          "statement": "Evaluate meeting commitment extraction on realistic transcripts using systematic error rubrics.",
+          "jd_quote": "gather permissioned examples with unclear speakers, corrections, and background noise, define what a wrong commitment means, and compare outputs using a written rubric."
+        },
+        {
+          "statement": "Establish governance, permission, and human-in-the-loop review safeguards before customer trials.",
+          "jd_quote": "propose controls for recording permission, transcript deletion, who can see a meeting, and review before any commitment is shared."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "define what a wrong commitment means, and compare outputs using a written rubric.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "propose controls for recording permission, transcript deletion, who can see a meeting, and review before any commitment is shared.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "compare a structured template, retrieval of company terms, and model-generated summaries, explaining expected cost and delay at different meeting lengths.",
+          "profile_status": "partial",
+          "profile_quote": "I wrote sample prompts, selected three favourable transcripts, and made slides comparing draft styles."
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "interview users with the lead PM and write one focused pilot scope with design and engineering.",
+          "profile_status": "partial",
+          "profile_quote": "assisted a product manager by taking notes in two customer calls"
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "report useful accepted actions, corrections, rejected drafts, and support issues without selecting only favourable examples.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The role requires moving past demo presentations to creating error taxonomies and rubrics that evaluate noisy, real-world transcripts objectively.",
+          "prep_action": "Draft an evaluation rubric specifying precision/recall criteria for action items, edge-case failure modes (corrections, background talk), and scoring guidelines."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "Meeting intelligence products handle sensitive corporate communications requiring explicit consent, role-based visibility, and data deletion workflows.",
+          "prep_action": "Map out a permission and data retention matrix covering meeting recording consent, access restrictions, and human verification before sharing commitments."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "Evaluating pilot readiness requires tracking objective acceptance, correction, and rejection rates rather than relying on curated samples.",
+          "prep_action": "Design a telemetry dashboard mockup detailing acceptance rate, user edit distance on commitments, draft rejection reasons, and support ticket categories."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC02",
+          "quote": "Shows how to request model responses that follow a defined JSON schema.",
+          "title": "Structured model outputs",
+          "url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The evaluation is based strictly on self-reported profile text and a fictional scenario role description.",
+        "No assessment is made regarding engineering implementation feasibility or employment decisions."
+      ]
+    }
+  },
+  "payload_sha256": "abd908d5c41a26ba747a236e74558f7e302c80b757b6ef9a83f28df6da468b36"
+}

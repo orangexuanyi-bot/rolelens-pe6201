@@ -1,0 +1,179 @@
+{
+  "case_id": "RLR30-25",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5924.41,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Build products that help developers monetize and manage money on Roblox.",
+        "Define a vision, roadmap and scope, then use experiments and instrumented measures to guide delivery."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Define a vision, roadmap and scope, then use experiments and instrumented measures to guide delivery.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Define a vision, roadmap and scope, then use experiments and instrumented measures to guide delivery.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "Combine customer understanding with scalable engineering and business collaboration.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Senior Product Manager, Developer Monetization and Wallets",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 6
+        }
+      ],
+      "top_gaps": [
+        "MONETIZATION_PRICING",
+        "CROSS_FUNCTIONAL",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK08",
+        "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+        "url": "https://stripe.com/resources/more/strategy-of-pricing",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 7.147788
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 7.116104
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.898462
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 5918.05,
+      "usage": {
+        "prompt_tokens": 901,
+        "completion_tokens": 1653,
+        "total_tokens": 2554
+      },
+      "billed_cost_usd": 0.0068745,
+      "estimated_cost_usd": 0.0068745,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate brings solid fintech product management experience in onboarding, compliance workflows, controlled experimentation, and cross-functional risk evaluation. However, the profile lacks direct evidence in developer monetization, games/virtual economies, and pricing optimization.",
+      "responsibilities": [
+        {
+          "statement": "Lead developer earnings, payment solutions, wallets, and in-experience monetization capabilities.",
+          "jd_quote": "Work on creator earnings, payments, in-experience monetization, wallets and group administration."
+        },
+        {
+          "statement": "Set strategic roadmaps and utilize experimentation and instrumentation to iterate on features.",
+          "jd_quote": "Define a vision, roadmap and scope, then use experiments and instrumented measures to guide delivery."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "Improve pricing while reducing fraud and abuse.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "use experiments and instrumented measures to guide delivery.",
+          "profile_status": "strong",
+          "profile_quote": "Completion rose in the controlled rollout, while customer-service calls about verification fell. I worked with analytics to check that the improvement was not limited to one device type."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "Combine customer understanding with scalable engineering and business collaboration.",
+          "profile_status": "strong",
+          "profile_quote": "I coordinate compliance, security, design, and engineering reviews for changes to identity checks."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "reducing fraud and abuse.",
+          "profile_status": "partial",
+          "profile_quote": "I asked for an error breakdown by document type and for a clear human appeal path before the trial."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Define a vision, roadmap and scope",
+          "profile_status": "partial",
+          "profile_quote": "I can make a trade-off document that includes both operational cost and customer harm."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role centers directly on developer monetization models, pricing, and virtual economy dynamics where the candidate currently has no documented experience.",
+          "prep_action": "Study virtual currency, microtransactions, and developer payout mechanisms; review Stripe pricing model literature to prepare case studies on developer monetization."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "The candidate has experience in identity risk and vendor evaluation, but Roblox requires mitigating payment fraud, abuse, and wallet security at scale.",
+          "prep_action": "Synthesize banking fraud prevention frameworks with digital marketplace abuse vectors like account takeovers, unauthorized chargebacks, and wash trading."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "The JD requires defining strategic vision and scope across complex developer monetization ecosystems rather than tactical journey improvements.",
+          "prep_action": "Structure a multi-quarter platform monetization vision and roadmap presentation demonstrating tradeoffs between creator incentives and platform economics."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK08",
+          "quote": "Surveys different bases for setting a price and stresses customer value, costs, competition, and model fit. Useful for framing pricing as a testable PM decision rather than a number chosen in isolation.",
+          "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+          "url": "https://stripe.com/resources/more/strategy-of-pricing",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The evaluation is restricted solely to the provided profile text and does not assess unstated background skills or domain knowledge outside of banking onboarding."
+      ]
+    }
+  },
+  "payload_sha256": "f3049d216b0c90ad9e0ad8235cc6c76842ede95db1eb242554570b5c5f1c9a0f"
+}

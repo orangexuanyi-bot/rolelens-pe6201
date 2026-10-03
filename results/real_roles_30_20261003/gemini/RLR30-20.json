@@ -1,0 +1,169 @@
+{
+  "case_id": "RLR30-20",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7559.04,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Build new products connecting brands and creators for social advertising."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Principal Product Manager - Tech, Social Advertising",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Address matching, campaign activation and compensation, including connections to demand-side and sponsored advertising products.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "GROWTH_LIFECYCLE"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 7.71281
+      },
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.086267
+      },
+      {
+        "id": "CK01",
+        "title": "Understand your conversion tracking data",
+        "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 3.004031
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7551.74,
+      "usage": {
+        "prompt_tokens": 919,
+        "completion_tokens": 1853,
+        "total_tokens": 2772
+      },
+      "billed_cost_usd": 0.007638,
+      "estimated_cost_usd": 0.007638,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P10 demonstrates solid digital product discovery, user task definition, and responsible AI rollout governance in municipal public services. However, the candidate has no evidenced background in programmatic advertising, creator compensation mechanics, or multi-touch attribution systems required for this Principal PM role.",
+      "responsibilities": [
+        {
+          "statement": "Drive the development of social advertising products linking brands and creators across matching, activation, and compensation workflows.",
+          "jd_quote": "Build new products connecting brands and creators for social advertising. Address matching, campaign activation and compensation, including connections to demand-side and sponsored advertising products."
+        },
+        {
+          "statement": "Establish product direction and make scope decisions informed by performance evidence and attribution metrics while collaborating with internal and external stakeholders.",
+          "jd_quote": "Choose initial scope and a longer-term direction, and work across internal organizations and external partners. Use attribution and performance evidence in decisions."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "The role needs understanding of programmatic advertising and technical tradeoffs in matching, APIs and advertising systems; writing code is not a prerequisite.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "Address matching, campaign activation and compensation, including connections to demand-side and sponsored advertising products.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Use attribution and performance evidence in decisions.",
+          "profile_status": "partial",
+          "profile_quote": "tested two content structures with residents. The chosen version reduced incomplete submissions in one district; differences in local outreach mean I would not generalise the exact percentage to every district."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Choose initial scope and a longer-term direction, and work across internal organizations and external partners.",
+          "profile_status": "partial",
+          "profile_quote": "I recommended limiting the assistant to navigation until that failure was addressed."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "work across internal organizations and external partners.",
+          "profile_status": "partial",
+          "profile_quote": "Procurement and security colleagues handled vendor assessment; I handled user tasks and content quality."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role requires architecting product features within programmatic advertising, DSP integrations, and sponsored ad ecosystems, where the profile currently shows no background.",
+          "prep_action": "Study foundational programmatic advertising architectures, RTB/DSP workflows, API integrations, and how creator-led sponsored placements integrate with demand-side platforms."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The position directly manages creator compensation and commercial activation across advertising partners.",
+          "prep_action": "Review creator economy compensation models (e.g., rev-share, fixed-fee sponsorships, performance-based CPA/CPC) and draft a comparison of payout mechanisms."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "Decision-making requires fluency in advertising performance metrics, attribution windows, and media performance trade-offs.",
+          "prep_action": "Learn multi-touch ad attribution methodologies, conversion tracking models, and key ad metrics including ROAS, cost per conversion, and new-to-brand purchases."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK04",
+          "quote": "Connects brand discovery goals with impressions, new-to-brand purchases, and return on ad spend. Useful for explaining why a PM should not treat one efficiency ratio as the only measure of a discovery product.",
+          "title": "Your complete guide to Sponsored Brands",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK01",
+          "quote": "Explains how conversion counts, conversion rate, value, cost per conversion, and attribution settings are reported. Useful when a PM must define an outcome metric and question whether a dashboard number is comparable across channels.",
+          "title": "Understand your conversion tracking data",
+          "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile contains evidence exclusively from civic digital service delivery and contains no direct ad-tech or commercial marketplace experience.",
+        "Candidate capabilities in evaluation and experimentation are civic-focused and need translation to media performance and advertising attribution environments."
+      ]
+    }
+  },
+  "payload_sha256": "420d83724b26b9d2e82679cb0ef5c67484f35b843ac076b1514d7c0b65eaaf1b"
+}

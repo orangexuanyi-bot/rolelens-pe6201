@@ -1,0 +1,169 @@
+{
+  "case_id": "RLR30-02",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7017.18,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Build repeatable evaluation systems and turn results into launch decisions."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Use product usage and feedback to shape datasets, tests, experiments and research priorities.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I planned an A/B test of a new substitution notice, checked sample-ratio balance with the analyst, and reported both conversion and cancellation effects.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "Balance offline quality with usefulness, latency, reliability, safety and cost in actual use.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "SAFETY_PRIVACY",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC06",
+        "title": "Getting started with datasets",
+        "url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 10.650296
+      },
+      {
+        "id": "DOC08",
+        "title": "Safety best practices",
+        "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.388025
+      },
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.578433
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7010.88,
+      "usage": {
+        "prompt_tokens": 824,
+        "completion_tokens": 1892,
+        "total_tokens": 2716
+      },
+      "billed_cost_usd": 0.007713,
+      "estimated_cost_usd": 0.007713,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P03 demonstrates foundational product analyst experience in user discovery, basic error reviews, and classical A/B experimentation within an e-commerce context. However, significant preparation is required to build technical depth in core model lifecycle processes, including repeatable AI evaluation systems, retrieval and training tradeoffs, and AI safety practices.",
+      "responsibilities": [
+        {
+          "statement": "Translate user goals into improvements in AI model behavior by aligning research and dataset priorities.",
+          "jd_quote": "Translate user goals into improvements to AI model behavior."
+        },
+        {
+          "statement": "Establish repeatable evaluation frameworks to balance model quality, latency, safety, and launch tradeoffs.",
+          "jd_quote": "Build repeatable evaluation systems and turn results into launch decisions."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Use product usage and feedback to shape datasets, tests, experiments and research priorities.",
+          "profile_status": "strong",
+          "profile_quote": "I planned an A/B test of a new substitution notice, checked sample-ratio balance with the analyst, and reported both conversion and cancellation effects."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "Build repeatable evaluation systems and turn results into launch decisions.",
+          "profile_status": "partial",
+          "profile_quote": "I assembled a small error review with 80 images and found mistakes on package variants; the pilot stopped before production."
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "Translate user goals into improvements to AI model behavior.",
+          "profile_status": "partial",
+          "profile_quote": "I also ran monthly calls with shoppers who used assistive technologies. Their feedback changed the placement of product-size information and led to a separate accessibility defect queue."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "Collaborate with research on query understanding, retrieval, training, inference and evaluation choices.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "Balance offline quality with usefulness, latency, reliability, safety and cost in actual use.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The role requires designing repeatable evaluation frameworks rather than one-off manual sample reviews.",
+          "prep_action": "Practice structuring offline benchmark datasets, defining rubric-based golden test sets, and setting quantitative go/no-go thresholds for model quality."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "why_now": "Collaborating effectively with research teams requires understanding core concepts across training, retrieval, and inference tradeoffs.",
+          "prep_action": "Study foundational model architectures, query understanding pipelines, and RAG retrieval parameters to prepare case discussions on model behavioral tradeoffs."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "Managing production AI models requires establishing guardrails and balancing safety with output usefulness.",
+          "prep_action": "Review common AI safety safeguards, content moderation practices, and adversarial testing workflows to formulate proactive model safety guidelines."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC06",
+          "quote": "Introduces creating evaluation datasets and checking model behavior against examples.",
+          "title": "Getting started with datasets",
+          "url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC08",
+          "quote": "Lists practical safeguards for building applications that use model outputs.",
+          "title": "Safety best practices",
+          "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile contains no evidence regarding core ML lifecycle management, retrieval systems, or training methodologies.",
+        "Evaluation experience in the profile is limited to manual vendor error checks on static image datasets rather than automated or continuous evaluation pipelines."
+      ]
+    }
+  },
+  "payload_sha256": "6369c6d1eaa69a5a8ec41a0a8aff88cf19b297aef77b073c0c1103ffec170eac"
+}

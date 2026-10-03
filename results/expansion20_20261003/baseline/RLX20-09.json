@@ -1,0 +1,80 @@
+{
+  "case_id": "RLX20-09",
+  "manifest_sha256": "20ad8864c77357248c7d0a9e22c2863bca868c2065e7343b5049d2ced953aee8",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 6.6,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "label": "User and customer discovery",
+          "jd_quote": "The PM will conduct customer interviews and observe actual research sessions to identify work that users would change rather than merely praise.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager - Research Evidence Workspace",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I would need experience with discovery, stakeholder negotiation, and shipping constraints before independently owning an AI product.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "They will turn that choice into an ordered plan, agree scope with design and engineering, and handle buyer requests that would delay the first release.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "CROSS_FUNCTIONAL",
+        "USER_DISCOVERY",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC20",
+        "title": "Prompt design strategies",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.3326
+      },
+      {
+        "id": "DOC06",
+        "title": "Getting started with datasets",
+        "url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.702751
+      },
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.297285
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "038f05a78b4cd4fd3c26e1f48417487d2edee19bbc2ab1202e1e4bfbe48a0664"
+}

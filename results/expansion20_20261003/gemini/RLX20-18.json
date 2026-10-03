@@ -1,0 +1,154 @@
+{
+  "case_id": "RLX20-18",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7521.39,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The PM will own the commercial experience from trial to recurring use.",
+        "They will agree account attribution, invoice responsibility, and support escalation with service resellers before offering a partner channel."
+      ],
+      "capabilities": [],
+      "top_gaps": [],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 13.621756
+      },
+      {
+        "id": "CK08",
+        "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+        "url": "https://stripe.com/resources/more/strategy-of-pricing",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 11.220153
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.32943
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7512.63,
+      "usage": {
+        "prompt_tokens": 1057,
+        "completion_tokens": 1833,
+        "total_tokens": 2890
+      },
+      "billed_cost_usd": 0.0076665,
+      "estimated_cost_usd": 0.0076665,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P19 brings solid internal workflow discovery and assistant evaluation experience from support tooling, but requires preparation on usage-based monetization models, partner commercial agreements, and formal commercial experimentation.",
+      "responsibilities": [
+        {
+          "statement": "Define and evaluate pricing and charging structures for AI-assisted support drafts.",
+          "jd_quote": "They will compare charging for attempted drafts, accepted answers, or a monthly allowance, and test the cost and fairness of including rejected model calls."
+        },
+        {
+          "statement": "Establish partner terms and billing clarity with service resellers.",
+          "jd_quote": "They will agree account attribution, invoice responsibility, and support escalation with service resellers before offering a partner channel."
+        },
+        {
+          "statement": "Design and execute controlled tests measuring net effort and paid account retention.",
+          "jd_quote": "They will test commercial changes with a comparison group, measuring net service effort and retained paid accounts rather than counting only fast answers."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will observe support workflows and keep policy sources and account exceptions visible to the agent reviewing an answer.",
+          "profile_status": "strong",
+          "profile_quote": "I am strongest at workflow observation, content governance, and bringing support agents into release decisions."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "keep policy sources and account exceptions visible to the agent reviewing an answer.",
+          "profile_status": "strong",
+          "profile_quote": "I defined a policy-source allowlist, wrote test questions from anonymised tickets, and asked reviewers to flag unsupported commitments."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare charging for attempted drafts, accepted answers, or a monthly allowance, and test the cost and fairness of including rejected model calls.",
+          "profile_status": "partial",
+          "profile_quote": "I am learning more about retrieval evaluation and cost per response."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will agree account attribution, invoice responsibility, and support escalation with service resellers before offering a partner channel.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will test commercial changes with a comparison group, measuring net service effort and retained paid accounts rather than counting only fast answers.",
+          "profile_status": "partial",
+          "profile_quote": "In a small pilot, agents resolved common questions faster. We did not include complex refund disputes in that measurement, and I have kept them separate in reporting."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role requires deciding whether to bill per attempted draft, accepted draft, or allowance, balancing fairness and model cost coverage.",
+          "prep_action": "Model trade-offs between usage-based, tiered, and per-seat structures, accounting for inference costs and customer value perception for failed drafts."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "Launching through reseller channels requires defining attribution, billing responsibility, and support tiers.",
+          "prep_action": "Draft a channel partner agreement framework covering revenue share, invoice handling, and dispute escalation protocols."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The JD mandates testing pricing adjustments with control groups against retention and net effort rather than superficial speed metrics.",
+          "prep_action": "Formulate an experiment design with treatment/control cohorts measuring unit economics, draft acceptance rates, and retained paid accounts."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK07",
+          "quote": "Outlines flat-rate, per-seat, tiered, and usage-based recurring pricing structures. Supports product choices about how value, usage, and customer understanding map to a plan design.",
+          "title": "Recurring pricing models",
+          "url": "https://docs.stripe.com/products-prices/pricing-models",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK08",
+          "quote": "Surveys different bases for setting a price and stresses customer value, costs, competition, and model fit. Useful for framing pricing as a testable PM decision rather than a number chosen in isolation.",
+          "title": "Strategy of pricing: How to build, test, and improve your pricing model",
+          "url": "https://stripe.com/resources/more/strategy-of-pricing",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile does not show prior direct experience managing reseller channels or partner billing agreements.",
+        "Candidate experience in pricing strategy and commercial trial management is currently developing rather than demonstrated."
+      ]
+    }
+  },
+  "payload_sha256": "edea1023b1b58f33802a39bfb44e3cbde7c2ab799b77b66202c3e173d1933efb"
+}

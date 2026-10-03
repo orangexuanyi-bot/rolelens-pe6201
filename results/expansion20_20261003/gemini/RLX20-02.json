@@ -1,0 +1,177 @@
+{
+  "case_id": "RLX20-02",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 6554.54,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager - Clinic Administration Companion",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "label": "Go-to-market and positioning",
+          "jd_quote": "They will prepare buyer messaging, frontline training, and a phased launch plan with the sales team, using claims that the pilot can support.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY",
+        "GO_TO_MARKET"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC15",
+        "title": "Citations",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/citations",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.3326
+      },
+      {
+        "id": "DOC11",
+        "title": "Prompt engineering overview",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.646088
+      },
+      {
+        "id": "DOC20",
+        "title": "Prompt design strategies",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.981224
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 6547.84,
+      "usage": {
+        "prompt_tokens": 967,
+        "completion_tokens": 1462,
+        "total_tokens": 2429
+      },
+      "billed_cost_usd": 0.00620775,
+      "estimated_cost_usd": 0.00620775,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate demonstrates relevant experience in clinic workflow observation, scoping safe assistant boundaries, and running early pilot evaluations, but lacks enterprise GTM launch experience and formal AI evaluation across latency, cost, and retrieval tradeoffs.",
+      "responsibilities": [
+        {
+          "statement": "Define product scope, safe interaction boundaries, and escalation paths for clinic reception tasks.",
+          "jd_quote": "The PM will select tasks with reception teams and preserve clear boundaries around medical advice."
+        },
+        {
+          "statement": "Evaluate retrieval and generation architectures while balancing speed, uncertainty, and cost tradeoffs.",
+          "jd_quote": "They must compare a rules lookup with a generated answer, explain when source retrieval is needed, and balance answer speed, uncertainty, and running cost."
+        },
+        {
+          "statement": "Lead cross-functional go-to-market execution, including pilot design, buyer messaging, and frontline training.",
+          "jd_quote": "They will prepare buyer messaging, frontline training, and a phased launch plan with the sales team, using claims that the pilot can support."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "preserve clear boundaries around medical advice.",
+          "profile_status": "strong",
+          "profile_quote": "I specified a rule that anything involving symptoms or treatment should route to staff, then manually reviewed 40 example answers for unsupported advice."
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will select tasks with reception teams",
+          "profile_status": "strong",
+          "profile_quote": "I observed reception teams, mapped patient journeys, and redesigned reminder wording with nurses and an accessibility reviewer."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "plan a staggered pilot that separates seasonal staffing effects from the product change",
+          "profile_status": "partial",
+          "profile_quote": "In a three-clinic pilot, fewer patients called to clarify preparation, but clinic staffing changed during the same period; I report this as a directional signal only."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "explain when source retrieval is needed, and balance answer speed, uncertainty, and running cost.",
+          "profile_status": "partial",
+          "profile_quote": "I explored whether an assistant could answer routine scheduling questions from approved clinic content."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "They will prepare buyer messaging, frontline training, and a phased launch plan with the sales team",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will specify correction and escalation steps with nurses, design, legal, and engineering.",
+          "profile_status": "partial",
+          "profile_quote": "redesigned reminder wording with nurses and an accessibility reviewer."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "GO_TO_MARKET",
+          "why_now": "The role requires collaborating directly with sales on buyer messaging, training materials, and a staged rollout supported by pilot claims.",
+          "prep_action": "Draft a sample clinic onboarding toolkit and buyer FAQ articulating pilot-backed claims and staff escalation workflows."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "why_now": "The JD requires explaining when retrieval is necessary and balancing operational constraints such as latency, uncertainty, and cost.",
+          "prep_action": "Structure a decision matrix comparing deterministic rule lookups against retrieval-augmented generation across latency, accuracy, and cost dimensions."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The JD requires designing staggered pilots to isolate seasonal confounding variables and track failure metrics alongside success.",
+          "prep_action": "Design a step-wedge rollout plan specifying baseline control clinics, tracking unanswered query rates and seasonal staffing shifts."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC15",
+          "quote": "Shows how to connect an answer to supporting source passages.",
+          "title": "Citations",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/citations",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC11",
+          "quote": "Introduces a process for improving Claude prompts using explicit goals and examples.",
+          "title": "Prompt engineering overview",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Profile does not show experience working directly with enterprise sales teams or authoring commercial buyer collateral.",
+        "Profile shows manual sample review (40 answers) but lacks formal, scaled AI evaluation and benchmarking methodology."
+      ]
+    }
+  },
+  "payload_sha256": "9fc5af3330e571015d24857c5bacb38d94581bb9b11b3a6259e6eca6b2fc2888"
+}

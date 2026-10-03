@@ -1,0 +1,164 @@
+{
+  "case_id": "RLR30-27",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5691.22,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Work with external partners and customers in product testing, and coordinate marketing and sales to drive adoption."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Set direction for advertising performance measurement across channels, devices and the customer journey.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK06",
+        "title": "About Conversion Lift Study",
+        "url": "https://ads.tiktok.com/resources/help/article/about-conversion-lift-study?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 6.295886
+      },
+      {
+        "id": "CK01",
+        "title": "Understand your conversion tracking data",
+        "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.890421
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 4.43948
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 5687.59,
+      "usage": {
+        "prompt_tokens": 904,
+        "completion_tokens": 1304,
+        "total_tokens": 2208
+      },
+      "billed_cost_usd": 0.005568,
+      "estimated_cost_usd": 0.005568,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate brings deep academic qualitative and observational research experience with strong awareness of causal inference limits, but lacks technical product management, ad-tech domain expertise, and cross-functional engineering delivery experience required for this principal measurement PM role.",
+      "responsibilities": [
+        {
+          "statement": "Set the strategic direction and measurement methodology across channels, attribution, and incrementality.",
+          "jd_quote": "Set direction for advertising performance measurement across channels, devices and the customer journey."
+        },
+        {
+          "statement": "Prioritize technical measurement use cases using market research and financial considerations across engineering teams.",
+          "jd_quote": "Use market and customer research plus financial implications to choose use cases across engineering teams."
+        },
+        {
+          "statement": "Drive partner testing and lead cross-functional go-to-market alignment with sales and marketing.",
+          "jd_quote": "Work with external partners and customers in product testing, and coordinate marketing and sales to drive adoption."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "Use market and customer research plus financial implications to choose use cases across engineering teams.",
+          "profile_status": "partial",
+          "profile_quote": "I designed interview protocols, recruited participants, analysed transcripts, and published reports for programme managers."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Address attribution, marketing-mix approaches and incremental impact using observed and modeled outcomes.",
+          "profile_status": "partial",
+          "profile_quote": "We did not randomise assignment, so I cautioned against claiming the shorter sessions caused the result."
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "The listing seeks extensive technical product management, complete delivery ownership and advertising-technology knowledge.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "coordinate marketing and sales to drive adoption.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "choose use cases across engineering teams.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role requires core domain knowledge in digital ad measurement, multi-touch attribution, and marketing mix modeling.",
+          "prep_action": "Study advertising technology fundamentals, conversion tracking lifecycles, and industry standards for multi-channel attribution."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "why_now": "A Principal PM must orchestrate execution across engineering, sales, marketing, and external partners.",
+          "prep_action": "Practice framing product delivery narratives, stakeholder management frameworks, and go-to-market alignment exercises."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "why_now": "The role demands evaluating financial implications and trade-offs to allocate engineering capacity across complex measurement use cases.",
+          "prep_action": "Develop prioritization case studies using quantitative business impact metrics and technical feasibility scoring."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK06",
+          "quote": "Describes a test-versus-control approach for estimating conversions caused by ad exposure. A PM can use it to distinguish incremental impact from conversions merely attributed to a campaign.",
+          "title": "About Conversion Lift Study",
+          "url": "https://ads.tiktok.com/resources/help/article/about-conversion-lift-study?lang=en",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK01",
+          "quote": "Explains how conversion counts, conversion rate, value, cost per conversion, and attribution settings are reported.",
+          "title": "Understand your conversion tracking data",
+          "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile contains no evidence of commercial ad-tech experience or software engineering leadership.",
+        "Assessment is limited to the provided text and does not evaluate full unstated candidate capabilities."
+      ]
+    }
+  },
+  "payload_sha256": "a9d7342a48d1e27197185a3abb2647264d5ee3a9a2ff39da2c8042899c0dea79"
+}

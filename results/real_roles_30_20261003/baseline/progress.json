@@ -1,0 +1,8 @@
+{
+  "completed_count": 30,
+  "case_count": 30,
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "complete": true
+}

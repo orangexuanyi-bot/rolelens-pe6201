@@ -1,0 +1,77 @@
+{
+  "case_id": "RLX20-10",
+  "manifest_sha256": "20ad8864c77357248c7d0a9e22c2863bca868c2065e7343b5049d2ced953aee8",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7.2,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "A junior PM, supported by a lead, will establish whether the feature works on ordinary meetings and what must be ready before a pilot.",
+        "The PM will gather permissioned examples with unclear speakers, corrections, and background noise, define what a wrong commitment means, and compare outputs using a written rubric.",
+        "They will interview users with the lead PM and write one focused pilot scope with design and engineering."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "Junior AI Product Manager - Meeting Follow-Through",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Candidate RL-P30 | AI Product Manager (internship title)",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "A fictional collaboration startup wants an assistant that turns meeting notes into a reviewable list of commitments.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "CROSS_FUNCTIONAL",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC11",
+        "title": "Prompt engineering overview",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 8.9408
+      },
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.962449
+      },
+      {
+        "id": "DOC02",
+        "title": "Structured model outputs",
+        "url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.211723
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "0714f2125ae0e7438705a3c2dcd929eeb050c607b3d94d9e57c564aa64a36754"
+}

@@ -1,0 +1,171 @@
+{
+  "case_id": "RLX20-06",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 11116.7,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will build a buyer-facing launch story, prepare sales demonstrations with ordinary failure cases, and define the handoff from trial to account support.",
+        "They will work with design, finance, engineering, and subject specialists to deliver one traceable workflow before broadening coverage."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager - Supplier Sustainability Assistant",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 18.186869
+      },
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.388025
+      },
+      {
+        "id": "DOC11",
+        "title": "Prompt engineering overview",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.646088
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 11109.73,
+      "usage": {
+        "prompt_tokens": 986,
+        "completion_tokens": 3373,
+        "total_tokens": 4359
+      },
+      "billed_cost_usd": 0.01338825,
+      "estimated_cost_usd": 0.01338825,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P18 demonstrates strong alignment with the technical and domain requirements of the AI Product Manager role, bringing concrete experience in sustainability data traceability, auditor collaboration, and AI assistant scenario testing. Key development areas focus on commercial strategy, including pricing model experimentation, buyer market selection, and go-to-market execution.",
+      "responsibilities": [
+        {
+          "statement": "Select and validate the initial target customer segment using buyer evidence.",
+          "jd_quote": "They must choose between serving internal sustainability teams and suppliers answering many customer questionnaires, using buyer evidence to justify the first market."
+        },
+        {
+          "statement": "Evaluate pricing models and compare customer willingness to pay against model and support costs.",
+          "jd_quote": "They will test whether customers prefer a paid report allowance, a seat charge, or an add-on, and compare willingness to pay with support and model costs."
+        },
+        {
+          "statement": "Maintain calculation traceability and collaborate with auditors to establish AI evaluation standards.",
+          "jd_quote": "The PM will retain source figures and dates and involve auditors when defining unacceptable explanations."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "The PM will retain source figures and dates and involve auditors when defining unacceptable explanations.",
+          "profile_status": "strong",
+          "profile_quote": "I wrote scenarios based on actual user questions, identified cases where missing data should trigger a question rather than an answer, and manually reviewed 70 drafts for unsupported explanations."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "An assistant would explain figures and ask for missing evidence instead of inventing a response.",
+          "profile_status": "strong",
+          "profile_quote": "I specified that the product must show underlying figures and document dates before presenting a narrative."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will test whether customers prefer a paid report allowance, a seat charge, or an add-on, and compare willingness to pay with support and model costs.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "They will build a buyer-facing launch story, prepare sales demonstrations with ordinary failure cases, and define the handoff from trial to account support.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "They must choose between serving internal sustainability teams and suppliers answering many customer questionnaires, using buyer evidence to justify the first market.",
+          "profile_status": "partial",
+          "profile_quote": "mapped the calculation workflow, prioritised source links and revision history"
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will work with design, finance, engineering, and subject specialists to deliver one traceable workflow before broadening coverage.",
+          "profile_status": "strong",
+          "profile_quote": "worked with auditors on the export format."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role requires testing report allowances, seat charges, and add-on pricing against LLM inference and support costs.",
+          "prep_action": "Develop a unit-economics framework modeling token and operational costs against usage-based and seat-based pricing tiers."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "why_now": "The position demands creating buyer-facing collateral, managing trial handoffs, and showing realistic AI failure cases in sales demos.",
+          "prep_action": "Create a go-to-market demonstration outline illustrating graceful degradation and edge-case handling for prospective buyers."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "The PM must prioritize between internal sustainability teams and multi-questionnaire suppliers based on market evidence.",
+          "prep_action": "Formulate a segment-evaluation matrix comparing willingness to pay, questionnaire volume, and onboarding friction across both personas."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC11",
+          "quote": "Introduces a process for improving Claude prompts using explicit goals and examples.",
+          "title": "Prompt engineering overview",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile does not provide evidence of packaging, pricing validation, or unit-economic modeling.",
+        "There is no documented experience in commercial go-to-market planning, sales enablement, or trial-to-paid conversion workflows."
+      ]
+    }
+  },
+  "payload_sha256": "d21f7537f8cf849eb6bd87a8a4c793af35d017ba982b193ef2e6aca43c2abb8d"
+}

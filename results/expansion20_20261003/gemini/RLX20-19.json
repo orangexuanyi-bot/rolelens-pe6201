@@ -1,0 +1,172 @@
+{
+  "case_id": "RLX20-19",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8489.96,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [],
+      "capabilities": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "The PM will interview merchants and work with compliance teams on clear document checks and appeal paths.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I coordinate compliance, security, design, and engineering reviews for changes to identity checks.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "They will prepare a corridor-specific launch proposition, sales examples, and merchant education with regional teams before opening broad acquisition.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Candidate RL-P20 | Banking Onboarding PM",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "GROWTH_LIFECYCLE",
+        "SAFETY_PRIVACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.047603
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.287563
+      },
+      {
+        "id": "CK01",
+        "title": "Understand your conversion tracking data",
+        "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 7.80812
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8483.39,
+      "usage": {
+        "prompt_tokens": 1050,
+        "completion_tokens": 2224,
+        "total_tokens": 3274
+      },
+      "billed_cost_usd": 0.0091275,
+      "estimated_cost_usd": 0.0091275,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P20 demonstrates strong product discovery, compliance coordination, and risk assessment skills in regulated banking onboarding. However, the candidate needs preparation in monetization structures, external banking partnership agreements, and go-to-market execution for cross-border merchant corridors.",
+      "responsibilities": [
+        {
+          "statement": "Conduct merchant research and collaborate with compliance to build clear document verification and appeal mechanisms.",
+          "jd_quote": "The PM will interview merchants and work with compliance teams on clear document checks and appeal paths."
+        },
+        {
+          "statement": "Structure and evaluate pricing options including transaction fees, currency spreads, and expedited settlement.",
+          "jd_quote": "They will compare a transaction fee, currency-spread charge, and a paid faster-settlement option, testing whether merchants understand the total bill."
+        },
+        {
+          "statement": "Establish operating level agreements and issue handling with banking and regional payout partners.",
+          "jd_quote": "They will agree service levels, exception handling, and customer ownership with banking and local payout partners."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will interview merchants and work with compliance teams on clear document checks and appeal paths.",
+          "profile_status": "strong",
+          "profile_quote": "I interviewed branch advisers and customers, then introduced clearer status messages and a save-and-return path."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will use a limited pilot to review paid repeat transactions, failed payouts, complaints, and service cost with finance, design, and engineering.",
+          "profile_status": "strong",
+          "profile_quote": "I coordinate compliance, security, design, and engineering reviews for changes to identity checks."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will agree service levels, exception handling, and customer ownership with banking and local payout partners.",
+          "profile_status": "partial",
+          "profile_quote": "A document-classification supplier proposed automating a manual routing step."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare a transaction fee, currency-spread charge, and a paid faster-settlement option, testing whether merchants understand the total bill.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "They will prepare a corridor-specific launch proposition, sales examples, and merchant education with regional teams before opening broad acquisition.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role requires designing and validating fee structures (spreads, transaction fees, and expedited settlement) to ensure merchants understand overall costs.",
+          "prep_action": "Draft a pricing comparison model showing FX spread vs. fixed fee trade-offs and design a clear fee disclosure artifact for merchant comprehension testing."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "The PM must define operational SLAs, payout exception ownership, and partner boundaries with local payout institutions.",
+          "prep_action": "Prepare a partner SLA checklist covering payout delay escalation paths, operational failure boundaries, and customer ownership models."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "why_now": "The position demands creating corridor-specific launch materials, sales enablement assets, and educational collateral before broad rollout.",
+          "prep_action": "Develop a go-to-market brief for a single cross-border corridor outlining merchant pain points, sample fee transparency sheets, and regional sales enablement talk tracks."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK07",
+          "quote": "Supports product choices about how value, usage, and customer understanding map to a plan design.",
+          "title": "Recurring pricing models",
+          "url": "https://docs.stripe.com/products-prices/pricing-models",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK09",
+          "quote": "Provides broad commercial context for a PM balancing conversion with sustained customer value.",
+          "title": "How to grow subscription revenue",
+          "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile does not provide evidence of packaging or testing transaction fees, FX spreads, or paid value-added tiers.",
+        "Experience managing external commercial bank partners and formal SLAs is not explicitly detailed beyond evaluating an onboarding software supplier.",
+        "Go-to-market collateral creation and commercial launch execution are not documented in the provided profile."
+      ]
+    }
+  },
+  "payload_sha256": "930b7d6dd3902e695069d31b1a38342537e4dc89fa9da8b1be1bad18dd703f61"
+}

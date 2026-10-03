@@ -1,0 +1,66 @@
+{
+  "case_id": "RLR30-11",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 3.59,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own product work for the platform that collects human data used in AI research."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "label": "AI quality and evaluation",
+          "jd_quote": "Track the time needed to launch data collection, the quality of collected data and downstream model evaluation signals.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_EVALUATION"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC03",
+        "title": "Function calling",
+        "url": "https://developers.openai.com/api/docs/guides/function-calling",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.723162
+      },
+      {
+        "id": "DOC06",
+        "title": "Getting started with datasets",
+        "url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.093313
+      },
+      {
+        "id": "DOC20",
+        "title": "Prompt design strategies",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.093313
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "9ebb0ad914e5bf420845e0413fe09d4a938e527cbe0807fe4067a53da7d2afa5"
+}

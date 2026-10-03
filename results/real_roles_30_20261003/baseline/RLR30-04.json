@@ -1,0 +1,64 @@
+{
+  "case_id": "RLR30-04",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 3.52,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own the direction of an enterprise product for strategy execution, including planning, reporting, insights, collaboration, administration and integrations."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "Own the direction of an enterprise product for strategy execution, including planning, reporting, insights, collaboration, administration and integrations.",
+          "profile_status": "strong_keyword_evidence",
+          "profile_quote": "I am comfortable explaining that priority decision to stakeholders who expected an AI feature.",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC20",
+        "title": "Prompt design strategies",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.954133
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.95596
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.313732
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "2fb232b502b032c5f88b8bceeb42e477d2ef11511b037db9b300bc3c83324a28"
+}

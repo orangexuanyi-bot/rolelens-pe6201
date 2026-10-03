@@ -1,0 +1,162 @@
+{
+  "case_id": "RLR30-22",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8754.41,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own supply-side advertising technology for Prime Video, from vision and roadmap to feature requirements."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Own supply-side advertising technology for Prime Video, from vision and roadmap to feature requirements.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Senior Product Manager - Tech, Prime Video Advertising",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "PRIORITIZATION"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 4.591138
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 3.738292
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 3.417537
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8746.4,
+      "usage": {
+        "prompt_tokens": 889,
+        "completion_tokens": 2215,
+        "total_tokens": 3104
+      },
+      "billed_cost_usd": 0.008973,
+      "estimated_cost_usd": 0.008973,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P14 has product experience in internal enterprise/HR tools and collaborating with data science on early prototypes, but lacks background in digital advertising, supply-side video ad tech, and commercial vendor management.",
+      "responsibilities": [
+        {
+          "statement": "Lead supply-side ad tech product vision, roadmaps, and requirements for Prime Video.",
+          "jd_quote": "Own supply-side advertising technology for Prime Video, from vision and roadmap to feature requirements."
+        },
+        {
+          "statement": "Balance viewer experience and advertiser goals across cross-functional engineering, science, legal, and business teams.",
+          "jd_quote": "Reconcile viewer and advertiser product objectives while working across engineering, science, legal, operations and business teams."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "Understand the video advertising ecosystem and collaborate with external vendors and industry organizations.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "collaborate with external vendors and industry organizations.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Own supply-side advertising technology for Prime Video, from vision and roadmap to feature requirements.",
+          "profile_status": "partial",
+          "profile_quote": "I wrote requirements for editable skill evidence and a way to challenge suggestions."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "working across engineering, science, legal, operations and business teams.",
+          "profile_status": "partial",
+          "profile_quote": "A data-science team built a prototype; I reviewed examples of false positives and missing experience."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Use customer feedback and performance indicators to improve addressable inventory.",
+          "profile_status": "partial",
+          "profile_quote": "People found policy information faster in the sessions; I have no evidence yet that internal hiring improved."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role requires ownership of supply-side ad tech and deep domain knowledge of video advertising infrastructure.",
+          "prep_action": "Study supply-side platforms (SSPs), ad insertion protocols (VAST/VMAP), ad pacing, and viewer-ad load balancing mechanics."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "The position demands collaboration with external ad tech vendors and industry standards bodies.",
+          "prep_action": "Review standard IAB video ad specifications and practice case studies on vendor evaluation, API integrations, and SLA definitions."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "Improving inventory performance requires establishing quantitative business metrics and running live experimentation.",
+          "prep_action": "Build familiarity with ad performance indicators such as fill rate, eCPM, viewability, and conversion attribution models."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK03",
+          "quote": "reporting section distinguishes exposure, clicks, attributed sales, and cost, which helps specify advertiser-facing metrics.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Profile does not evidence any commercial monetization, digital advertising, or supply-side ad tech domain experience.",
+        "No evidence of managing external industry partners or technology vendor contracts."
+      ]
+    }
+  },
+  "payload_sha256": "cefd19498ddae3f7193aed12991a1eaae03d9b16e0149d66e0d2d804b4995db3"
+}

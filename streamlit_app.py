@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import json
 
 import streamlit as st
 
@@ -16,7 +17,16 @@ st.set_page_config(page_title="RoleLens", page_icon="🔎", layout="wide")
 st.title("RoleLens")
 st.caption("English-language AI and commercial product manager role preparation with evidence links. Put the PM title on the first JD line. This prototype supports candidate preparation, not hiring decisions.")
 
-with st.expander("Load fictional demonstration inputs"):
+with st.expander("Load a real employer role with a synthetic candidate", expanded=True):
+    examples = [json.loads(line) for line in (ROOT / "data" / "real_role_cases_30.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+    selected = st.selectbox("Verified employer role", examples, format_func=lambda row: row["jd"].splitlines()[0] + " · " + row["jd_source_id"])
+    st.caption("Official employer requirements summarized on 3 October 2026; candidate evidence is fictional. Check the source for complete qualifications, seniority and eligibility.")
+    st.markdown(f"[Read official employer listing]({selected['jd_source_url']})")
+    if st.button("Use real role example"):
+        st.session_state["jd"] = selected["jd"]
+        st.session_state["profile"] = selected["profile"]
+
+with st.expander("Load historical fictional demonstration inputs"):
     if st.button("Use synthetic example"):
         st.session_state["jd"] = (ROOT / "demo" / "jd.txt").read_text(encoding="utf-8")
         st.session_state["profile"] = (ROOT / "demo" / "profile.txt").read_text(encoding="utf-8")

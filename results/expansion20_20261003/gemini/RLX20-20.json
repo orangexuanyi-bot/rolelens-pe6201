@@ -1,0 +1,163 @@
+{
+  "case_id": "RLX20-20",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 6476.08,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will define campaign setup, local placement eligibility, spend controls, and advertiser reports that separate paid exposure from ordinary store demand."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "They will define campaign setup, local placement eligibility, spend controls, and advertiser reports that separate paid exposure from ordinary store demand.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 10.716983
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 10.504497
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.672752
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 6467.42,
+      "usage": {
+        "prompt_tokens": 1080,
+        "completion_tokens": 1320,
+        "total_tokens": 2400
+      },
+      "billed_cost_usd": 0.00576,
+      "estimated_cost_usd": 0.00576,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The role requires a hands-on commercial product manager to build and test a store-supplier promotion console, define campaign mechanics and spend controls, rigorously analyze placement and transaction data, and negotiate scope across cross-functional partners. The candidate brings extensive executive transformation and operational leadership experience, but lacks direct hands-on product discovery, ads monetization mechanics, and granular data analysis practice.",
+      "responsibilities": [
+        {
+          "statement": "Conduct hands-on user research with store operators and suppliers to translate competing operational and commercial needs into interaction requirements.",
+          "jd_quote": "The PM will personally observe store operators and interview supplier users, test their competing needs, and translate findings into specific interaction requirements."
+        },
+        {
+          "statement": "Define commercial promotion controls, campaign setup, and reporting that isolates paid exposure impact from baseline store sales.",
+          "jd_quote": "They will define campaign setup, local placement eligibility, spend controls, and advertiser reports that separate paid exposure from ordinary store demand."
+        },
+        {
+          "statement": "Inspect detailed transaction datasets and run rigorous segmentation to validate revenue impact and prevent false conclusions.",
+          "jd_quote": "They will inspect transaction and placement data, check joins and denominators, segment outcomes by store, and explain which apparent revenue changes the evidence does not support."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will personally observe store operators and interview supplier users, test their competing needs, and translate findings into specific interaction requirements.",
+          "profile_status": "partial",
+          "profile_quote": "I asked store managers for concerns, authorised a limited proof of concept, and decided against rollout when its explanations were difficult to verify."
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "They will define campaign setup, local placement eligibility, spend controls, and advertiser reports that separate paid exposure from ordinary store demand.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "DATA_DECISIONS",
+          "jd_quote": "They will inspect transaction and placement data, check joins and denominators, segment outcomes by store, and explain which apparent revenue changes the evidence does not support.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will negotiate a limited release scope with finance, store operations, design, and engineering and review field feedback each week.",
+          "profile_status": "partial",
+          "profile_quote": "My teams introduced new inventory reporting, redesigned store training, and negotiated contracts with software providers."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare sponsor revenue with shopper complaints, supplier repeat purchase, and operational work created by exceptions.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The primary deliverable is an ad promotion console requiring concrete mechanics for spend control, placement eligibility, and incremental attribution.",
+          "prep_action": "Study retail media ad structures (campaign setups, budgets, bids, and exposure vs. organic sales attribution) and practice writing product requirement specifications for a supplier ad console."
+        },
+        {
+          "capability_id": "DATA_DECISIONS",
+          "why_now": "The JD demands granular verification of data joins, denominators, and store-level segmentation to defend revenue claims rather than aggregate transformation metrics.",
+          "prep_action": "Work through promotion analytics case studies to practice isolating incremental ad lift from baseline sales, diagnosing join errors, and defining store-level attribution denominators."
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "why_now": "The role explicitly requires direct, personal user interviews and observation of store operators and suppliers rather than high-level steering committee feedback.",
+          "prep_action": "Draft interview scripts and observational protocol templates tailored to retail store operators and suppliers to practice extracting concrete interaction requirements."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK03",
+          "quote": "Introduces sponsored retail placements and the advertiser controls around targets, bids, and budgets. Its reporting section distinguishes exposure, clicks, attributed sales, and cost, which helps specify advertiser-facing metrics.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK04",
+          "quote": "Connects brand discovery goals with impressions, new-to-brand purchases, and return on ad spend. Useful for explaining why a PM should not treat one efficiency ratio as the only measure of a discovery product.",
+          "title": "Your complete guide to Sponsored Brands",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The candidate profile does not contain details regarding technical telemetry, specific analytics tools, or direct interaction with engineering design sprints."
+      ]
+    }
+  },
+  "payload_sha256": "e69ce780296a8fdbb5c40fe91179c6ec4431726825e0276db6d6c727528b1dfc"
+}

@@ -1,0 +1,703 @@
+{
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "producer": "Codex AI",
+  "generated_date": "2026-10-03",
+  "frozen_at_utc": "2026-10-03T03:18:43.857386+00:00",
+  "input_file_sha256": "5ab644504a21edc4eba47b1382979bd0387aa40970722d431cbc74fe97d6c5cb",
+  "reference_method": "Codex authored concise requirements from official employer pages and three evidence-gap judgments per pair before this phase predictions. Same assistant family also helped author taxonomy and profiles. Different tested model: Gemini. AI agreement is not correctness.",
+  "chronology": "Added after earlier fictional-JD 10+20 experiments. All thirty profiles were seen in those earlier experiments; these are new real-JD/profile pairs, not thirty unseen profiles or an original preregistered holdout.",
+  "student_review_scope": "Confirmed personal review covers original RLV2F-01..10 only, after their prediction run. No personal review is asserted for RLR30-01..30.",
+  "cases": [
+    {
+      "case_id": "RLR30-01",
+      "gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "AI_EVALUATION",
+        "PRODUCT_STRATEGY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "A manual ticket experiment does not demonstrate choosing agent infrastructure or API abstractions."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "reason": "No evidence of defining agent quality or safety acceptance tests for release."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "The profile shows onboarding improvements, but not ownership of a developer platform direction."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-02",
+      "gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "AI_EVALUATION",
+        "PRODUCT_STRATEGY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "An image-classification pilot does not establish breadth across foundation-model training, retrieval and inference decisions."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "reason": "Reviewing eighty image errors is useful but does not show ownership of repeatable model evaluation and launch gates."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "Experiments on one grocery workflow do not establish setting model product direction across research priorities."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-03",
+      "gap_ids": [
+        "AI_EVALUATION",
+        "SAFETY_PRIVACY",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "reason": "Editor checks on summaries are narrower than systematic adversarial multimodal evaluation."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "reason": "Human approval is a useful protection but the profile does not show designing multimodal risk frameworks."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "Working with ranking scientists and summaries gives partial exposure, not multimodal safety product depth."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-04",
+      "gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "AI_EVALUATION",
+        "GROWTH_LIFECYCLE"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "Rejecting a chatbot does not establish fluency in LLM, agent and retrieval alternatives."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "reason": "Prediction error definitions are partial evidence; there is no quality program for generative features."
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "reason": "Operational workflow experience does not demonstrate driving adoption of an enterprise AI product."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-05",
+      "gap_ids": [
+        "PRODUCT_STRATEGY",
+        "AI_EVALUATION",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "Claims-process improvements do not show ownership of a sensitive-deployment product direction."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "reason": "A document checklist does not establish assessment of multi-step agent misuse and mitigation effectiveness."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "The model was chosen by data scientists; agent investigation and deployment tradeoffs are not evidenced."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-06",
+      "gap_ids": [
+        "SAFETY_PRIVACY",
+        "METRICS_EXPERIMENTATION",
+        "GROWTH_LIFECYCLE"
+      ],
+      "judgments": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "reason": "Advertising dashboard work provides no evidence of youth protection or crisis-support design."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "reason": "The dashboard pilot lacked outcome attribution; defining youth-product success and guardrails needs stronger evidence."
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "reason": "A read-only seller pilot does not establish iterative adoption of consumer experiences for young users."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-07",
+      "gap_ids": [
+        "AI_EVALUATION",
+        "AI_PRODUCT_LITERACY",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "reason": "Manual translation checks do not establish scientific benchmark validity or reproducibility evaluation."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "Travel translation experience does not demonstrate judgment about AI research workbench capabilities."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "reason": "The profile does not show introducing a product through scientific enterprise procurement and adoption channels."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-08",
+      "gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "AI_EVALUATION",
+        "PRODUCT_STRATEGY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "Spam thresholds and rejecting a drafting feature do not demonstrate broad research capability assessment."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "reason": "Review-time and overturn measures are useful but do not show evaluation of new research capabilities."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "Moderation workflow decisions provide limited evidence of research-to-market product strategy."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-09",
+      "gap_ids": [
+        "COMMERCIAL_PARTNERSHIPS",
+        "AI_PRODUCT_LITERACY",
+        "GROWTH_LIFECYCLE"
+      ],
+      "judgments": [
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "reason": "No evidence of negotiating and delivering external platform integrations."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "Speech-recognition observations are narrower than proactive shared-agent product behavior."
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "reason": "Accessibility research does not establish growing adoption from early users to enterprise accounts."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-10",
+      "gap_ids": [
+        "COMMERCIAL_PARTNERSHIPS",
+        "GO_TO_MARKET",
+        "PRODUCT_STRATEGY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "reason": "The support-tool profile does not show delivering products with cloud or government integration partners."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "reason": "An internal staff trial does not establish public-sector commercialization and rollout."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "Narrow support policy choices do not show selecting agency needs for a broader portfolio."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-11",
+      "gap_ids": [
+        "CROSS_FUNCTIONAL",
+        "PRIORITIZATION",
+        "DATA_DECISIONS"
+      ],
+      "judgments": [
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "reason": "Strong local service work does not establish leading researchers, engineers and external labeling vendors."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "reason": "A sixty-five-case comparison does not show prioritizing reusable platform work across competing research requests."
+        },
+        {
+          "capability_id": "DATA_DECISIONS",
+          "reason": "Quality checking is evidenced, but operating collection lead-time and downstream data-quality indicators is not."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-12",
+      "gap_ids": [
+        "USER_DISCOVERY",
+        "PRODUCT_STRATEGY",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "reason": "The engineer explicitly did not own customer discovery or user decisions."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "Product managers supplied the problem and roadmap; scientific-market direction is not evidenced."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "reason": "Model deployment is established, but customer launch, procurement and adoption ownership is absent."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-13",
+      "gap_ids": [
+        "MONETIZATION_PRICING",
+        "AI_PRODUCT_LITERACY",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "Campaign contribution is not ownership of subscription prices, unit economics or profit and loss."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "No evidence of building or making technical product choices for LLM agents."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "reason": "The campaign growth claim is shared and not isolated with a controlled experiment."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-14",
+      "gap_ids": [
+        "PRODUCT_STRATEGY",
+        "PRIORITIZATION",
+        "CROSS_FUNCTIONAL"
+      ],
+      "judgments": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "Administrative templates and course badges do not demonstrate setting an identity-platform direction."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "reason": "No evidence of owning product scope or a roadmap across multiple consuming teams."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "reason": "The profile does not show delivering a product with engineering, legal and safeguards partners."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-15",
+      "gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "AI_EVALUATION",
+        "USER_DISCOVERY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "reason": "Sponsoring a demonstration does not establish hands-on judgment of AI security capabilities."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "reason": "The director did not inspect errors or prompts, leaving model weakness and release-bar evaluation unsupported."
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "reason": "Executive vendor management does not show direct discovery with security practitioners using the product."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-16",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "Procurement workflows do not demonstrate advertiser performance or multi-channel ad-technology expertise."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "There is no evidence of choosing advertising products that improve customer commercial returns."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "reason": "A six-customer procurement pilot does not show sales-led adoption of advertising products."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-17",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "GROWTH_LIFECYCLE",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "Clinic service design provides no demonstrated experience with advertisers, formats or campaign management."
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "reason": "A confounded clinic pilot does not establish advertiser retention or engagement improvements."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "reason": "No production AI launch or advertiser-facing launch and sales enablement is evidenced."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-18",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "PRODUCT_STRATEGY",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "Education product work does not demonstrate advertiser or agency product understanding."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "A limited learning pilot does not establish ownership of a monetization product direction."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "reason": "No broad launch, agency messaging or advertising sales enablement is evidenced."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-19",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "MONETIZATION_PRICING",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "API onboarding work does not establish media-partner advertising product expertise."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "The candidate did not own pricing or procurement and provides no subscription or program profitability decisions."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "reason": "Search comparisons are partial evidence, but viewer-versus-advertiser business experiments are not shown."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-20",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "COMMERCIAL_PARTNERSHIPS",
+        "PRODUCT_STRATEGY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "Municipal navigation work does not demonstrate creator advertising, programmatic media or attribution expertise."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "reason": "Vendor security review is not evidence of shaping a brand-and-creator partner ecosystem."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "A permit assistant scope does not establish a multi-sided advertising product strategy."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-21",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "Home-monitoring experience does not demonstrate live-event auctions, publishers or advertising demand."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "The profile does not show defining paid packages or prices for a marketplace."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "reason": "Field testing with customers does not establish commercial publisher partnership ownership."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-22",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "PRODUCT_STRATEGY",
+        "DATA_DECISIONS"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "People-tools work provides no evidence of supply-side video advertising or inventory decisions."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "The profile lacks ownership of a commercial platform vision and roadmap."
+        },
+        {
+          "capability_id": "DATA_DECISIONS",
+          "reason": "Fairness-aware process work does not establish using advertising inventory performance indicators for investment decisions."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-23",
+      "gap_ids": [
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION",
+        "MONETIZATION_PRICING"
+      ],
+      "judgments": [
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "reason": "Maintenance workflow experience does not demonstrate consumer acquisition or paid activation."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "reason": "The maintenance outcome was confounded by parts availability; rigorous subscription experiments are not evidenced."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "No evidence of subscription value, revenue per user or paid-package decisions."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-24",
+      "gap_ids": [
+        "GROWTH_LIFECYCLE",
+        "MONETIZATION_PRICING",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "reason": "Enterprise reporting and a draft assistant trial do not demonstrate consumer subscription retention or acquisition."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "The profile explicitly lacks pricing ownership and measured serving costs."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "reason": "Manual draft checks do not establish statistically rigorous growth experiments."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-25",
+      "gap_ids": [
+        "MONETIZATION_PRICING",
+        "METRICS_EXPERIMENTATION",
+        "PRODUCT_STRATEGY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "Bank onboarding controls do not establish creator pricing or in-app monetization choices."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "reason": "Controlled rollout and error tracking are partial evidence, but monetization experiments are not documented."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "The profile does not show owning a creator wallet and monetization product vision."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-26",
+      "gap_ids": [
+        "MONETIZATION_PRICING",
+        "PRODUCT_STRATEGY",
+        "DATA_DECISIONS"
+      ],
+      "judgments": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "Sales coordination and course keywords do not establish pricing, billing or revenue-sharing decisions."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "Booking demonstrations is not evidence of selecting and delivering new product markets."
+        },
+        {
+          "capability_id": "DATA_DECISIONS",
+          "reason": "SQL listed in courses does not establish ownership of revenue and activation instrumentation."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-27",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "METRICS_EXPERIMENTATION",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "Education research does not establish attribution or advertising measurement product expertise."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "reason": "The profile distinguishes observational research from causality but does not demonstrate incrementality experiments."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "reason": "A volunteer form prototype does not establish launching and gaining adoption for a measurement platform."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-28",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "MONETIZATION_PRICING",
+        "PRODUCT_STRATEGY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "Release coordination and a class exercise do not demonstrate premium-brand advertising expertise."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "No evidence of designing monetizable placements or deciding profit and revenue tradeoffs."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "The candidate did not own product direction or roadmap decisions."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-29",
+      "gap_ids": [
+        "COMMERCIAL_PARTNERSHIPS",
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "reason": "Academic research and volunteer testing do not establish delivery with a cloud channel partner."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "reason": "No evidence of channel revenue, margin or commercial accountability."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "reason": "A research prototype does not demonstrate enterprise API commercialization or sales enablement."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    },
+    {
+      "case_id": "RLR30-30",
+      "gap_ids": [
+        "PRODUCT_STRATEGY",
+        "METRICS_EXPERIMENTATION",
+        "ADS_ECOSYSTEM"
+      ],
+      "judgments": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "reason": "The intern selected good transcripts but did not own product direction or priorities."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "reason": "Three selected demonstrations are not a performance test or an evaluation with failures included."
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "reason": "The profile contains no experience with advertiser, publisher or advertising marketplace tradeoffs."
+        }
+      ],
+      "interpretation": "Priorities for documented evidence, not a verdict that the person lacks a skill. Domain expertise and seniority are not separately scored by this taxonomy."
+    }
+  ]
+}

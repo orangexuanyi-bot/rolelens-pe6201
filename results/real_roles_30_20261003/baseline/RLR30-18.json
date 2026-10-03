@@ -1,0 +1,99 @@
+{
+  "case_id": "RLR30-18",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5.39,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Determine what to build and why for Alexa advertising and monetization.",
+        "Develop product positioning, messaging and enablement for advertising sales and agencies."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "label": "Product strategy",
+          "jd_quote": "Research customers, set product direction and priorities, and specify the measures and instrumentation needed to assess outcomes.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "Generative AI, commerce and advertising knowledge are relevant.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Determine what to build and why for Alexa advertising and monetization.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Determine what to build and why for Alexa advertising and monetization.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 3
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "label": "Go-to-market and positioning",
+          "jd_quote": "Develop product positioning, messaging and enablement for advertising sales and agencies.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "AI_PRODUCT_LITERACY",
+        "GO_TO_MARKET"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC04",
+        "title": "File search",
+        "url": "https://developers.openai.com/api/docs/guides/tools-file-search",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.640646
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.435814
+      },
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 7.817055
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "f02421deb854555b3697f08ba4a6745a2a0e84b5fedf2879c68df8af81ccf69d"
+}

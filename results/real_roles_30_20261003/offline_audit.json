@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "case_count": 30,
+  "results_checksums_verified": 60,
+  "summary_recomputations": 2,
+  "baseline_predictions_reproduced": 30,
+  "accepted_ai_reports_revalidated": 30,
+  "literal_quote_counts": {
+    "jd": 232,
+    "profile": 88,
+    "note": 52
+  },
+  "source_manifest_sha256": "727bd4c8a92a6661aebc199d7f241e4cb3400dd212bdfd5be414cddb0f0a8dea",
+  "limitations": "Offline checks verify integrity, computation and literal evidence only, not semantic support or independent correctness."
+}

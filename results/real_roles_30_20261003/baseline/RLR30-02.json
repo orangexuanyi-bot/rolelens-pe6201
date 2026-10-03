@@ -1,0 +1,75 @@
+{
+  "case_id": "RLR30-02",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 6.06,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "abstain",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Build repeatable evaluation systems and turn results into launch decisions."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Use product usage and feedback to shape datasets, tests, experiments and research priorities.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I planned an A/B test of a new substitution notice, checked sample-ratio balance with the analyst, and reported both conversion and cancellation effects.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "Balance offline quality with usefulness, latency, reliability, safety and cost in actual use.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "SAFETY_PRIVACY",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC06",
+        "title": "Getting started with datasets",
+        "url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 10.650296
+      },
+      {
+        "id": "DOC08",
+        "title": "Safety best practices",
+        "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.388025
+      },
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.578433
+      }
+    ],
+    "reason_codes": [
+      "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+    ],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "4d39691ca5b5ab6bc74cd314e9f5ce0672e4d745b54d9abcc33f8ea47ecde87f"
+}

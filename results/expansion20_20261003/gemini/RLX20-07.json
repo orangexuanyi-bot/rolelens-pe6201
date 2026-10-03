@@ -1,0 +1,170 @@
+{
+  "case_id": "RLX20-07",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8888.72,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "The new PM will own the planning experience, not the forecasting service."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager - Forecast-Assisted Store Planning",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 11.978687
+      },
+      {
+        "id": "DOC20",
+        "title": "Prompt design strategies",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.981224
+      },
+      {
+        "id": "DOC11",
+        "title": "Prompt engineering overview",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.294712
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8880.4,
+      "usage": {
+        "prompt_tokens": 986,
+        "completion_tokens": 1729,
+        "total_tokens": 2715
+      },
+      "billed_cost_usd": 0.00722325,
+      "estimated_cost_usd": 0.00722325,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "This role owns the end-to-end planning workflow and adoption for a store demand forecasting product, focusing on user discovery, workflow integration, and cross-functional execution rather than backend model building. The candidate possesses strong machine learning engineering experience in demand forecasting and model evaluation, but has limited hands-on ownership of product strategy, user discovery, and roadmap prioritization.",
+      "responsibilities": [
+        {
+          "statement": "Investigate planner workflows and uncover reasons for non-adoption to target the most critical decision.",
+          "jd_quote": "The PM must observe planners during weekly allocation work, test competing explanations for non-use, and identify the decision that deserves help first."
+        },
+        {
+          "statement": "Define target segment strategy and manage release sequencing and scope tradeoffs.",
+          "jd_quote": "They will choose one store segment and articulate why it is a better starting market than headquarters reporting or supplier planning."
+        },
+        {
+          "statement": "Collaborate across functions to make uncertainty and manual control usable while tracking business outcomes.",
+          "jd_quote": "They will agree with analysts on a comparison of assisted and existing planning, tracking stockouts, waste, and planner overrides."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "observe planners during weekly allocation work, test competing explanations for non-use",
+          "profile_status": "partial",
+          "profile_quote": "I joined two planner interviews to explain model limitations"
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "They will choose one store segment and articulate why it is a better starting market than headquarters reporting or supplier planning.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "turn findings into a sequenced release plan, negotiate what to leave out, and change the plan when field trials reveal conflicting needs",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "agree with analysts on a comparison of assisted and existing planning, tracking stockouts, waste, and planner overrides",
+          "profile_status": "partial",
+          "profile_quote": "monitored performance by city and season"
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "make uncertainty and manual control understandable",
+          "profile_status": "strong",
+          "profile_quote": "suggested displaying uncertainty bands"
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "work with operations, design, sales, and engineering to make uncertainty and manual control understandable",
+          "profile_status": "partial",
+          "profile_quote": "A product manager supplied the user problem, success definition, and roadmap."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "The JD requires selecting a specific initial store segment and justifying market entry over alternative operational segments.",
+          "prep_action": "Draft a business case comparing store allocation against supplier and HQ reporting, highlighting criteria such as operational leverage, workflow friction, and data readiness."
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "why_now": "The product problem is driven by workflow misalignment and poor timing rather than model accuracy, requiring deep user observation.",
+          "prep_action": "Structure an observational discovery plan and interview script to uncover planners' spreadsheet heuristics and operational constraints during allocation cycles."
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "why_now": "The role must sequence release milestones and ruthlessly de-scope features based on field trial feedback.",
+          "prep_action": "Create an MVP release roadmap with explicit scope exclusion rationales and clear fallback triggers when field trials conflict."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC01",
+          "quote": "Explains how to write and iterate instructions that make model responses more reliable.",
+          "title": "Prompt engineering",
+          "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC11",
+          "quote": "Introduces a process for improving Claude prompts using explicit goals and examples.",
+          "title": "Prompt engineering overview",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Candidate profile highlights ML engineering and technical maintenance rather than core PM leadership and customer-facing decision making.",
+        "Retrieved knowledge notes cover prompt engineering for LLMs, which provides minimal direct relevance to store demand forecasting and allocation workflows."
+      ]
+    }
+  },
+  "payload_sha256": "d003197d7cbd0077e7393204997a0d98754f3c549c28865440e7ebd656e37562"
+}

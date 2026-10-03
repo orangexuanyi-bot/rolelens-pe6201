@@ -1,0 +1,82 @@
+{
+  "case_id": "RLR30-07",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5.18,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Build a roadmap around biological research, verification and workflows involving research service providers."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Build a roadmap around biological research, verification and workflows involving research service providers.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "Address responsible access, onboarding, enterprise privacy, administration, security and procurement needs.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I have also written marketplace rules for dispute escalation and worked with trust staff when a simple conversion target conflicted with guest safety.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Address responsible access, onboarding, enterprise privacy, administration, security and procurement needs.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I have also written marketplace rules for dispute escalation and worked with trust staff when a simple conversion target conflicted with guest safety.",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "PRIORITIZATION",
+        "GROWTH_LIFECYCLE",
+        "SAFETY_PRIVACY"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.981224
+      },
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 2.351375
+      },
+      {
+        "id": "DOC15",
+        "title": "Citations",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/citations",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 2.351375
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "f605c153fa3d25d6deb5a4db8258f12995a96f05b1ad4b5e605740ef5836d996"
+}

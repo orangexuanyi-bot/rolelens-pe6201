@@ -1,0 +1,705 @@
+{
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "producer": "Codex AI",
+  "producer_model_family": "GPT-6 Codex",
+  "confidence_definition": "Qualitative judgement confidence, not a probability of correctness.",
+  "generated_date": "2026-10-03",
+  "status": "AI_REFERENCE_FROZEN_BEFORE_EXPANSION_PREDICTIONS",
+  "input_file_sha256": "dbf0c028634a770de7d56084ae0db5dc86404679cfa0a97effc8ea4b180d9918",
+  "reference_method": "A separate Codex authoring agent saw frozen taxonomy and input fixtures only, not earlier predictions or performance. Root checked schema, source quotations, taxonomy IDs and coverage before prediction. AI authorship is not independent human ground truth.",
+  "scope": "20 additional original fictional PM role cards paired once each with the 20 profiles unused by primary_cases_v2; 10 AI PM and 10 commercial PM. Target roles are product managers, including candidates transferring from other backgrounds.",
+  "limitations": [
+    "AI-authored references are an interpretive comparison target, not human ground truth or correctness labels.",
+    "The same assistant family helped author profiles, taxonomy, new role cards, and references; shared framing and author bias remain.",
+    "Each role card was designed with at least three assessable evidence gaps; this purposive synthetic sample is not representative of the job market or candidate population.",
+    "Twenty cases extend the original fixed ten; they are a later cohort and must be reported separately as well as in any pooled summary.",
+    "Absence of a skill in a short profile is lack of documented evidence, not proof that the person lacks the skill.",
+    "No student review is claimed for these twenty new cases. Prior confirmation for the original ten does not cover this extension."
+  ],
+  "cases": [
+    {
+      "case_id": "RLX20-01",
+      "gap_ids": [
+        "AI_EVALUATION",
+        "METRICS_EXPERIMENTATION",
+        "MONETIZATION_PRICING"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "They must define a test collection of ordinary and difficult agreements, decide what counts as an unsupported warning, and set a release threshold with reviewers.",
+          "profile_quote": "I am looking for an AI product role where I can build deeper evaluation skills.",
+          "reason_zh": "岗位要求负责测试集合、错误定义与发布门槛。候选人检查过检索遗漏，但未展示其制定完整评测体系和验收标准；这是现有检索经验之上的准备重点。"
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will compare assisted and existing review workflows, measure missed clauses as well as time saved, and explain whether the pilot supports a causal benefit claim.",
+          "profile_quote": "A pilot with six customers reduced repeated support requests, but we have not isolated which part of the release made the difference.",
+          "reason_zh": "候选人明确承认无法分离发布效果。岗位需要设计辅助与现有流程的比较，并平衡漏检与时间收益，需要补充实验对照和归因方案。"
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will test seat-based versus document-based paid packages with buyers and account for the cost of rejected model responses.",
+          "profile_quote": "I have facilitated trade-off meetings where legal staff wanted complete traceability and sales wanted fewer clicks.",
+          "reason_zh": "协调销售与法务不等于制定收费单位。资料未提供付费方案验证或单次成本测算证据，应准备席位与文档计费的取舍及买方验证。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "PRODUCT_STRATEGY",
+        "reason_zh": "首个文档工作流和客户选择也值得追问，但资料已展示采购场景问题判断，故收费与评测更优先。"
+      },
+      "confidence": "medium",
+      "reason_zh": "评测责任深度、因果验证和收费设计是三个可辩护准备点；并非认定候选人没有产品经验。"
+    },
+    {
+      "case_id": "RLX20-02",
+      "gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "METRICS_EXPERIMENTATION",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "They must compare a rules lookup with a generated answer, explain when source retrieval is needed, and balance answer speed, uncertainty, and running cost.",
+          "profile_quote": "The vendor built the prototype; I wrote the scope, reviewed failures, and stopped it from being presented as a medical adviser.",
+          "reason_zh": "已具备边界意识，但岗位明确要求比较规则查找与生成方案、检索需要及成本延迟；现有材料没有这些方案选择证据。准备产品层技术取舍，不要求自己训练模型。"
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will plan a staggered pilot that separates seasonal staffing effects from the product change and counts unanswered questions alongside successful ones.",
+          "profile_quote": "In a three-clinic pilot, fewer patients called to clarify preparation, but clinic staffing changed during the same period; I report this as a directional signal only.",
+          "reason_zh": "岗位要分开人员和季节变化的影响。候选人知道混杂因素，但没有展示如何设计分批对照、分母及失败计数，这是需要补足的实验设计证据。"
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "They will prepare buyer messaging, frontline training, and a phased launch plan with the sales team, using claims that the pilot can support.",
+          "profile_quote": "I am familiar with approval workflows and consent requirements, though I have no production AI launch.",
+          "reason_zh": "岗位要求向采购方和前线人员推出可重复的产品。候选人没有生产发布经历，需要准备培训、买方价值表述与分阶段推广，而非重复已有的安全案例。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "PRODUCT_STRATEGY",
+        "reason_zh": "从试点成为可重复产品也涉及目标客户和定位，但JD对方案比较、试验和推出路径的要求更具体。"
+      },
+      "confidence": "medium",
+      "reason_zh": "原有安全和用户观察证据较强，优先准备技术方案判断、实验设计和推出产品的经验范围。"
+    },
+    {
+      "case_id": "RLX20-03",
+      "gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "They will compare speech and language-model options, decide which tasks need generation, and explain the quality, response-time, and per-session cost tradeoff.",
+          "profile_quote": "I did not own the model selection, and the trial was not released to all learners.",
+          "reason_zh": "候选人有比较教师与模型评论的经验，但没有选型责任。岗位要求把能力、延迟和会话成本联系起来，需准备具体方案比较依据。"
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will test which benefits belong in a paid plan and choose usage limits that customers understand and that can cover service costs.",
+          "profile_quote": "My strongest skills are designing the learning flow, aligning educators, and turning observations into prioritised product changes.",
+          "reason_zh": "学习体验和排序经验可迁移，资料却未给出付费价值、用量限制或单位经济证据。收费方案是JD明确决定是否扩张的条件。"
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "jd_quote": "They will diagnose why learners stop after initial practice, redesign the return journey, and measure sustained use after novelty fades.",
+          "profile_quote": "In a limited rollout, learners attempted more corrections; retention did not change clearly over the observation window.",
+          "reason_zh": "候选人报告过留存未变，但没有展示找出回访障碍并改变行为的闭环。岗位核心是解决尝鲜后停用，应准备分群、回访路径和观察周期。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "METRICS_EXPERIMENTATION",
+        "reason_zh": "需要严格验证持续练习收益，但候选人已有谨慎的有限发布观察；此处更关注留存问题的产品诊断和收费取舍。"
+      },
+      "confidence": "medium",
+      "reason_zh": "保留已有教师评审和学习体验优势，准备商业约束下的AI方案选择与持续使用。"
+    },
+    {
+      "case_id": "RLX20-04",
+      "gap_ids": [
+        "SAFETY_PRIVACY",
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "judgments": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "They will define who may see each source, how sensitive fields are removed, and what happens when an answer combines material from different access groups.",
+          "profile_quote": "This gave me practical evaluation experience, not ownership of model training or production guardrails.",
+          "reason_zh": "候选人有检索相关性测试，但明确没有生产护栏责任。该岗位最具体的风险是跨团队访问和敏感字段泄露，应准备产品权限规则与失效处理。"
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare per-team and usage-based paid packages and test whether spending limits make procurement and budgeting easier.",
+          "profile_quote": "Commercial pricing and enterprise procurement have been outside my remit so far.",
+          "reason_zh": "材料明确指出此前不负责定价与采购，而JD要求比较收费单位和预算可理解性。这是明确且与岗位直接相关的准备缺口。"
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will coordinate reseller enablement, integration responsibilities, and support escalation with external service partners.",
+          "profile_quote": "Earlier role: Solutions engineer.",
+          "reason_zh": "解决客户技术问题不自动证明管理经销服务伙伴。JD要求外部伙伴的职责、支持和培训安排，资料没有这样的合作产品证据。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "GO_TO_MARKET",
+        "reason_zh": "企业发布也需要渠道说明和买方叙事，和伙伴合作有重叠；此JD更明确要求外部职责与升级处理，故选择合作能力。"
+      },
+      "confidence": "medium",
+      "reason_zh": "候选人已有技术讨论、用户观察和检索测试证据，不将工程实现作为目标缺口；优先关注权限、收费和外部伙伴。"
+    },
+    {
+      "case_id": "RLX20-05",
+      "gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "AI_EVALUATION",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "They will compare translation, retrieval, and answer-generation options, including fallback behaviour when the source language differs from the question.",
+          "profile_quote": "Procurement and security colleagues handled vendor assessment; I handled user tasks and content quality.",
+          "reason_zh": "候选人擅长任务和内容质量，但技术供应商选择由他人处理。JD要求说明多语言翻译、检索、生成及回退的产品方案取舍，需要补充这类判断。"
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "They must build a repeatable assessment across permit classes, languages, outdated pages, and ambiguous questions, with named release thresholds.",
+          "profile_quote": "During testing, several answers combined rules from different permit classes.",
+          "reason_zh": "发现错误和限制范围是有效基础，但资料没显示系统覆盖语言、许可类别和过期来源，也没有发布门槛。重点是把一次错误发现扩展为可重复评测。"
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will design a district pilot with a comparison group, count residents who abandon the task, and separate outreach effects from the assistant's effect.",
+          "profile_quote": "The chosen version reduced incomplete submissions in one district; differences in local outreach mean I would not generalise the exact percentage to every district.",
+          "reason_zh": "已经认识到地区宣传差异，岗位进一步要求比较组及放弃者统计。需要展示如何在设计上减少混杂，而不只是结果之后加限制说明。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "GROWTH_LIFECYCLE",
+        "reason_zh": "覆盖更多地区涉及采用和持续使用，但公共任务成功与实验归因在这份JD中更直接。"
+      },
+      "confidence": "medium",
+      "reason_zh": "用户任务与谨慎升级已有证据；三个准备方向聚焦方案选型、评测完整性和效果识别。"
+    },
+    {
+      "case_id": "RLX20-06",
+      "gap_ids": [
+        "PRODUCT_STRATEGY",
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "They must choose between serving internal sustainability teams and suppliers answering many customer questionnaires, using buyer evidence to justify the first market.",
+          "profile_quote": "I can turn technical uncertainty into an understandable product choice.",
+          "reason_zh": "候选人体现产品选择能力，但没有展示在两个买方市场间选择初始市场和检验需求。该岗位先要证明谁会付钱，准备市场取舍比补算法实现更重要。"
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will test whether customers prefer a paid report allowance, a seat charge, or an add-on, and compare willingness to pay with support and model costs.",
+          "profile_quote": "I am cautious about repeating that claim in sales materials.",
+          "reason_zh": "谨慎对外宣称不等于验证收费。资料无支付意愿、收费单位或模型加支持成本测算，需要准备该岗位明确要求的商业判断。"
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "They will build a buyer-facing launch story, prepare sales demonstrations with ordinary failure cases, and define the handoff from trial to account support.",
+          "profile_quote": "A customer panel reported greater confidence in the revised reports, but I have no verified evidence that reporting time decreased.",
+          "reason_zh": "客户小组反馈有价值，但未体现买方叙事、销售演示和试用移交的推出方案。应把已知效果边界转化为可交付的销售与支持计划。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "COMMERCIAL_PARTNERSHIPS",
+        "reason_zh": "供应链存在外部组织，但JD未要求经营渠道或战略联盟，因此不能只因供应商一词就优先选合作能力。"
+      },
+      "confidence": "medium",
+      "reason_zh": "已有溯源、审计和失败样本经验，应重点准备市场选择、付费单位与推出新产品。"
+    },
+    {
+      "case_id": "RLX20-07",
+      "gap_ids": [
+        "USER_DISCOVERY",
+        "PRODUCT_STRATEGY",
+        "PRIORITIZATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM must observe planners during weekly allocation work, test competing explanations for non-use, and identify the decision that deserves help first.",
+          "profile_quote": "I joined two planner interviews to explain model limitations and suggested displaying uncertainty bands, but I did not decide which segment to serve or whether the feature should ship.",
+          "reason_zh": "参与两次访谈主要解释模型限制，不能等同于主导观察和验证不使用原因。岗位的首要问题正是技术可用但流程不合用，需要准备独立研究的证据。"
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "They will choose one store segment and articulate why it is a better starting market than headquarters reporting or supplier planning.",
+          "profile_quote": "A product manager supplied the user problem, success definition, and roadmap.",
+          "reason_zh": "候选人过去接受产品经理定义的问题，未承担市场选择。目标岗位要求选择门店细分与替代市场，应准备为何先服务这个人群的判断。"
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "They will turn findings into a sequenced release plan, negotiate what to leave out, and change the plan when field trials reveal conflicting needs.",
+          "profile_quote": "I have not priced a product, negotiated scope with customers, or led usability tests.",
+          "reason_zh": "资料明确缺少与客户协商范围的经历，岗位要在试验冲突后决定删减和次序。模型回滚经历不自动成为产品需求排序证据。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "CROSS_FUNCTIONAL",
+        "reason_zh": "候选人缺少端到端发布领导也值得准备；但其协调回滚已有团队协作基础，而发现、市场和范围决策是JD最突出的转岗责任。"
+      },
+      "confidence": "medium",
+      "reason_zh": "工程经验是技术基础，目标是产品岗位；优先识别没有被实现经验替代的用户、方向和范围决策。"
+    },
+    {
+      "case_id": "RLX20-08",
+      "gap_ids": [
+        "USER_DISCOVERY",
+        "PRIORITIZATION",
+        "AI_EVALUATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The associate will watch administrators complete real tasks, interview people who reject forms, and separate repeated pain points from one team's preference.",
+          "profile_quote": "I sometimes write instructions for colleagues and check whether a new form is understandable.",
+          "reason_zh": "候选人有可迁移的可理解性检查，但还没有系统观察不同团队和拒收者并验证问题的证据。初级岗位也需要完成一个受指导但真实的发现环节。"
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "They will choose a small first scope, write acceptance criteria, and explain which requested fields or document types should wait.",
+          "profile_quote": "There are no software engineers in my team, and I have not owned an application release.",
+          "reason_zh": "资料显示提出共享模板，不代表已有软件功能边界、验收和延期选择经验。这里要求的准备是小范围需求取舍，不是大型发布履历。"
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "They will collect representative and deliberately difficult examples, check unsupported entries with a reviewer, and define when the system must leave a field blank.",
+          "profile_quote": "I can describe what a language model does at a high level, but I could not yet assess its output quality, write a query unaided, or explain model deployment trade-offs from experience.",
+          "reason_zh": "岗位要求通过困难样例识别不支持内容并决定留空，候选人明确尚不能判断输出质量。证书关键词不能替代动手评测证据。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "AI_PRODUCT_LITERACY",
+        "reason_zh": "基础技术取舍也不足，但该初级JD在导师支持下最直接要求可观察的评测、用户任务和范围判断。"
+      },
+      "confidence": "medium",
+      "reason_zh": "按初级职责评价，不因证书多便视为有交付经验，也不因行政背景否定已有流程改进基础。"
+    },
+    {
+      "case_id": "RLX20-09",
+      "gap_ids": [
+        "USER_DISCOVERY",
+        "PRODUCT_STRATEGY",
+        "PRIORITIZATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will conduct customer interviews and observe actual research sessions to identify work that users would change rather than merely praise.",
+          "profile_quote": "I observed four volunteers trying to find rules and reported where document titles misled them.",
+          "reason_zh": "观察四位志愿者是良好起点，但没有围绕真实研究工作和买方价值持续验证的证据。需要展示如何从有限可用性观察走向客户问题发现。"
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "They will choose an initial buyer group and state which competing tools and manual methods the product must improve on.",
+          "profile_quote": "I enjoy investigating why a system fails, but my work has mostly been bounded research questions rather than choosing a market, maintaining a roadmap, or balancing revenue and support costs.",
+          "reason_zh": "候选人直接指出研究范围未覆盖市场选择。JD要求在多种用途和替代方法中选择初始买方，是科研转产品的关键准备内容。"
+        },
+        {
+          "capability_id": "PRIORITIZATION",
+          "jd_quote": "They will turn that choice into an ordered plan, agree scope with design and engineering, and handle buyer requests that would delay the first release.",
+          "profile_quote": "Another volunteer built the page, and I did not prioritise fixes after the test.",
+          "reason_zh": "资料明确未负责测试后的修复排序。岗位要协商范围并处理会拖延发布的需求，需补充在资源限制下做决定的案例。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "CROSS_FUNCTIONAL",
+        "reason_zh": "跨部门协商也是短板，与范围排序重合；研究评审协作已有部分基础，这里将更明确的范围决策列入前三。"
+      },
+      "confidence": "medium",
+      "reason_zh": "不把论文与标注经验当作商业产品所有权；同时承认其AI评测已有明确证据。"
+    },
+    {
+      "case_id": "RLX20-10",
+      "gap_ids": [
+        "AI_EVALUATION",
+        "SAFETY_PRIVACY",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "judgments": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "The PM will gather permissioned examples with unclear speakers, corrections, and background noise, define what a wrong commitment means, and compare outputs using a written rubric.",
+          "profile_quote": "It was not available to customers, and no systematic error review was performed; I do not know how it would behave with noisy audio or sensitive meetings.",
+          "reason_zh": "岗位明确要求覆盖困难输入和书面错误标准，候选人自己承认没有系统检查。应从精选演示补到代表性和边界样例评测。"
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "They will propose controls for recording permission, transcript deletion, who can see a meeting, and review before any commitment is shared.",
+          "profile_quote": "I wrote sample prompts, selected three favourable transcripts, and made slides comparing draft styles.",
+          "reason_zh": "准备演示材料未证明获得录制同意、删除和访问策略。会议内容与对外承诺是该产品直接风险，应准备产品控制而不是仅称会保护隐私。"
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "They will compare a structured template, retrieval of company terms, and model-generated summaries, explaining expected cost and delay at different meeting lengths.",
+          "profile_quote": "I have not owned a live AI feature, a retrieval system, evaluation data, or a cost plan.",
+          "reason_zh": "候选人使用过模型工具，但没有检索和成本方案的负责经验。JD要求比较模板、检索与生成的成本延迟，这是初级PM在导师支持下可补齐的技术判断。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "PRIORITIZATION",
+        "reason_zh": "试点范围也缺少独立负责证据，但JD说明有带教；本案例更急迫的三项是从演示转为可信试点所需的质量、权限和方案选择。"
+      },
+      "confidence": "medium",
+      "reason_zh": "实习头衔不证明已具备上线能力；判断限定在资料所显示的演示经验与岗位试点责任差距。"
+    },
+    {
+      "case_id": "RLX20-11",
+      "gap_ids": [
+        "PRODUCT_STRATEGY",
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "They must choose an initial merchant segment and explain why a bundle is a better product direction than charging for each small feature.",
+          "profile_quote": "I worked on merchant onboarding and the help flow used by small retailers.",
+          "reason_zh": "候选人已有商户流程经验，但未体现选择付费目标客群及功能捆绑方向。岗位在收费前需要明确服务谁、为何捆绑，应准备相应选择依据。"
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare a fixed monthly fee, per-transaction add-ons, and a usage allowance, testing willingness to pay and potential bill surprises.",
+          "profile_quote": "I owned the event taxonomy and reviewed the dashboard weekly with operations.",
+          "reason_zh": "埋点和看板证据不等于支付意愿或计费单位设计。资料没有商业收费责任，而JD把三种收费方式的比较作为主要工作。"
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "They will prepare a launch proposition for branch advisers and digital channels and decide how the offer should be explained at the first relevant customer moment.",
+          "profile_quote": "Comfortable with SQL, spreadsheet analysis, interview notes, Figma wireframes, and writing acceptance criteria.",
+          "reason_zh": "这些工具支持研究交付，尚未显示面向销售渠道的价值说明和推广触点设计。需准备把已验证需求转换为可理解的商业推出方案。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "GROWTH_LIFECYCLE",
+        "reason_zh": "留存付费商户很重要，但候选人已有商户开户漏斗改进证据，本角色更缺从需求到付费产品推出的环节。"
+      },
+      "confidence": "medium",
+      "reason_zh": "同为商户场景不代表已做过商业化；保留用户访谈和数据基础，将目标客群、收费和推出作为准备重点。"
+    },
+    {
+      "case_id": "RLX20-12",
+      "gap_ids": [
+        "ADS_ECOSYSTEM",
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "judgments": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "They will specify advertiser controls, placement eligibility, spend limits, and reporting rules so campaign results are not confused with normal repeat purchases.",
+          "profile_quote": "I supported the team responsible for search and category browsing.",
+          "reason_zh": "搜索浏览和促销广告相邻，但资料没有广告主控制、预算和归因规则证据。岗位需要说明广告系统两方价值与投放限制，不能直接由电商经历推定。"
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare charging for views, clicks, or a fixed promotional package and explain the incentives and risk each creates for buyers.",
+          "profile_quote": "I planned an A/B test of a new substitution notice, checked sample-ratio balance with the analyst, and reported both conversion and cancellation effects.",
+          "reason_zh": "实验设计是已有优势，但不证明会比较曝光、点击和套餐的商业激励。资料没有收费决策责任，JD却明确要求这项取舍。"
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will agree data-sharing, reporting responsibilities, and support handoffs with brand agencies and retailer partners before opening a joint pilot.",
+          "profile_quote": "My role was product discovery and review, not model development.",
+          "reason_zh": "资料展示内部发现和评审，没有外部品牌代理、零售伙伴的数据和交付职责安排。准备合作试点的边界和责任比补模型开发更符合岗位。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "PRODUCT_STRATEGY",
+        "reason_zh": "广告产品首版方向同样值得讨论，但JD给出较明确的品牌促销场景，三项商业机制更直接缺证据。"
+      },
+      "confidence": "medium",
+      "reason_zh": "候选人的实验和购物用户研究具有价值；优先补广告产品、收费机制及外部合作的证据。"
+    },
+    {
+      "case_id": "RLX20-13",
+      "gap_ids": [
+        "MONETIZATION_PRICING",
+        "METRICS_EXPERIMENTATION",
+        "GROWTH_LIFECYCLE"
+      ],
+      "judgments": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will test a single pass against flexible tiers, decide the benefit promise and cancellation terms, and check whether creator effort can support the chosen price.",
+          "profile_quote": "Coordinated editors, design, and engineering so curated collections could be updated without a weekly engineering ticket.",
+          "reason_zh": "协调内容工具交付证明流程所有权，却未证明收费权益、价格和创作者成本设计。新岗位的付费承诺是明确缺证据环节。"
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will design controlled tests that distinguish a launch promotion from enduring willingness to pay and report uncertainty for small creator groups.",
+          "profile_quote": "Data scientists owned the ranking tests and model changes.",
+          "reason_zh": "已有衡量计划与指标警惕性，但测试由他人负责。JD要求亲自设计商业实验并处理小样本，应准备分组、观察期和不确定性解释。"
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "jd_quote": "They will map first attendance, second attendance, and renewal, then investigate why paid members stop using benefits.",
+          "profile_quote": "Editorial turnaround improved after release; audience effects differed by genre and never became a clean single-number win.",
+          "reason_zh": "候选人如实说明观众效果混合，但未展示识别付费成员停用节点并推动续费的闭环。准备从首次参与到复用和续费的行为分析与动作。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "COMMERCIAL_PARTNERSHIPS",
+        "reason_zh": "创作者关系可能涉及外部合作，但此JD重点是会员产品权益和续费，没有要求谈判商业合同。"
+      },
+      "confidence": "medium",
+      "reason_zh": "不把内容行业熟悉度直接当作订阅商业化经验，仍承认跨团队交付和质量判断基础。"
+    },
+    {
+      "case_id": "RLX20-14",
+      "gap_ids": [
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "judgments": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will select a paid allowance or per-order charge, test it with different merchant sizes, and make expected spending visible before purchase.",
+          "profile_quote": "I lead a small product area covering dispatcher screens and driver incident reporting.",
+          "reason_zh": "候选人负责内部运营产品，未给出商户收费和付费额度设计。新岗位要兼顾商户规模和服务成本，需准备收费单位及支出可预期性。"
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "They will develop the launch proposition, onboarding materials, and field-sales demonstration for one city before expanding.",
+          "profile_quote": "I am comfortable explaining that priority decision to stakeholders who expected an AI feature.",
+          "reason_zh": "能解释内部优先级，不自动证明有城市推广、销售演示和外部商户开户材料经验。JD明确要求首城商业推出，应准备独立计划。"
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will agree integration ownership, lead attribution, and support escalation with commerce-platform partners that introduce merchants to the service.",
+          "profile_quote": "I have led cross-functional planning but have limited direct experience with foundation-model evaluation.",
+          "reason_zh": "内部跨职能计划是优势，但资料没涉及电商平台合作的线索归因、集成和支持责任。目标商业岗位的短板在合作机制，不是基础模型评测。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "USER_DISCOVERY",
+        "reason_zh": "商户访谈不同于调度员观察，但已有扎实田野观察可迁移，因此未将场景差异单独当作前三能力缺口。"
+      },
+      "confidence": "medium",
+      "reason_zh": "运营判断可迁移；准备重点是从内部工具转向外部商户付费产品所需的收费、推出和渠道合作。"
+    },
+    {
+      "case_id": "RLX20-15",
+      "gap_ids": [
+        "PRODUCT_STRATEGY",
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "They will choose between carrier operations and independent adjusting teams, compare the alternatives those buyers use today, and explain the initial product position.",
+          "profile_quote": "I support claims intake for a general insurer.",
+          "reason_zh": "同领域业务理解较好，但资料体现服务一家保险公司的流程，不是选择首个买方市场与对比替代方案。JD要求的市场定位需要单独准备。"
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will test per-seat and per-case charging, specify included service levels, and reason about cost when a difficult claim needs extra human support.",
+          "profile_quote": "I defined a checklist for missing evidence, tested it with 12 adjusters, and tracked repeat-contact rates after release.",
+          "reason_zh": "流程验收和重复联系统计是有效证据，却没有按席位或案件计费及人工支持成本的商业决策。此缺口由岗位明确收费责任决定。"
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "They will prepare a limited-market launch plan with sales, including a value demonstration, clear exclusions, and a repeatable trial-to-contract handoff.",
+          "profile_quote": "My next step is to gain hands-on experience with evaluation of language-model outputs while retaining a strong human review path.",
+          "reason_zh": "候选人的下一步兴趣在AI评测，但该商业岗位需要推出和试用转合同设计。履历没有销售价值演示、排除项说明和市场发布经验。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "COMMERCIAL_PARTNERSHIPS",
+        "reason_zh": "独立理赔团队在此是买方而非渠道伙伴；不应仅因组织多就选择商业合作能力。"
+      },
+      "confidence": "medium",
+      "reason_zh": "避免把AI兴趣当作所有岗位的准备重点；此商业角色需要市场、收费和推出证据。"
+    },
+    {
+      "case_id": "RLX20-16",
+      "gap_ids": [
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare charging per site, per asset, and for support tiers, test the proposed boundaries with buyers, and account for uneven service demand.",
+          "profile_quote": "I have managed release windows around production shutdowns and documented rollback decisions.",
+          "reason_zh": "发布与回退能力不等于按站点、资产或支持层级定价。资料未展示收费边界、需求波动和续费产品设计，JD对此要求直接。"
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will agree installation, support, and renewal responsibilities with equipment distributors and independent maintenance firms.",
+          "profile_quote": "The vendor owned its model, and I did not validate accuracy across all machine types.",
+          "reason_zh": "接触预测维护供应商不等于负责分销商和维修商的商业分工。目标岗位要分配安装、支持、续费责任，需要具体合作框架证据。"
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will design a rollout comparison that separates changes in spare-parts supply from the effect of the paid service and includes unsuccessful work orders.",
+          "profile_quote": "In the first plant, repeat visits per work order declined, but a parts-supply change happened at the same time.",
+          "reason_zh": "候选人已经识别零件供应混杂并扩大观察，但没有明确对照方案。新岗位要求分离商业服务效果，需准备对照单位、分层和未成功工单分母。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "GO_TO_MARKET",
+        "reason_zh": "首个设备组推广也有欠缺；此JD将外部交付责任和验证付费效果写得更明确，优先列入前三。"
+      },
+      "confidence": "medium",
+      "reason_zh": "技术现场经验与安全意识是可迁移优势；收费、伙伴分工和归因设计仍缺直接证据。"
+    },
+    {
+      "case_id": "RLX20-17",
+      "gap_ids": [
+        "MONETIZATION_PRICING",
+        "ADS_ECOSYSTEM",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare paid benefit packages, test willingness to pay without pressure, and set cancellation and refund terms that are easy to understand.",
+          "profile_quote": "I have led discovery and prioritisation for this area, though I have less experience with revenue metrics and budget planning.",
+          "reason_zh": "候选人直接说明商业数字经验较少，资料没有权益与支付意愿证据。岗位需要区分基础可访问性与付费便利，并制定退款取消，值得重点准备。"
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "They will define sponsor controls, disclosure, frequency limits, and reporting that respects member privacy and does not reward intrusive placements.",
+          "profile_quote": "I spent four years designing account and messaging experiences at a social app.",
+          "reason_zh": "社交体验经历不自动覆盖赞助产品的广告主控制、频次和效果报告。履历未展示广告机制，需要从用户价值与广告激励的双边关系准备。"
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will design a controlled pilot tracking repeat use, revenue, complaints, and access failures over time, including people who leave the experience.",
+          "profile_quote": "Task completion improved in moderated testing, but we did not measure long-term messaging behaviour.",
+          "reason_zh": "主持式测试支持可用性结论，不能代替长期受控商业试点。岗位要求跟踪流失者与持续体验，需要补实验设计和观察周期。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "DATA_DECISIONS",
+        "reason_zh": "持续收入与流失数据分析也需成长；这里将数据需求视为受控试点设计的一部分，避免把同一证据短板重复列入前三。"
+      },
+      "confidence": "medium",
+      "reason_zh": "充分承认发现、优先级和隐私证据，重点准备商业方案及长期验证，而不是反复考核已有的无障碍设计能力。"
+    },
+    {
+      "case_id": "RLX20-18",
+      "gap_ids": [
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "judgments": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare charging for attempted drafts, accepted answers, or a monthly allowance, and test the cost and fairness of including rejected model calls.",
+          "profile_quote": "I am learning more about retrieval evaluation and cost per response.",
+          "reason_zh": "关注单次成本是起点，但尚未体现把失败调用、计费单位与买方公平感合成收费方案。JD明确要求这些商业比较。"
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will agree account attribution, invoice responsibility, and support escalation with service resellers before offering a partner channel.",
+          "profile_quote": "I am strongest at workflow observation, content governance, and bringing support agents into release decisions.",
+          "reason_zh": "内部客服参与发布的协作是优势，但资料没有经销渠道的账户归因、开票和支持职责。应准备跨组织商业合作安排。"
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will test commercial changes with a comparison group, measuring net service effort and retained paid accounts rather than counting only fast answers.",
+          "profile_quote": "We did not include complex refund disputes in that measurement, and I have kept them separate in reporting.",
+          "reason_zh": "候选人透明披露排除范围，但新岗位要求包含困难案例并比较净服务工作量。需补对照组、成本分母和全量效果评价，不能仅复述已知快速回答收益。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "GO_TO_MARKET",
+        "reason_zh": "从内部工具转为付费服务也需要推出叙事，但此JD对计费、伙伴职责和商业效果识别要求最明确。"
+      },
+      "confidence": "medium",
+      "reason_zh": "支持领域和内容治理已有强证据；优先补将内部工具变为可持续收入产品所需的三项商业责任。"
+    },
+    {
+      "case_id": "RLX20-19",
+      "gap_ids": [
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS",
+        "GO_TO_MARKET"
+      ],
+      "judgments": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare a transaction fee, currency-spread charge, and a paid faster-settlement option, testing whether merchants understand the total bill.",
+          "profile_quote": "I can make a trade-off document that includes both operational cost and customer harm.",
+          "reason_zh": "已体现成本与伤害取舍，但没有收费构成和商户总账单理解测试。岗位的交易费、汇差和加速到账组合需要独立商业证据。"
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will agree service levels, exception handling, and customer ownership with banking and local payout partners.",
+          "profile_quote": "I coordinate compliance, security, design, and engineering reviews for changes to identity checks.",
+          "reason_zh": "内部多团队评审不能替代跨银行与本地付款伙伴的服务协议及客户责任分配。资料未展示这种外部合作责任。"
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "They will prepare a corridor-specific launch proposition, sales examples, and merchant education with regional teams before opening broad acquisition.",
+          "profile_quote": "I manage a digital account-opening journey at a community bank.",
+          "reason_zh": "开户流程负责经历很相关，但未提供面向特定跨境通道的销售主张、商户教育和地区推出方案。需要准备从流程交付走向商业推出的步骤。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "PRODUCT_STRATEGY",
+        "reason_zh": "选择首个国家通道涉及市场战略，但JD的三个商业机制更具体，且资料对监管产品取舍已有基础。"
+      },
+      "confidence": "medium",
+      "reason_zh": "不因跨境场景新就否定已验证开户体验；前三项聚焦收费、外部合作和市场推出。"
+    },
+    {
+      "case_id": "RLX20-20",
+      "gap_ids": [
+        "USER_DISCOVERY",
+        "ADS_ECOSYSTEM",
+        "DATA_DECISIONS"
+      ],
+      "judgments": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will personally observe store operators and interview supplier users, test their competing needs, and translate findings into specific interaction requirements.",
+          "profile_quote": "A hands-on associate product role would require me to rebuild habits around individual user interviews, specifications, and iteration.",
+          "reason_zh": "候选人直接承认需要重建访谈和迭代习惯。该岗位要求亲自观察与形成交互要求，不能仅用高层征询或项目治理替代。"
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "They will define campaign setup, local placement eligibility, spend controls, and advertiser reports that separate paid exposure from ordinary store demand.",
+          "profile_quote": "My teams introduced new inventory reporting, redesigned store training, and negotiated contracts with software providers.",
+          "reason_zh": "零售和采购合同经验不是广告投放控制与报告机制。资料没有广告主产品证据，岗位却要求本地推广产品的核心机制。"
+        },
+        {
+          "capability_id": "DATA_DECISIONS",
+          "jd_quote": "They will inspect transaction and placement data, check joins and denominators, segment outcomes by store, and explain which apparent revenue changes the evidence does not support.",
+          "profile_quote": "A corporate presentation attributes a substantial efficiency gain to the programme, but the number combines several operational initiatives and I cannot isolate software effects.",
+          "reason_zh": "候选人知道项目汇总数字限制，未展示亲自检查底层联表、分母和分店结果。JD需要可复核的细粒度分析，应准备具体数据决策过程。"
+        }
+      ],
+      "alternative": {
+        "capability_id": "PRIORITIZATION",
+        "reason_zh": "亲自协商周级产品范围也缺少近期证据；但其预算和项目管理提供一些基础，本案更优先列用户、广告产品和底层分析。"
+      },
+      "confidence": "medium",
+      "reason_zh": "不将资深治理经历等同于个体产品技能；保留组织和供应商管理优势，同时明确这一手动产品岗位的证据差距。"
+    }
+  ],
+  "frozen_at_utc": "2026-10-02T19:18:13.543399+00:00",
+  "chronology": "Expansion added after the original ten-case exploratory results were known to root. Inputs and references are fixed before these new predictions, not before the original experiment. Preserve phase-specific and pooled descriptive results.",
+  "student_review_scope": "Confirmed personal check applies to original RLV2F-01..10 only, after their run. No personal review asserted for RLX20-01..20."
+}

@@ -1,0 +1,192 @@
+{
+  "case_id": "RLR30-17",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 12474.82,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own monetization products for India and other emerging markets.",
+        "Build the roadmap using customer research, engagement data and market needs.",
+        "Define measures of success and support launch with marketing narratives, sales and account managers."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Build the roadmap using customer research, engagement data and market needs.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Own monetization products for India and other emerging markets.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Improve advertiser engagement and retention while considering shoppers, click behavior, relevance and campaign management.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Build the roadmap using customer research, engagement data and market needs.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "GROWTH_LIFECYCLE",
+        "MONETIZATION_PRICING"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.299917
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.609374
+      },
+      {
+        "id": "CK01",
+        "title": "Understand your conversion tracking data",
+        "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.114244
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 12469.74,
+      "usage": {
+        "prompt_tokens": 917,
+        "completion_tokens": 2805,
+        "total_tokens": 3722
+      },
+      "billed_cost_usd": 0.0112065,
+      "estimated_cost_usd": 0.0112065,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate demonstrates transferable product skills in user research, workflow design, and prototype safety evaluation within healthcare services, but lacks direct experience in digital advertising ecosystems, monetization mechanics, and ML-driven ad optimization required for the India Ads PM role.",
+      "responsibilities": [
+        {
+          "statement": "Drive monetization product strategy and roadmaps for India and emerging markets.",
+          "jd_quote": "Own monetization products for India and other emerging markets."
+        },
+        {
+          "statement": "Design ad formats and machine-learning solutions balancing advertiser engagement with shopper experience.",
+          "jd_quote": "Work on advertising formats, available placements and machine-learning solutions with local and worldwide teams."
+        },
+        {
+          "statement": "Define success metrics and coordinate go-to-market execution across cross-functional teams.",
+          "jd_quote": "Define measures of success and support launch with marketing narratives, sales and account managers."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "Improve advertiser engagement and retention while considering shoppers, click behavior, relevance and campaign management.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "Own monetization products for India and other emerging markets.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "Work on advertising formats, available placements and machine-learning solutions with local and worldwide teams.",
+          "profile_status": "partial",
+          "profile_quote": "I specified a rule that anything involving symptoms or treatment should route to staff, then manually reviewed 40 example answers for unsupported advice."
+        },
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "Build the roadmap using customer research, engagement data and market needs.",
+          "profile_status": "partial",
+          "profile_quote": "I observed reception teams, mapped patient journeys, and redesigned reminder wording with nurses and an accessibility reviewer."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Define measures of success and support launch with marketing narratives, sales and account managers.",
+          "profile_status": "partial",
+          "profile_quote": "In a three-clinic pilot, fewer patients called to clarify preparation, but clinic staffing changed during the same period; I report this as a directional signal only."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The position requires optimizing advertiser retention, placement formats, and click relevance across a multi-sided marketplace.",
+          "prep_action": "Study digital advertising concepts including ad auctions, placement inventory, CTR, conversion tracking, and advertiser campaign management tools."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role explicitly owns monetization product roadmaps in emerging markets.",
+          "prep_action": "Prepare case studies analyzing ad pricing models (CPC, CPM), budget optimization, and monetization trade-offs between user experience and revenue."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "Defining commercial success metrics and interpreting experiment data is critical for scaling advertising products under constraints.",
+          "prep_action": "Develop metric trees that balance advertiser ROI metrics with consumer engagement and platform relevance guardrails."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK03",
+          "quote": "Introduces sponsored retail placements and the advertiser controls around targets, bids, and budgets.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK05",
+          "quote": "Defines reach, impressions, frequency, clicks, conversions, conversion rates, and cost measures for an ads dashboard.",
+          "title": "Basic metrics and definitions in TikTok Ads Manager",
+          "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Evaluated strictly on the supplied profile and job description without extrapolating unmentioned experience.",
+        "No inferences were made regarding personal background or final hiring suitability."
+      ]
+    }
+  },
+  "payload_sha256": "7a4f61d0a5ca1ede7fdd4ede299c5ed4bd9513d4f4db4981a959b51479704b71"
+}

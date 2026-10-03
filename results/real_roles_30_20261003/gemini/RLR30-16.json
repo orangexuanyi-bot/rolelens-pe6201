@@ -1,0 +1,166 @@
+{
+  "case_id": "RLR30-16",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8078.68,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own the direction and longer-term roadmap for advertising products that help customers improve campaign performance across the web, mobile devices and connected television."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Own the direction and longer-term roadmap for advertising products that help customers improve campaign performance across the web, mobile devices and connected television.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Senior Product Manager-Tech, Advertising",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "PRIORITIZATION"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.772779
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 4.916226
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 3.417537
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8075.02,
+      "usage": {
+        "prompt_tokens": 881,
+        "completion_tokens": 2415,
+        "total_tokens": 3296
+      },
+      "billed_cost_usd": 0.009717,
+      "estimated_cost_usd": 0.009717,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P02 brings four years of B2B SaaS product ownership and customer discovery experience, including collaborating with engineers and data teams on workflow rules and search features. Transitioning to this Senior PM-Tech role requires building deep advertising technology domain knowledge, articulating multi-quarter product strategy, and strengthening experimentation rigor.",
+      "responsibilities": [
+        {
+          "statement": "Lead roadmap and product direction for advertising solutions across multiple platforms.",
+          "jd_quote": "Own the direction and longer-term roadmap for advertising products that help customers improve campaign performance across the web, mobile devices and connected television."
+        },
+        {
+          "statement": "Partner across engineering, science, design, and sales to translate feedback into product priorities.",
+          "jd_quote": "Translate customer evidence into requirements and priorities with engineering, science, design and sales."
+        },
+        {
+          "statement": "Diagnose performance challenges using analytical methods and partner feedback.",
+          "jd_quote": "Investigate performance issues using data and use sales feedback to support adoption."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "familiarity with advertising technology is preferred.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Own the direction and longer-term roadmap for advertising products that help customers improve campaign performance across the web, mobile devices and connected television.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "Translate customer evidence into requirements and priorities with engineering, science, design and sales.",
+          "profile_status": "partial",
+          "profile_quote": "I have facilitated trade-off meetings where legal staff wanted complete traceability and sales wanted fewer clicks."
+        },
+        {
+          "capability_id": "DATA_DECISIONS",
+          "jd_quote": "Investigate performance issues using data and use sales feedback to support adoption.",
+          "profile_status": "partial",
+          "profile_quote": "I partnered with a data engineer to inspect retrieval misses and wrote clearer empty-state copy."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "help customers improve campaign performance across the web, mobile devices and connected television.",
+          "profile_status": "partial",
+          "profile_quote": "A pilot with six customers reduced repeated support requests, but we have not isolated which part of the release made the difference."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role specifically focuses on advertising products across web, mobile, and connected TV, requiring an understanding of ad delivery, bidding, and campaign performance mechanics.",
+          "prep_action": "Study core digital advertising concepts including auctions, attribution models, and reporting metrics across web and connected TV channels."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "The position expects ownership of longer-term strategic direction rather than feature maintenance or execution tasks.",
+          "prep_action": "Draft a mock multi-quarter roadmap framing market problems, success metrics, and platform investments for a high-impact advertising workflow."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "Optimizing campaign performance requires rigorous hypothesis testing and isolating causal factors behind feature performance.",
+          "prep_action": "Practice structuring controlled experiments, defining guardrail and primary metrics, and analyzing multivariate test results."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK03",
+          "quote": "Introduces sponsored retail placements and the advertiser controls around targets, bids, and budgets. Its reporting section distinguishes exposure, clicks, attributed sales, and cost, which helps specify advertiser-facing metrics.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile contains no evidence of working within digital advertising ecosystems or connected television platforms.",
+        "The candidate's experience is framed around product ownership of workflows rather than multi-year technical product strategy."
+      ]
+    }
+  },
+  "payload_sha256": "1fbf232b076be95f4eaca6cca794d2c1b1ffe4cc399568fe755db6cbcbfd45d3"
+}

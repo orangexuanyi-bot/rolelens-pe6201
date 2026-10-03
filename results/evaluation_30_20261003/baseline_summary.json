@@ -1,0 +1,1237 @@
+{
+  "evaluation_type": "pooled_ai_reference_exploratory_baseline",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "limitation": "Agreement against Codex AI-generated reference labels, not human accuracy or correctness. No student review is asserted. Shared model assumptions may inflate agreement; literal quote validation does not establish semantic support.",
+  "manifest_sha256": "ec7715b9dffb8132b75d623dff1111b8cf22eeed18a21ad95c06c2db266b8051",
+  "input_file_sha256": "23bc0969424508df6b8d02644916db875c0582c7a168b216141463d33b8f8897",
+  "reference_file_sha256": "64842afe9d8899ce06c7bf1453997d423e880d6bd33d75d3db2ae88ff89598bc",
+  "baseline_ai_reference_agreement": {
+    "case_count": 30,
+    "accepted_count": 10,
+    "abstention_count": 20,
+    "coverage": 0.3333333333333333,
+    "mean_overlap_all_cases_abstain_zero": 0.6333333333333333,
+    "mean_overlap_fraction_all_cases_abstain_zero": 0.2111111111111111,
+    "case_pass_at_least_two_of_three_count": 7,
+    "case_pass_at_least_two_of_three_all_cases": 0.23333333333333334,
+    "accepted_only_mean_overlap": 1.9,
+    "accepted_only_pass_at_least_two_of_three": 0.7,
+    "metric_interpretation": "AI-reference agreement only; not human accuracy"
+  },
+  "requested_mode_ai_reference_agreement": {
+    "case_count": 30,
+    "accepted_count": 10,
+    "abstention_count": 20,
+    "coverage": 0.3333333333333333,
+    "mean_overlap_all_cases_abstain_zero": 0.6333333333333333,
+    "mean_overlap_fraction_all_cases_abstain_zero": 0.2111111111111111,
+    "case_pass_at_least_two_of_three_count": 7,
+    "case_pass_at_least_two_of_three_all_cases": 0.23333333333333334,
+    "accepted_only_mean_overlap": 1.9,
+    "accepted_only_pass_at_least_two_of_three": 0.7,
+    "metric_interpretation": "AI-reference agreement only; not human accuracy"
+  },
+  "abstention_reason_counts": {
+    "FEWER_THAN_THREE_EVIDENCED_JD_GAPS": 20
+  },
+  "baseline_abstention_reason_counts": {
+    "FEWER_THAN_THREE_EVIDENCED_JD_GAPS": 20
+  },
+  "latency_including_abstentions": {
+    "n": 30,
+    "median_ms": 6.355,
+    "p95_ms": 24.81
+  },
+  "total_response_reported_cost_usd": null,
+  "response_reported_cost_case_count": 0,
+  "response_reported_cost_missing_case_count": 0,
+  "total_estimated_cost_usd": null,
+  "cost_note": "Includes response-reported charges for invalid and abstained responses; missing costs are unknown, not zero. These are not provider invoices.",
+  "external_model_requested": false,
+  "raw_inputs_exported": false,
+  "case_results": [
+    {
+      "case_id": "RLV2F-01",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "SAFETY_PRIVACY",
+        "CROSS_FUNCTIONAL"
+      ],
+      "reference_gap_ids": [
+        "SAFETY_PRIVACY",
+        "PRIORITIZATION",
+        "AI_EVALUATION"
+      ],
+      "overlap": 1,
+      "reason_codes": [],
+      "latency_ms": 51.89,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLV2F-02",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "USER_DISCOVERY",
+        "AI_PRODUCT_LITERACY",
+        "GROWTH_LIFECYCLE"
+      ],
+      "reference_gap_ids": [
+        "SAFETY_PRIVACY",
+        "AI_PRODUCT_LITERACY",
+        "GROWTH_LIFECYCLE"
+      ],
+      "overlap": 2,
+      "reason_codes": [],
+      "latency_ms": 13.48,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLV2F-03",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "GROWTH_LIFECYCLE",
+        "MONETIZATION_PRICING",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "overlap": 2,
+      "reason_codes": [],
+      "latency_ms": 13.67,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLV2F-04",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "AI_EVALUATION",
+        "METRICS_EXPERIMENTATION",
+        "GO_TO_MARKET"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 12.98,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLV2F-05",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "PRIORITIZATION",
+        "AI_PRODUCT_LITERACY",
+        "PRODUCT_STRATEGY"
+      ],
+      "reference_gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "PRODUCT_STRATEGY",
+        "GROWTH_LIFECYCLE"
+      ],
+      "overlap": 2,
+      "reason_codes": [],
+      "latency_ms": 12.81,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLV2F-06",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "ADS_ECOSYSTEM",
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "reference_gap_ids": [
+        "ADS_ECOSYSTEM",
+        "METRICS_EXPERIMENTATION",
+        "PRODUCT_STRATEGY"
+      ],
+      "overlap": 2,
+      "reason_codes": [],
+      "latency_ms": 14.99,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLV2F-07",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "ADS_ECOSYSTEM",
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "reference_gap_ids": [
+        "GROWTH_LIFECYCLE",
+        "ADS_ECOSYSTEM",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "overlap": 3,
+      "reason_codes": [],
+      "latency_ms": 12.77,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLV2F-08",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION",
+        "MONETIZATION_PRICING"
+      ],
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "overlap": 3,
+      "reason_codes": [],
+      "latency_ms": 11.5,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLV2F-09",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "GROWTH_LIFECYCLE",
+        "MONETIZATION_PRICING",
+        "CROSS_FUNCTIONAL"
+      ],
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "PRIORITIZATION",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "overlap": 1,
+      "reason_codes": [],
+      "latency_ms": 12.03,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLV2F-10",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE",
+        "PRIORITIZATION"
+      ],
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "PRIORITIZATION",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "overlap": 2,
+      "reason_codes": [],
+      "latency_ms": 12.99,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-01",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "AI_EVALUATION",
+        "METRICS_EXPERIMENTATION",
+        "MONETIZATION_PRICING"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 24.81,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-02",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "METRICS_EXPERIMENTATION",
+        "GO_TO_MARKET"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.18,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-03",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.09,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-04",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "SAFETY_PRIVACY",
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 5.87,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-05",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "AI_PRODUCT_LITERACY",
+        "AI_EVALUATION",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 5.9,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-06",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "PRODUCT_STRATEGY",
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.46,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-07",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "USER_DISCOVERY",
+        "PRODUCT_STRATEGY",
+        "PRIORITIZATION"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 5.78,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-08",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "USER_DISCOVERY",
+        "PRIORITIZATION",
+        "AI_EVALUATION"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.15,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-09",
+      "accepted": true,
+      "prediction_gap_ids": [
+        "CROSS_FUNCTIONAL",
+        "USER_DISCOVERY",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "reference_gap_ids": [
+        "USER_DISCOVERY",
+        "PRODUCT_STRATEGY",
+        "PRIORITIZATION"
+      ],
+      "overlap": 1,
+      "reason_codes": [],
+      "latency_ms": 6.6,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-10",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "AI_EVALUATION",
+        "SAFETY_PRIVACY",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 7.2,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-11",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "PRODUCT_STRATEGY",
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 5.85,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-12",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "ADS_ECOSYSTEM",
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 5.76,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-13",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "METRICS_EXPERIMENTATION",
+        "GROWTH_LIFECYCLE"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 5.73,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-14",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET",
+        "COMMERCIAL_PARTNERSHIPS"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.06,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-15",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "PRODUCT_STRATEGY",
+        "MONETIZATION_PRICING",
+        "GO_TO_MARKET"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.23,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-16",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 5.93,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-17",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "ADS_ECOSYSTEM",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.24,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-18",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.17,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-19",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "MONETIZATION_PRICING",
+        "COMMERCIAL_PARTNERSHIPS",
+        "GO_TO_MARKET"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.25,
+      "response_reported_cost_usd": null
+    },
+    {
+      "case_id": "RLX20-20",
+      "accepted": false,
+      "prediction_gap_ids": null,
+      "reference_gap_ids": [
+        "USER_DISCOVERY",
+        "ADS_ECOSYSTEM",
+        "DATA_DECISIONS"
+      ],
+      "overlap": 0,
+      "reason_codes": [
+        "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+      ],
+      "latency_ms": 6.47,
+      "response_reported_cost_usd": null
+    }
+  ],
+  "aggregation": "All cases pooled at record level; abstentions contribute zero; phase percentages are not averaged",
+  "phase_count": 2,
+  "case_count": 30,
+  "bucket_counts": {
+    "AI_PM": 15,
+    "COMMERCIAL_PM": 15
+  },
+  "unique_profile_count": 30,
+  "phase_summaries": [
+    {
+      "phase_id": "historical_phase_1",
+      "case_count": 10,
+      "bucket_counts": {
+        "AI_PM": 5,
+        "COMMERCIAL_PM": 5
+      },
+      "freeze_recorded_at_utc": "2026-10-02T17:30:09.081309+00:00",
+      "source_code_sha256": {
+        "rolelens/__init__.py": "19794c2ef7ff88182925dbdbbaf899caac6264d2c3498b8ac7bb4449975abdb9",
+        "rolelens/baseline.py": "9685df368286de6f2cd86c98dd986fd71a7ae040ed2eb271db5bf51169118672",
+        "rolelens/cli.py": "83dccad94293b2ecae6bfa0f95eb4fe32023bad960942d14b9c27e8ef0cbf84a",
+        "rolelens/exploratory.py": "49f00d9b781e754f180ca43da19b6fcec7ba8c3aee0030a9f3af26471fb9ac34",
+        "rolelens/pipeline.py": "2dcbd1c3ee674f73fa98e1223c106841565db4511c60c9e6ba2c0edd58b56afc",
+        "rolelens/provider.py": "203169f9ad802973ae7d1ce39255424dce9d24b6e0e213a78fc72a89b05b09ea",
+        "rolelens/retrieval.py": "2b0037e21c72317d20aef64a0228a83f6dc7697076906c9b37e5bccd1be3b5f6",
+        "rolelens/scope.py": "9bd2d646b7b8ed47fc1e175d6b55ac331323ee101407a8b64b2ee8110f57775e",
+        "rolelens/taxonomy.py": "b7bbafa387d412c1f7bc5582a22e2ff001558c837a86c233e2a20734b7fce36c",
+        "rolelens/validation.py": "c9a05acc476f039731588a9e83ae345e1bdc2a2e3ec01fc66b037be03bbde528",
+        "project_core/__init__.py": "fff894a393a98237fc24f17e28659a3ea075495412988ca31fa5950e9ddff910",
+        "project_core/evidence.py": "8be30c0ee19cc7028c31681506fa368e7a8ad79d2624aaffcd07542e72e93e7c",
+        "project_core/metrics.py": "568f10aa83951f89cbd510f67c6fb69853ab42b04bea258a76f2426eda08e6ed"
+      },
+      "summary": {
+        "evaluation_type": "ai_reference_exploratory_baseline",
+        "reference_kind": "ai_generated_exploratory",
+        "human_reviewed": false,
+        "limitation": "Agreement against Codex AI-generated reference labels, not human accuracy or correctness. No student review is asserted. Shared model assumptions may inflate agreement; literal quote validation does not establish semantic support.",
+        "manifest_sha256": "1479dd08370c47fb315773612df811f09eebdcbe1bf9e97dff68aa13e68afe1f",
+        "input_file_sha256": "0943cbe3daa2c348082553acc3b3ab47c49aa85bc8679868317ffe5814f68a2e",
+        "reference_file_sha256": "11afd47863c48bcdf6358c16062b27ac28792343b01fdda02063bac988911f29",
+        "baseline_ai_reference_agreement": {
+          "case_count": 10,
+          "accepted_count": 9,
+          "abstention_count": 1,
+          "coverage": 0.9,
+          "mean_overlap_all_cases_abstain_zero": 1.8,
+          "mean_overlap_fraction_all_cases_abstain_zero": 0.6,
+          "case_pass_at_least_two_of_three_count": 7,
+          "case_pass_at_least_two_of_three_all_cases": 0.7,
+          "accepted_only_mean_overlap": 2.0,
+          "accepted_only_pass_at_least_two_of_three": 0.7777777777777778,
+          "metric_interpretation": "AI-reference agreement only; not human accuracy"
+        },
+        "requested_mode_ai_reference_agreement": {
+          "case_count": 10,
+          "accepted_count": 9,
+          "abstention_count": 1,
+          "coverage": 0.9,
+          "mean_overlap_all_cases_abstain_zero": 1.8,
+          "mean_overlap_fraction_all_cases_abstain_zero": 0.6,
+          "case_pass_at_least_two_of_three_count": 7,
+          "case_pass_at_least_two_of_three_all_cases": 0.7,
+          "accepted_only_mean_overlap": 2.0,
+          "accepted_only_pass_at_least_two_of_three": 0.7777777777777778,
+          "metric_interpretation": "AI-reference agreement only; not human accuracy"
+        },
+        "abstention_reason_counts": {
+          "FEWER_THAN_THREE_EVIDENCED_JD_GAPS": 1
+        },
+        "baseline_abstention_reason_counts": {
+          "FEWER_THAN_THREE_EVIDENCED_JD_GAPS": 1
+        },
+        "latency_including_abstentions": {
+          "n": 10,
+          "median_ms": 12.985,
+          "p95_ms": 51.89
+        },
+        "total_response_reported_cost_usd": null,
+        "response_reported_cost_case_count": 0,
+        "response_reported_cost_missing_case_count": 0,
+        "total_estimated_cost_usd": null,
+        "cost_note": "Includes response-reported charges for invalid and abstained responses; missing costs are unknown, not zero. These are not provider invoices.",
+        "external_model_requested": false,
+        "raw_inputs_exported": false,
+        "case_results": [
+          {
+            "case_id": "RLV2F-01",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "AI_PRODUCT_LITERACY",
+              "SAFETY_PRIVACY",
+              "CROSS_FUNCTIONAL"
+            ],
+            "reference_gap_ids": [
+              "SAFETY_PRIVACY",
+              "PRIORITIZATION",
+              "AI_EVALUATION"
+            ],
+            "overlap": 1,
+            "reason_codes": [],
+            "latency_ms": 51.89,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLV2F-02",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "USER_DISCOVERY",
+              "AI_PRODUCT_LITERACY",
+              "GROWTH_LIFECYCLE"
+            ],
+            "reference_gap_ids": [
+              "SAFETY_PRIVACY",
+              "AI_PRODUCT_LITERACY",
+              "GROWTH_LIFECYCLE"
+            ],
+            "overlap": 2,
+            "reason_codes": [],
+            "latency_ms": 13.48,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLV2F-03",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "GROWTH_LIFECYCLE",
+              "MONETIZATION_PRICING",
+              "AI_PRODUCT_LITERACY"
+            ],
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "GROWTH_LIFECYCLE",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "overlap": 2,
+            "reason_codes": [],
+            "latency_ms": 13.67,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLV2F-04",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "AI_EVALUATION",
+              "METRICS_EXPERIMENTATION",
+              "GO_TO_MARKET"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 12.98,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLV2F-05",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "PRIORITIZATION",
+              "AI_PRODUCT_LITERACY",
+              "PRODUCT_STRATEGY"
+            ],
+            "reference_gap_ids": [
+              "AI_PRODUCT_LITERACY",
+              "PRODUCT_STRATEGY",
+              "GROWTH_LIFECYCLE"
+            ],
+            "overlap": 2,
+            "reason_codes": [],
+            "latency_ms": 12.81,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLV2F-06",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "ADS_ECOSYSTEM",
+              "GROWTH_LIFECYCLE",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "reference_gap_ids": [
+              "ADS_ECOSYSTEM",
+              "METRICS_EXPERIMENTATION",
+              "PRODUCT_STRATEGY"
+            ],
+            "overlap": 2,
+            "reason_codes": [],
+            "latency_ms": 14.99,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLV2F-07",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "ADS_ECOSYSTEM",
+              "GROWTH_LIFECYCLE",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "reference_gap_ids": [
+              "GROWTH_LIFECYCLE",
+              "ADS_ECOSYSTEM",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "overlap": 3,
+            "reason_codes": [],
+            "latency_ms": 12.77,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLV2F-08",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "GROWTH_LIFECYCLE",
+              "METRICS_EXPERIMENTATION",
+              "MONETIZATION_PRICING"
+            ],
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "GROWTH_LIFECYCLE",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "overlap": 3,
+            "reason_codes": [],
+            "latency_ms": 11.5,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLV2F-09",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "GROWTH_LIFECYCLE",
+              "MONETIZATION_PRICING",
+              "CROSS_FUNCTIONAL"
+            ],
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "PRIORITIZATION",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "overlap": 1,
+            "reason_codes": [],
+            "latency_ms": 12.03,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLV2F-10",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "MONETIZATION_PRICING",
+              "GROWTH_LIFECYCLE",
+              "PRIORITIZATION"
+            ],
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "PRIORITIZATION",
+              "COMMERCIAL_PARTNERSHIPS"
+            ],
+            "overlap": 2,
+            "reason_codes": [],
+            "latency_ms": 12.99,
+            "response_reported_cost_usd": null
+          }
+        ]
+      }
+    },
+    {
+      "phase_id": "expansion_20_20261003",
+      "case_count": 20,
+      "bucket_counts": {
+        "AI_PM": 10,
+        "COMMERCIAL_PM": 10
+      },
+      "freeze_recorded_at_utc": "2026-10-02T19:19:33.889579+00:00",
+      "source_code_sha256": {
+        "rolelens/__init__.py": "19794c2ef7ff88182925dbdbbaf899caac6264d2c3498b8ac7bb4449975abdb9",
+        "rolelens/baseline.py": "9685df368286de6f2cd86c98dd986fd71a7ae040ed2eb271db5bf51169118672",
+        "rolelens/cli.py": "83dccad94293b2ecae6bfa0f95eb4fe32023bad960942d14b9c27e8ef0cbf84a",
+        "rolelens/exploratory.py": "18c53a89ef5d09683a299b3d990b138c3d4e9c5ce56ccacb985802b6a46f22c1",
+        "rolelens/pipeline.py": "2dcbd1c3ee674f73fa98e1223c106841565db4511c60c9e6ba2c0edd58b56afc",
+        "rolelens/pool_exploratory.py": "588c82dd1d76be05b15a1a0385ce69b4ada76debd8cd1c0fbdbd9bfa504806ce",
+        "rolelens/provider.py": "a6565ba407e70ba24ca927359a0b5f41c54567c61387433429fffc34b9b8bf1a",
+        "rolelens/retrieval.py": "2b0037e21c72317d20aef64a0228a83f6dc7697076906c9b37e5bccd1be3b5f6",
+        "rolelens/scope.py": "9bd2d646b7b8ed47fc1e175d6b55ac331323ee101407a8b64b2ee8110f57775e",
+        "rolelens/taxonomy.py": "b7bbafa387d412c1f7bc5582a22e2ff001558c837a86c233e2a20734b7fce36c",
+        "rolelens/validation.py": "c9a05acc476f039731588a9e83ae345e1bdc2a2e3ec01fc66b037be03bbde528",
+        "project_core/__init__.py": "fff894a393a98237fc24f17e28659a3ea075495412988ca31fa5950e9ddff910",
+        "project_core/evidence.py": "8be30c0ee19cc7028c31681506fa368e7a8ad79d2624aaffcd07542e72e93e7c",
+        "project_core/metrics.py": "568f10aa83951f89cbd510f67c6fb69853ab42b04bea258a76f2426eda08e6ed"
+      },
+      "summary": {
+        "evaluation_type": "ai_reference_exploratory_baseline",
+        "reference_kind": "ai_generated_exploratory",
+        "human_reviewed": false,
+        "limitation": "Agreement against Codex AI-generated reference labels, not human accuracy or correctness. No student review is asserted. Shared model assumptions may inflate agreement; literal quote validation does not establish semantic support.",
+        "manifest_sha256": "20ad8864c77357248c7d0a9e22c2863bca868c2065e7343b5049d2ced953aee8",
+        "input_file_sha256": "dbf0c028634a770de7d56084ae0db5dc86404679cfa0a97effc8ea4b180d9918",
+        "reference_file_sha256": "c7af71d1b71c396da28cf79f9492b97367a4b244d4a28be67ec076c8811d2029",
+        "baseline_ai_reference_agreement": {
+          "case_count": 20,
+          "accepted_count": 1,
+          "abstention_count": 19,
+          "coverage": 0.05,
+          "mean_overlap_all_cases_abstain_zero": 0.05,
+          "mean_overlap_fraction_all_cases_abstain_zero": 0.016666666666666666,
+          "case_pass_at_least_two_of_three_count": 0,
+          "case_pass_at_least_two_of_three_all_cases": 0.0,
+          "accepted_only_mean_overlap": 1.0,
+          "accepted_only_pass_at_least_two_of_three": 0.0,
+          "metric_interpretation": "AI-reference agreement only; not human accuracy"
+        },
+        "requested_mode_ai_reference_agreement": {
+          "case_count": 20,
+          "accepted_count": 1,
+          "abstention_count": 19,
+          "coverage": 0.05,
+          "mean_overlap_all_cases_abstain_zero": 0.05,
+          "mean_overlap_fraction_all_cases_abstain_zero": 0.016666666666666666,
+          "case_pass_at_least_two_of_three_count": 0,
+          "case_pass_at_least_two_of_three_all_cases": 0.0,
+          "accepted_only_mean_overlap": 1.0,
+          "accepted_only_pass_at_least_two_of_three": 0.0,
+          "metric_interpretation": "AI-reference agreement only; not human accuracy"
+        },
+        "abstention_reason_counts": {
+          "FEWER_THAN_THREE_EVIDENCED_JD_GAPS": 19
+        },
+        "baseline_abstention_reason_counts": {
+          "FEWER_THAN_THREE_EVIDENCED_JD_GAPS": 19
+        },
+        "latency_including_abstentions": {
+          "n": 20,
+          "median_ms": 6.16,
+          "p95_ms": 7.2
+        },
+        "total_response_reported_cost_usd": null,
+        "response_reported_cost_case_count": 0,
+        "response_reported_cost_missing_case_count": 0,
+        "total_estimated_cost_usd": null,
+        "cost_note": "Includes response-reported charges for invalid and abstained responses; missing costs are unknown, not zero. These are not provider invoices.",
+        "external_model_requested": false,
+        "raw_inputs_exported": false,
+        "case_results": [
+          {
+            "case_id": "RLX20-01",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "AI_EVALUATION",
+              "METRICS_EXPERIMENTATION",
+              "MONETIZATION_PRICING"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 24.81,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-02",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "AI_PRODUCT_LITERACY",
+              "METRICS_EXPERIMENTATION",
+              "GO_TO_MARKET"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.18,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-03",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "AI_PRODUCT_LITERACY",
+              "MONETIZATION_PRICING",
+              "GROWTH_LIFECYCLE"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.09,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-04",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "SAFETY_PRIVACY",
+              "MONETIZATION_PRICING",
+              "COMMERCIAL_PARTNERSHIPS"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 5.87,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-05",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "AI_PRODUCT_LITERACY",
+              "AI_EVALUATION",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 5.9,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-06",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "PRODUCT_STRATEGY",
+              "MONETIZATION_PRICING",
+              "GO_TO_MARKET"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.46,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-07",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "USER_DISCOVERY",
+              "PRODUCT_STRATEGY",
+              "PRIORITIZATION"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 5.78,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-08",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "USER_DISCOVERY",
+              "PRIORITIZATION",
+              "AI_EVALUATION"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.15,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-09",
+            "accepted": true,
+            "prediction_gap_ids": [
+              "CROSS_FUNCTIONAL",
+              "USER_DISCOVERY",
+              "AI_PRODUCT_LITERACY"
+            ],
+            "reference_gap_ids": [
+              "USER_DISCOVERY",
+              "PRODUCT_STRATEGY",
+              "PRIORITIZATION"
+            ],
+            "overlap": 1,
+            "reason_codes": [],
+            "latency_ms": 6.6,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-10",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "AI_EVALUATION",
+              "SAFETY_PRIVACY",
+              "AI_PRODUCT_LITERACY"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 7.2,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-11",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "PRODUCT_STRATEGY",
+              "MONETIZATION_PRICING",
+              "GO_TO_MARKET"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 5.85,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-12",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "ADS_ECOSYSTEM",
+              "MONETIZATION_PRICING",
+              "COMMERCIAL_PARTNERSHIPS"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 5.76,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-13",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "METRICS_EXPERIMENTATION",
+              "GROWTH_LIFECYCLE"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 5.73,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-14",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "GO_TO_MARKET",
+              "COMMERCIAL_PARTNERSHIPS"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.06,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-15",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "PRODUCT_STRATEGY",
+              "MONETIZATION_PRICING",
+              "GO_TO_MARKET"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.23,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-16",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "COMMERCIAL_PARTNERSHIPS",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 5.93,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-17",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "ADS_ECOSYSTEM",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.24,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-18",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "COMMERCIAL_PARTNERSHIPS",
+              "METRICS_EXPERIMENTATION"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.17,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-19",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "MONETIZATION_PRICING",
+              "COMMERCIAL_PARTNERSHIPS",
+              "GO_TO_MARKET"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.25,
+            "response_reported_cost_usd": null
+          },
+          {
+            "case_id": "RLX20-20",
+            "accepted": false,
+            "prediction_gap_ids": null,
+            "reference_gap_ids": [
+              "USER_DISCOVERY",
+              "ADS_ECOSYSTEM",
+              "DATA_DECISIONS"
+            ],
+            "overlap": 0,
+            "reason_codes": [
+              "FEWER_THAN_THREE_EVIDENCED_JD_GAPS"
+            ],
+            "latency_ms": 6.47,
+            "response_reported_cost_usd": null
+          }
+        ]
+      }
+    }
+  ],
+  "pooled_manifest": {
+    "identity": {
+      "input_file_sha256": "23bc0969424508df6b8d02644916db875c0582c7a168b216141463d33b8f8897",
+      "reference_file_sha256": "64842afe9d8899ce06c7bf1453997d423e880d6bd33d75d3db2ae88ff89598bc",
+      "phase_manifest_hashes": [
+        "1479dd08370c47fb315773612df811f09eebdcbe1bf9e97dff68aa13e68afe1f",
+        "20ad8864c77357248c7d0a9e22c2863bca868c2065e7343b5049d2ced953aee8"
+      ]
+    },
+    "composition": "Descriptive pooling of separately frozen phases; not a single original preregistered batch"
+  },
+  "source_code_identical_across_phases": false,
+  "chronology_note": "Additional phases were frozen later. Report original and expansion results separately as well as pooled; pooled results are descriptive, not a new single frozen trial."
+}

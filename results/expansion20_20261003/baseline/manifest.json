@@ -1,0 +1,36 @@
+{
+  "identity": {
+    "schema_version": 1,
+    "reference_kind": "ai_generated_exploratory",
+    "human_reviewed": false,
+    "input_file_sha256": "dbf0c028634a770de7d56084ae0db5dc86404679cfa0a97effc8ea4b180d9918",
+    "input_lock_sha256": "469d546f4a0ee87acc6ddb5743c81277a1055f832e331c93eaa4dfa2ccf3cdeb",
+    "protocol_sha256": "a2fb72c7faefcf7320df0c47333755f54195754755f8295e2d0aada714becc38",
+    "reference_file_sha256": "c7af71d1b71c396da28cf79f9492b97367a4b244d4a28be67ec076c8811d2029",
+    "knowledge_sha256": "d883c25dae3d706ba32a0ba733e93cf09cd1ae5efa2ad3d65f2f668bdabd5128",
+    "mode": "baseline",
+    "model": null,
+    "external_processing_authorized": false,
+    "source_code_sha256": {
+      "rolelens/__init__.py": "19794c2ef7ff88182925dbdbbaf899caac6264d2c3498b8ac7bb4449975abdb9",
+      "rolelens/baseline.py": "9685df368286de6f2cd86c98dd986fd71a7ae040ed2eb271db5bf51169118672",
+      "rolelens/cli.py": "83dccad94293b2ecae6bfa0f95eb4fe32023bad960942d14b9c27e8ef0cbf84a",
+      "rolelens/exploratory.py": "18c53a89ef5d09683a299b3d990b138c3d4e9c5ce56ccacb985802b6a46f22c1",
+      "rolelens/pipeline.py": "2dcbd1c3ee674f73fa98e1223c106841565db4511c60c9e6ba2c0edd58b56afc",
+      "rolelens/pool_exploratory.py": "588c82dd1d76be05b15a1a0385ce69b4ada76debd8cd1c0fbdbd9bfa504806ce",
+      "rolelens/provider.py": "a6565ba407e70ba24ca927359a0b5f41c54567c61387433429fffc34b9b8bf1a",
+      "rolelens/retrieval.py": "2b0037e21c72317d20aef64a0228a83f6dc7697076906c9b37e5bccd1be3b5f6",
+      "rolelens/scope.py": "9bd2d646b7b8ed47fc1e175d6b55ac331323ee101407a8b64b2ee8110f57775e",
+      "rolelens/taxonomy.py": "b7bbafa387d412c1f7bc5582a22e2ff001558c837a86c233e2a20734b7fce36c",
+      "rolelens/validation.py": "c9a05acc476f039731588a9e83ae345e1bdc2a2e3ec01fc66b037be03bbde528",
+      "project_core/__init__.py": "fff894a393a98237fc24f17e28659a3ea075495412988ca31fa5950e9ddff910",
+      "project_core/evidence.py": "8be30c0ee19cc7028c31681506fa368e7a8ad79d2624aaffcd07542e72e93e7c",
+      "project_core/metrics.py": "568f10aa83951f89cbd510f67c6fb69853ab42b04bea258a76f2426eda08e6ed"
+    },
+    "phase_id": "expansion_20_20261003",
+    "case_count": 20
+  },
+  "labels_frozen_before_predictions": true,
+  "freeze_recorded_at_utc": "2026-10-02T19:19:33.889579+00:00",
+  "limitation": "Agreement against Codex AI-generated reference labels, not human accuracy or correctness. No student review is asserted. Shared model assumptions may inflate agreement; literal quote validation does not establish semantic support."
+}

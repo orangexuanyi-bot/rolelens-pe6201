@@ -1,0 +1,151 @@
+{
+  "case_id": "RLR30-08",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7263.84,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Set direction and a roadmap, then ship research-driven capabilities with research, platform and engineering teams.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "PRIORITIZATION"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC08",
+        "title": "Safety best practices",
+        "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.89182
+      },
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.294712
+      },
+      {
+        "id": "DOC09",
+        "title": "Prompt caching",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-caching",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 2.351375
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7259.74,
+      "usage": {
+        "prompt_tokens": 831,
+        "completion_tokens": 2253,
+        "total_tokens": 3084
+      },
+      "billed_cost_usd": 0.009072,
+      "estimated_cost_usd": 0.009072,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P15 presents solid product experience in safety operations, workflow optimization, and classifier integration, but lacks explicit evidence in research commercialization, competitive AI strategy, and Python fluency.",
+      "responsibilities": [
+        {
+          "statement": "Turn breakthroughs from AI research into viable customer products with clear roadmap direction.",
+          "jd_quote": "Turn advances in AI research into products customers can use."
+        },
+        {
+          "statement": "Collaborate cross-functionally across research, platform, and engineering teams to launch research-driven features.",
+          "jd_quote": "Set direction and a roadmap, then ship research-driven capabilities with research, platform and engineering teams."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "Discover needs that customers may not yet be able to articulate and translate them into requirements and evaluations.",
+          "profile_status": "strong",
+          "profile_quote": "I observed moderators working through busy weekend queues and redesigned the evidence summary so they could see context before acting."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "Turn advances in AI research into products customers can use.",
+          "profile_status": "strong",
+          "profile_quote": "An early generative reply draft was withdrawn after it suggested actions moderators were not authorised to take."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "translate them into requirements and evaluations.",
+          "profile_status": "partial",
+          "profile_quote": "My role was defining routing thresholds, escalation rules, and feedback from moderators."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "The listing values technical fluency in AI and machine learning, practical Python and SQL familiarity",
+          "profile_status": "partial",
+          "profile_quote": "I use event analytics, SQL, user interviews, Figma, and incident reviews."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "commercialization or distribution experience",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "GO_TO_MARKET",
+          "why_now": "The JD prioritizes taking research advances to market, requiring familiarity with commercial distribution models and launch playbooks.",
+          "prep_action": "Document a go-to-market plan for an AI capability, defining target segments, distribution channels, and commercial release stages."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "Translating research models into production requires defining systematic benchmark suites and qualitative human-in-the-loop evals.",
+          "prep_action": "Design an evaluation framework specifying automated benchmark metrics, edge-case test sets, and human feedback loops for an LLM feature."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "why_now": "The role expects technical fluency in ML and Python alongside SQL to collaborate closely with research scientists.",
+          "prep_action": "Build a hands-on Python evaluation script assessing model latency and prompt outputs against a test dataset."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC08",
+          "quote": "Lists practical safeguards for building applications that use model outputs.",
+          "title": "Safety best practices",
+          "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "No commercialization, pricing, or product launch distribution history was provided in the profile.",
+        "Python proficiency is not mentioned in the candidate profile despite demonstrated SQL usage."
+      ]
+    }
+  },
+  "payload_sha256": "b79ae71ae64b43c2bab7bde1befd7c815e15875471c0ebd5a6e2dc8a0d37b5eb"
+}

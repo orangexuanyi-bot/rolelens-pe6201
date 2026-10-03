@@ -1,0 +1,153 @@
+{
+  "case_id": "RLR30-11",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7711.24,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own product work for the platform that collects human data used in AI research."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "label": "AI quality and evaluation",
+          "jd_quote": "Track the time needed to launch data collection, the quality of collected data and downstream model evaluation signals.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_EVALUATION"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC03",
+        "title": "Function calling",
+        "url": "https://developers.openai.com/api/docs/guides/function-calling",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.723162
+      },
+      {
+        "id": "DOC06",
+        "title": "Getting started with datasets",
+        "url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.093313
+      },
+      {
+        "id": "DOC20",
+        "title": "Prompt design strategies",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.093313
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7706.67,
+      "usage": {
+        "prompt_tokens": 829,
+        "completion_tokens": 2181,
+        "total_tokens": 3010
+      },
+      "billed_cost_usd": 0.0088005,
+      "estimated_cost_usd": 0.0088005,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P21 brings operations and workflow improvement experience, including building test sets and working with engineers on AI assistant guardrails, but lacks formal product management platform ownership and vendor management experience.",
+      "responsibilities": [
+        {
+          "statement": "Lead product platform development for human data collection and annotation infrastructure.",
+          "jd_quote": "Own product work for the platform that collects human data used in AI research."
+        },
+        {
+          "statement": "Turn custom research requests into scalable, reusable tooling for data collection.",
+          "jd_quote": "Convert individual research requests into reusable tools."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "downstream model evaluation signals.",
+          "profile_status": "partial",
+          "profile_quote": "I drew up 65 examples of the awkward questions, marked which ones required a person to decide, and compared drafts with the exact policy page available at the time."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "prototype quickly with engineers.",
+          "profile_status": "partial",
+          "profile_quote": "When the tool combined two policies, I asked engineers to show the passage it used and to pause instead of guessing."
+        },
+        {
+          "capability_id": "DATA_DECISIONS",
+          "jd_quote": "Improve annotation tools, infrastructure, data quality and operational visibility.",
+          "profile_status": "partial",
+          "profile_quote": "collected examples where written guidance disagreed with the product, and made a single review queue with named owners."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Convert individual research requests into reusable tools.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "effective coordination with research and vendors.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "The role requires converting one-off research workflows into reusable platform tools, which requires core platform product strategy.",
+          "prep_action": "Prepare case studies detailing how custom service processes or internal requests were generalized into reusable software workflows."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "The platform relies on external data vendors and partners to deliver annotation tasks at scale.",
+          "prep_action": "Practice structuring vendor SLAs, data quality benchmarks, and coordination workflows for distributed data workforces."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The role requires monitoring data quality metrics and linking them directly to downstream model evaluation signals.",
+          "prep_action": "Study standardized dataset benchmarking practices and design metric frameworks connecting annotation precision to AI model performance."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC06",
+          "quote": "Introduces creating evaluation datasets and checking model behavior against examples.",
+          "title": "Getting started with datasets",
+          "url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile contains no formal product management title or platform-scale software delivery history.",
+        "No evidence is provided regarding vendor contracting, pricing, or external workforce management."
+      ]
+    }
+  },
+  "payload_sha256": "17f1ea483ddad2b172e9f6cbf4c23e0b0f1ddd0fa53617cda9bcf1c1b3e6aa9f"
+}

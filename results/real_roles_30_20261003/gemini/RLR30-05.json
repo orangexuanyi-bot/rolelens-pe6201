@@ -1,0 +1,180 @@
+{
+  "case_id": "RLR30-05",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5767.61,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Build controls for AI deployment in government, regulated and other high-trust environments.",
+        "Own the roadmap for deployment readiness and integrity, including misuse of agents that take several steps and constraints on access to private information.",
+        "Define indicators of residual risk, investigation quality and mitigation effectiveness."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Own the roadmap for deployment readiness and integrity, including misuse of agents that take several steps and constraints on access to private information.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "label": "Trust, safety and privacy",
+          "jd_quote": "Develop investigation workflows and repeatable deployment guidance with policy, legal, privacy, research and engineering partners.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I have also attended privacy and retention reviews, where I learned to ask which fields are necessary before collecting them.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "Develop investigation workflows and repeatable deployment guidance with policy, legal, privacy, research and engineering partners.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "CROSS_FUNCTIONAL",
+        "PRIORITIZATION",
+        "SAFETY_PRIVACY"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.962449
+      },
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 4.297285
+      },
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 1.94591
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 5763.14,
+      "usage": {
+        "prompt_tokens": 826,
+        "completion_tokens": 1666,
+        "total_tokens": 2492
+      },
+      "billed_cost_usd": 0.006867,
+      "estimated_cost_usd": 0.006867,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P09 brings operational and risk-aware product analyst experience in regulated insurance environments, including vendor extraction evaluation and privacy review participation. Transitioning to leading AI deployment controls and multi-step agent safety requires expanding from operational workflows to formal AI evaluation frameworks and agent integrity roadmaps.",
+      "responsibilities": [
+        {
+          "statement": "Lead deployment readiness and integrity roadmaps addressing multi-step agent misuse and sensitive data constraints.",
+          "jd_quote": "Own the roadmap for deployment readiness and integrity, including misuse of agents that take several steps and constraints on access to private information."
+        },
+        {
+          "statement": "Collaborate with policy, legal, privacy, research, and engineering partners to establish investigation workflows and deployment standards.",
+          "jd_quote": "Develop investigation workflows and repeatable deployment guidance with policy, legal, privacy, research and engineering partners."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "constraints on access to private information.",
+          "profile_status": "partial",
+          "profile_quote": "attended privacy and retention reviews, where I learned to ask which fields are necessary before collecting them."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "Define indicators of residual risk, investigation quality and mitigation effectiveness.",
+          "profile_status": "partial",
+          "profile_quote": "helped evaluate document extraction supplied by a vendor. I collected cases where tables, handwriting, or multiple claimants produced unreliable fields and asked the team to keep a visible correction step."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "Develop investigation workflows and repeatable deployment guidance with policy, legal, privacy, research and engineering partners.",
+          "profile_status": "partial",
+          "profile_quote": "rewrote the upload flow with legal and operations review."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Own the roadmap for deployment readiness and integrity",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "The role requires turning complex risks and policy decisions into practical product behavior.",
+          "profile_status": "partial",
+          "profile_quote": "reviewed error examples and designed the correction interface; the data-science group selected the model."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "The role requires directly owning the product roadmap for AI deployment readiness and integrity in high-trust sectors.",
+          "prep_action": "Draft a deployment readiness roadmap framework outlining tiered release gates, policy thresholds, and risk sign-offs for regulated environments."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "Evaluating multi-step agent behavior and measuring residual risk goes beyond heuristic error collection for vendor extraction models.",
+          "prep_action": "Study multi-step agent evaluation methods using benchmark traces, trajectory grading, and rubrics for measuring agent misuse and mitigation effectiveness."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "The JD focuses on proactive AI controls, privacy constraints, and sensitive government deployments rather than general data collection reviews.",
+          "prep_action": "Design product requirements for access control policies and audit logging tailored to sensitive generative AI and agentic tooling deployments."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC07",
+          "quote": "Describes evaluating multi-step agent behavior with traces and test cases.",
+          "title": "Evaluate agent workflows",
+          "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Profile lacks evidence of owning end-to-end product roadmaps or working directly with LLM and agentic architectures.",
+        "Evaluation experience is currently limited to manual review and vendor extraction interfaces."
+      ]
+    }
+  },
+  "payload_sha256": "b5e4ab10f9b5a7835946e2bd0abb807fabfe5be8b73eb391ce8343048b19da9a"
+}

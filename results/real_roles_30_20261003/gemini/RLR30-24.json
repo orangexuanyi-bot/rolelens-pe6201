@@ -1,0 +1,187 @@
+{
+  "case_id": "RLR30-24",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7798.9,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own the value proposition, tiers, prices and long-term roadmap for Premium subscriptions.",
+        "Lead across the company and mentor other product managers."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Own the value proposition, tiers, prices and long-term roadmap for Premium subscriptions.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Run growth experiments with a strong statistical standard and use cohort and bookings information in decisions.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "The listing seeks deep consumer subscription and growth experience, including at least five years of relevant work.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Improve acquisition, purchase conversion, retention and churn across markets.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        }
+      ],
+      "top_gaps": [
+        "GROWTH_LIFECYCLE",
+        "MONETIZATION_PRICING",
+        "METRICS_EXPERIMENTATION"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 8.989762
+      },
+      {
+        "id": "CK01",
+        "title": "Understand your conversion tracking data",
+        "url": "https://support.google.com/google-ads/answer/6270625?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.121265
+      },
+      {
+        "id": "CK02",
+        "title": "About the Experiments page",
+        "url": "https://support.google.com/google-ads/answer/10682377?hl=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 3.904625
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7790.24,
+      "usage": {
+        "prompt_tokens": 904,
+        "completion_tokens": 2182,
+        "total_tokens": 3086
+      },
+      "billed_cost_usd": 0.0088605,
+      "estimated_cost_usd": 0.0088605,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P18 brings five years of B2B product and analytics experience in climate software, demonstrating strong data rigor and workflow mapping. However, the profile lacks documented experience in consumer subscription monetization, growth lifecycle management, and statistical growth experimentation required for this Principal PM role.",
+      "responsibilities": [
+        {
+          "statement": "Define and manage subscription tiers, pricing models, and product roadmaps.",
+          "jd_quote": "Own the value proposition, tiers, prices and long-term roadmap for Premium subscriptions."
+        },
+        {
+          "statement": "Optimize end-to-end subscriber lifecycle performance across international markets.",
+          "jd_quote": "Improve acquisition, purchase conversion, retention and churn across markets."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "Own the value proposition, tiers, prices and long-term roadmap for Premium subscriptions.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "jd_quote": "Improve acquisition, purchase conversion, retention and churn across markets.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Run growth experiments with a strong statistical standard and use cohort and bookings information in decisions.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "DATA_DECISIONS",
+          "jd_quote": "use cohort and bookings information in decisions.",
+          "profile_status": "partial",
+          "profile_quote": "Earlier roles in analytics taught me to check units and denominators before discussing trends."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "Create new benefits with teams serving developers and creators.",
+          "profile_status": "partial",
+          "profile_quote": "worked with auditors on the export format."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role requires direct ownership of tier structures, price testing, and premium subscription value propositions.",
+          "prep_action": "Study consumer subscription packaging models and construct a sample tiered pricing case study outlining packaging tradeoffs."
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "why_now": "The position demands proven leadership in driving acquisition, conversion, retention, and churn mitigation.",
+          "prep_action": "Review conversion funnel mechanics and prepare examples of diagnosing churn drivers using retention curves."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "Running rigorous statistical growth tests and evaluating cohort metrics are explicit core expectations.",
+          "prep_action": "Refresh A/B testing statistical foundations, sample size determination, and cohort bookings analysis frameworks."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK09",
+          "quote": "Covers subscription packaging, retention, customer experience, and experiments as revenue levers.",
+          "title": "How to grow subscription revenue",
+          "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK02",
+          "quote": "Describes controlled campaign experiments that split traffic or budget between an original and a proposed change.",
+          "title": "About the Experiments page",
+          "url": "https://support.google.com/google-ads/answer/10682377?hl=en",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The evaluation is based strictly on explicit text provided in the profile; unlisted background experience cannot be evaluated.",
+        "B2B enterprise product experience may not directly capture candidate aptitude in consumer growth dynamics."
+      ]
+    }
+  },
+  "payload_sha256": "239cd767ecbe83ffc53369ff95760755ca5c742f04373d408c3a78e660a12cff"
+}

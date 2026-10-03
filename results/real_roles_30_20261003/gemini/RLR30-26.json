@@ -1,0 +1,188 @@
+{
+  "case_id": "RLR30-26",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8252.39,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Develop new markets and monetization for Claude.",
+        "Work on partner-platform usage measurement, attribution, billing and commercial terms, enterprise spending controls, and a consistent account and wallet across API and subscription use.",
+        "Own revenue and activation measurement and negotiate pricing, revenue sharing and contractual choices with finance, legal and business development."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "The role values developer API products, shipped LLM experiences, SQL and complete product ownership.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Summary: Interested in AI product management, generative AI, agents, RAG, prompt engineering, responsible AI, machine learning, A/B testing, SQL, Python, strategy, roadmaps, OKRs, and stakeholder management.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "label": "Monetization and pricing",
+          "jd_quote": "Product Manager, New Markets and Monetization",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Own revenue and activation measurement and negotiate pricing, revenue sharing and contractual choices with finance, legal and business development.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "label": "Commercial partnerships",
+          "jd_quote": "Own revenue and activation measurement and negotiate pricing, revenue sharing and contractual choices with finance, legal and business development.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Candidate RL-P22 | Business Development Coordinator",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "MONETIZATION_PRICING",
+        "GROWTH_LIFECYCLE",
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.80242
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 18.300362
+      },
+      {
+        "id": "CK07",
+        "title": "Recurring pricing models",
+        "url": "https://docs.stripe.com/products-prices/pricing-models",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 16.650933
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8242.33,
+      "usage": {
+        "prompt_tokens": 894,
+        "completion_tokens": 2098,
+        "total_tokens": 2992
+      },
+      "billed_cost_usd": 0.008538,
+      "estimated_cost_usd": 0.008538,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P22 has business development coordination experience in software resale but lacks demonstrated experience in product management, pricing models, developer API platforms, or deployed LLM applications.",
+      "responsibilities": [
+        {
+          "statement": "Lead monetization, billing terms, and account wallet unification across API and subscription models.",
+          "jd_quote": "Work on partner-platform usage measurement, attribution, billing and commercial terms, enterprise spending controls, and a consistent account and wallet across API and subscription use."
+        },
+        {
+          "statement": "Measure revenue and activation metrics while negotiating commercial terms and pricing structures across cross-functional partners.",
+          "jd_quote": "Own revenue and activation measurement and negotiate pricing, revenue sharing and contractual choices with finance, legal and business development."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "billing and commercial terms, enterprise spending controls, and a consistent account and wallet across API and subscription use.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "shipped LLM experiences",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "negotiate pricing, revenue sharing and contractual choices with finance, legal and business development.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Own revenue and activation measurement",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Explore new customer segments and business opportunities.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The role centers on defining usage-based billing, subscriptions, wallets, and commercial monetization mechanisms for API and SaaS offerings.",
+          "prep_action": "Study recurring and usage-based pricing structures, drafting PRDs for credit wallets, spend caps, and multi-tier billing models."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "why_now": "The position expects familiarity with shipping LLM products and understanding developer API behaviors and token economics.",
+          "prep_action": "Build prototype applications using model APIs to understand latency, token consumption, error handling, and API integration workflows."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "Monetization requires negotiating complex revenue-sharing, attribution, and partner platform terms with legal, finance, and BD teams.",
+          "prep_action": "Analyze commercial case studies on API platform marketplaces, platform rev-share agreements, and enterprise contractual constraints."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK07",
+          "quote": "Outlines flat-rate, per-seat, tiered, and usage-based recurring pricing structures.",
+          "title": "Recurring pricing models",
+          "url": "https://docs.stripe.com/products-prices/pricing-models",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK09",
+          "quote": "Covers subscription packaging, retention, customer experience, and experiments as revenue levers.",
+          "title": "How to grow subscription revenue",
+          "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Profile indicates self-study interest but no direct PM experience managing software backlogs, metrics, or engineering sprints.",
+        "Analysis is strictly limited to provided text and does not evaluate non-documented candidate skills or potential."
+      ]
+    }
+  },
+  "payload_sha256": "4f64bac139cb8b7768bd76faebcc6bf83d90f5f1b6bf09237891dcf3c88463a0"
+}

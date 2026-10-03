@@ -1,0 +1,151 @@
+{
+  "case_id": "RLR30-15",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 5216.92,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Own outcomes for AI cybersecurity products, including finding vulnerabilities and helping users remediate them.",
+        "Decide when to build and when to work with partners.",
+        "Deliver with engineering, sales and legal."
+      ],
+      "capabilities": [],
+      "top_gaps": [],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.039223
+      },
+      {
+        "id": "DOC08",
+        "title": "Safety best practices",
+        "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.039223
+      },
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.981224
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 5212.31,
+      "usage": {
+        "prompt_tokens": 838,
+        "completion_tokens": 1434,
+        "total_tokens": 2272
+      },
+      "billed_cost_usd": 0.006006,
+      "estimated_cost_usd": 0.006006,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate has substantial leadership experience in enterprise operational change, vendor management, and governance, but lacks direct product management experience in cybersecurity, commercial B2B go-to-market, and hands-on AI safety and evaluation.",
+      "responsibilities": [
+        {
+          "statement": "Evaluate build versus buy decisions and collaborate with external partners and vendors.",
+          "jd_quote": "Decide when to build and when to work with partners."
+        },
+        {
+          "statement": "Set quality bars with research and establish access controls and safeguards with policy teams.",
+          "jd_quote": "Work with research on the required quality bar and with policy teams on access and safeguards."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "Decide when to build and when to work with partners.",
+          "profile_status": "partial",
+          "profile_quote": "negotiated contracts with software providers."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "identify model weaknesses that matter for reliable use.",
+          "profile_status": "partial",
+          "profile_quote": "decided against rollout when its explanations were difficult to verify."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "Work with research on the required quality bar and with policy teams on access and safeguards.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "Deliver with engineering, sales and legal.",
+          "profile_status": "partial",
+          "profile_quote": "I managed budgets and executive reviews, while specialist teams made day-to-day product and technical choices."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "jd_quote": "experience bringing new products to paying customers.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The role requires identifying model weaknesses and establishing quality bars for cybersecurity outcomes.",
+          "prep_action": "Practice defining test datasets, failure modes, and systematic benchmark metrics for model reliability."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "The position necessitates working with policy teams to enforce access rules and safety safeguards.",
+          "prep_action": "Study common security guardrails, vulnerability taxonomy, and policy compliance frameworks for AI applications."
+        },
+        {
+          "capability_id": "GO_TO_MARKET",
+          "why_now": "The JD specifically asks for experience bringing new products to paying customers rather than internal change management.",
+          "prep_action": "Prepare case studies outlining pricing, customer discovery, packaging, and commercial launch strategies for enterprise software."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC08",
+          "quote": "Lists practical safeguards for building applications that use model outputs.",
+          "title": "Safety best practices",
+          "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "No evidence of cybersecurity domain expertise or technical vulnerability remediation in the candidate profile.",
+        "Candidate experience is centered on internal corporate transformation rather than commercial product delivery to paying customers."
+      ]
+    }
+  },
+  "payload_sha256": "5e4cd0ce0be61ae8324bce1d44c20552543845e6cc647b880759a534ba123dd2"
+}

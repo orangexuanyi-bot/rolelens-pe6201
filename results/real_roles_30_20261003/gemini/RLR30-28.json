@@ -1,0 +1,199 @@
+{
+  "case_id": "RLR30-28",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8909.38,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_AND_COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Diagnose low advertising penetration and develop sponsored or hybrid formats, using experiments to choose what should scale.",
+        "Build a roadmap that spans near-term delivery and longer-term investment."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "PRIORITIZATION",
+          "label": "Roadmap and prioritization",
+          "jd_quote": "Build a roadmap that spans near-term delivery and longer-term investment.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "label": "Product metrics and experimentation",
+          "jd_quote": "Diagnose low advertising penetration and develop sponsored or hybrid formats, using experiments to choose what should scale.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "The listing also notes possible use of generative AI as a relevant area.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "Coordinate many teams across shopping and advertising and make technical and product tradeoffs with stakeholders.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Grow premium-brand advertising opportunities within Amazon shopping experiences.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 3
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "AI_PRODUCT_LITERACY",
+        "CROSS_FUNCTIONAL"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 3.954133
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 16.26677
+      },
+      {
+        "id": "CK09",
+        "title": "How to grow subscription revenue",
+        "url": "https://stripe.com/resources/more/how-to-increase-subscription-revenue",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 9.71686
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8903.4,
+      "usage": {
+        "prompt_tokens": 896,
+        "completion_tokens": 2791,
+        "total_tokens": 3687
+      },
+      "billed_cost_usd": 0.01113825,
+      "estimated_cost_usd": 0.01113825,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "This role is a Principal Technical Product Manager position focused on growing premium-brand advertising and developing hybrid ad formats across shopping experiences via experimentation and roadmap ownership. The candidate currently has junior product coordination experience and academic prototype exposure, leaving substantial gaps in ads ecosystem expertise, commercial strategy, and production experimentation.",
+      "responsibilities": [
+        {
+          "statement": "Diagnose advertising adoption challenges and design experimental sponsored ad formats to drive business growth.",
+          "jd_quote": "Diagnose low advertising penetration and develop sponsored or hybrid formats, using experiments to choose what should scale."
+        },
+        {
+          "statement": "Establish and execute a comprehensive multi-horizon product roadmap balancing immediate delivery and future investments.",
+          "jd_quote": "Build a roadmap that spans near-term delivery and longer-term investment."
+        },
+        {
+          "statement": "Lead cross-functional collaboration between shopping and advertising teams to resolve technical and product tradeoffs.",
+          "jd_quote": "Coordinate many teams across shopping and advertising and make technical and product tradeoffs with stakeholders."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "Grow premium-brand advertising opportunities within Amazon shopping experiences.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Diagnose low advertising penetration and develop sponsored or hybrid formats, using experiments to choose what should scale.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "jd_quote": "Build a roadmap that spans near-term delivery and longer-term investment.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "Coordinate many teams across shopping and advertising and make technical and product tradeoffs with stakeholders.",
+          "profile_status": "partial",
+          "profile_quote": "A cross-team project reduced the number of billing questions, but my work was limited to updating help copy and checking that links worked; I do not claim ownership of the outcome."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "The listing also notes possible use of generative AI as a relevant area.",
+          "profile_status": "partial",
+          "profile_quote": "I assembled a small set of public definitions and manually compared 20 generated answers to the source text."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The core mission of this Principal PM role requires driving premium advertising penetration and sponsored format monetization.",
+          "prep_action": "Study retail media networks, sponsored brand display formats, and advertising revenue levers including impressions, ROAS, and incremental sales."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The job explicitly relies on experiments to decide which premium ad formats should scale.",
+          "prep_action": "Practice designing A/B testing frameworks, defining treatment cohorts, and interpreting conversion, incremental units, and profit metrics."
+        },
+        {
+          "capability_id": "PRODUCT_STRATEGY",
+          "why_now": "Leading at a Principal level entails building long-term strategic roadmaps and aligning diverse executive stakeholders.",
+          "prep_action": "Draft mock multi-horizon product strategy documents connecting commercial shopper experience goals to engineering milestones."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK04",
+          "quote": "Connects brand discovery goals with impressions, new-to-brand purchases, and return on ad spend.",
+          "title": "Your complete guide to Sponsored Brands",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The candidate profile reflects junior support and coordination duties rather than principal-level tech PM ownership.",
+        "No commercial advertising ecosystem experience or live experimentation work is evidenced in the candidate background."
+      ]
+    }
+  },
+  "payload_sha256": "b8a5ad7bc042ae8dcfc7a2372d44a156545c12163207f421b55b1eff5a427b6f"
+}

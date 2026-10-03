@@ -56,24 +56,23 @@ Text equivalent: **input -> local scope/baseline/retrieval -> permission check -
 | Orchestration and validation | Own Python code for permission, scope, output contracts, cost reporting and abstention. | Rules need maintenance and cannot establish semantic correctness. |
 | Model | Rent `google/gemini-3.7-flash` through OpenRouter, one request per AI analysis. | Provider dependency, token charges and model latency. |
 | Retrieval | Own a lexical index over short source-linked notes. It is inspectable and easy to run. | Misses synonyms and has no measured retrieval-quality benchmark. |
-| Evaluation | Own frozen fixtures, reference metadata, deterministic metrics and saved run records. | Small synthetic set and shared-author bias limit validity. |
+| Evaluation | Own frozen fixtures, reference metadata, deterministic metrics and saved run records. | Synthetic candidates, summarized real requirements, profile reuse and shared-author bias limit validity. |
 
 The simple baseline is the measured alternative. Narrow ML was not trained because stable labeled training data is unavailable. The original embedding-retrieval plan was reduced to lexical retrieval for a small corpus and simpler setup. A general chatbot lacks this prototype's reproducible baseline and deterministic evidence contract. A low-code workflow could connect a form to an LLM; Python was chosen to keep the validator and evaluation behavior explicit and versioned. No low-code prototype or measured time-to-deploy comparison is claimed. An agent loop is unnecessary because the task needs one analysis, not autonomous actions.
 
 ## Targets and observed results
 
-The proposal targeted at least 80% Top-3 case agreement on 30 held-out cases and at least 20 percentage points above the keyword baseline. Current evidence comes from **ten** fictional pairs and AI-drafted references; the student personally checked and accepted all ten afterward. See [data and evaluation](DATA_AND_EVALUATION.md) for the method and review record.
+The proposal specified thirty official JDs and thirty held-out comparisons, with at least 80% case agreement and a +20 point improvement. The final experiment now covers thirty real employer requirement summaries and thirty synthetic profiles. It is an exploratory study with AI references and previously used profiles; it does not establish the originally proposed independent holdout validity.
 
-| Measure | Target or purpose | Keyword baseline | Gemini | Interpretation |
-| --- | --- | ---: | ---: | --- |
-| At least 2 of 3 reference IDs match | Proposed 80% on 30 held-out cases | 7/10, 70% | 8/10, 80% | The current ten-case AI-reference study does not validate the original human-reference target. |
-| Difference from baseline | At least +20 percentage points | Reference | +10 points | Target improvement not reached. |
-| Coverage | Measure abstention alongside agreement | 9/10, 90% | 10/10, 100% | Accepted output is not necessarily correct advice. |
-| Individual gap overlap, abstention = zero | Supporting diagnostic | 18/30, 60% | 19/30, 63.3% | One additional reference ID matched overall. |
-| Median end-to-end latency | Observe usability cost | 12.985 ms | 8,069.285 ms | One small sequential run, not a production benchmark. |
-| Response-reported API cost | Observe cost to serve | No external call | US$0.08174175 for ten cases | About US$0.00817 per case; excludes development and human review. |
+| Measure, all 30 real-role pairs | Keyword baseline | Gemini |
+| --- | ---: | ---: |
+| Accepted / attempted | 13/30 (43.3%) | 30/30 (100.0%) |
+| Cases matching at least 2 of 3 reference IDs | 7/30 (23.3%) | 19/30 (63.3%) |
+| Matched reference IDs, abstention = 0 | 17/90 (18.9%) | 55/90 (61.1%) |
+| Median end-to-end latency | 3.865 ms | 7.157 s |
+| Response-reported API cost | No external call | US$0.24741375 total; $0.008247/attempt |
 
-Among accepted cases only, baseline mean overlap was 2.0/3 versus Gemini's 1.9/3. The model recovered one abstention but did not consistently improve rankings. There is no measured user-benefit, semantic-accuracy, fairness, or deployment-readiness claim.
+The 80% case-agreement threshold was not reached; the +20 percentage-point difference was reached on this AI-reference dataset. Neither establishes an independent correctness target. The observed case-agreement difference is 40.0 points. A high difference against an alias baseline with many abstentions is not proof of reliable superiority over stronger alternatives. Full provenance and historical results appear in [data and evaluation](DATA_AND_EVALUATION.md).
 
 ## File and module guide
 
@@ -102,6 +101,7 @@ Among accepted cases only, baseline mean overlap was 2.0/3 versus Gemini's 1.9/3
 
 - Exact quotations can still be interpreted incorrectly: negation, weak ownership and transfer across domains need semantic checking.
 - The first-line scope rule and English lexical retrieval can miss valid roles or useful passages.
+- Domain expertise, experience requirements and work authorization are not separately scored by the fourteen-capability taxonomy. Senior employer examples are capability references, not a personal application shortlist.
 - The three real-profile sanity cases were private convenience samples; they do not establish representativeness.
 - No product-benefit test was run. A next study should use unseen cases, independent human references and observed preparation decisions.
 

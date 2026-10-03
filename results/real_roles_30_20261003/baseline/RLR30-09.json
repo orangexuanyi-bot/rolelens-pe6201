@@ -1,0 +1,83 @@
+{
+  "case_id": "RLR30-09",
+  "manifest_sha256": "e7a64182e8e5363bc1cba6b43d57feedeea35885db79aeb36e71d6a2a34b1327",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 3.82,
+  "result": {
+    "mode": "baseline",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Develop external partnerships from initial conversations through integrations, and turn early use into adoption by larger organizations.",
+        "The role seeks strong platform or ecosystem ownership, partner relationships and technical fluency, with substantial product management experience; an engineering background is not required."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "label": "Cross-functional product leadership",
+          "jd_quote": "Expand a shared, proactive AI agent across workplace collaboration surfaces beyond Slack.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 2
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Design onboarding and interactions that fit each surface and support collaboration among several users.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "I balanced requests from users, privacy reviewers, and the infrastructure team, and I wrote a decision memo for transcript retention.",
+          "keyword_priority_score": 1
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "label": "Commercial partnerships",
+          "jd_quote": "Develop external partnerships from initial conversations through integrations, and turn early use into adoption by larger organizations.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "CROSS_FUNCTIONAL",
+        "COMMERCIAL_PARTNERSHIPS",
+        "GROWTH_LIFECYCLE"
+      ],
+      "abstained": false,
+      "abstain_reason": null,
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.591998
+      },
+      {
+        "id": "DOC07",
+        "title": "Evaluate agent workflows",
+        "url": "https://developers.openai.com/api/docs/guides/agent-evals",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.927135
+      },
+      {
+        "id": "DOC11",
+        "title": "Prompt engineering overview",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 5.240622
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program."
+  },
+  "payload_sha256": "55691d9c440893f5cdefd4be906bdc5598b7f5d0fff1d92035d183516f891616"
+}

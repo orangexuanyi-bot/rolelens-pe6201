@@ -1,0 +1,157 @@
+{
+  "case_id": "RLX20-04",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8745.09,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They will define who may see each source, how sensitive fields are removed, and what happens when an answer combines material from different access groups."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager - Enterprise Incident Briefing",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC01",
+        "title": "Prompt engineering",
+        "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.997463
+      },
+      {
+        "id": "DOC13",
+        "title": "How tool use works",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.929808
+      },
+      {
+        "id": "DOC15",
+        "title": "Citations",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/citations",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.3326
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8738.22,
+      "usage": {
+        "prompt_tokens": 991,
+        "completion_tokens": 2207,
+        "total_tokens": 3198
+      },
+      "billed_cost_usd": 0.0090195,
+      "estimated_cost_usd": 0.0090195,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P08 has solid developer experience PM and solutions engineering background, including hands-on observational user discovery and offline search evaluation. However, the candidate lacks demonstrated experience in enterprise access control/privacy governance, B2B packaging and pricing models, and managing external reseller/commercial partnerships.",
+      "responsibilities": [
+        {
+          "statement": "Discover operational needs and scope the core incident briefing output with operations leaders.",
+          "jd_quote": "The PM will observe incident handoffs and agree on the smallest useful briefing with operations leaders."
+        },
+        {
+          "statement": "Define access control, data redaction, and multi-source permission policies for enterprise briefings.",
+          "jd_quote": "They will define who may see each source, how sensitive fields are removed, and what happens when an answer combines material from different access groups."
+        },
+        {
+          "statement": "Formulate and test enterprise packaging, usage pricing structures, and budget controls.",
+          "jd_quote": "They will compare per-team and usage-based paid packages and test whether spending limits make procurement and budgeting easier."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will observe incident handoffs and agree on the smallest useful briefing with operations leaders.",
+          "profile_status": "strong",
+          "profile_quote": "After watching setup sessions, I reordered documentation examples, specified clearer authentication errors, and asked the team to publish a working sample repository."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "They will use a fixed set of difficult incidents to check source fidelity and stale information with engineering and customer teams.",
+          "profile_status": "partial",
+          "profile_quote": "Compared lexical documentation search with an embedding service on 60 queries and wrote relevance notes, including stale-example failures."
+        },
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "jd_quote": "They will define who may see each source, how sensitive fields are removed, and what happens when an answer combines material from different access groups.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "They will compare per-team and usage-based paid packages and test whether spending limits make procurement and budgeting easier.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "They will coordinate reseller enablement, integration responsibilities, and support escalation with external service partners.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "SAFETY_PRIVACY",
+          "why_now": "Enterprise buyers require strict data segregation and redaction to prevent confidential data leakage across team boundaries before adopting generative briefings.",
+          "prep_action": "Study role-based access control (RBAC) and document-level security patterns in enterprise RAG systems, defining product rules for permission filtering and redaction fallbacks."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "Evaluating per-seat versus consumption pricing and budget cap mechanics is required to pass enterprise procurement.",
+          "prep_action": "Analyze B2B SaaS pricing models for AI tools, designing a mock pricing proposal comparing per-seat license tiers with usage-based quota allowances and hard spending limits."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "The role requires driving go-to-market and operational integration via external reseller channels and support escalation paths.",
+          "prep_action": "Draft a partner enablement blueprint outlining channel partner certification, shared support SLA definitions, and tier-1/tier-2 escalation workflows."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC15",
+          "quote": "Shows how to connect an answer to supporting source passages.",
+          "title": "Citations",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/citations",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The evaluation is restricted to explicit evidence in the candidate profile and does not extrapolate unmentioned enterprise commercial or security experience.",
+        "No hiring decisions, salary expectations, or candidate demographic inferences were made."
+      ]
+    }
+  },
+  "payload_sha256": "16c65654b770aae27a990e7ec6aeb985f7ad932e0e15dde092c6e22c54f15a52"
+}

@@ -1,0 +1,164 @@
+{
+  "case_id": "RLX20-05",
+  "manifest_sha256": "e6813cf97411595f81a1b8b8773b4288ebf4b727f5d417b3933add300b45e728",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 8502.89,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "AI_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "They must build a repeatable assessment across permit classes, languages, outdated pages, and ambiguous questions, with named release thresholds."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "label": "AI product literacy",
+          "jd_quote": "AI Product Manager - Multilingual Public-Service Navigator",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 1
+        }
+      ],
+      "top_gaps": [
+        "AI_PRODUCT_LITERACY"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "DOC11",
+        "title": "Prompt engineering overview",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 7.997463
+      },
+      {
+        "id": "DOC20",
+        "title": "Prompt design strategies",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.740799
+      },
+      {
+        "id": "DOC12",
+        "title": "Define success criteria and build evaluations",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+        "accessed_at": "2026-09-26",
+        "domain": "ai_product",
+        "score": 6.3326
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 8496.75,
+      "usage": {
+        "prompt_tokens": 977,
+        "completion_tokens": 2032,
+        "total_tokens": 3009
+      },
+      "billed_cost_usd": 0.00835275,
+      "estimated_cost_usd": 0.00835275,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "The candidate brings relevant municipal service product experience, user research practices, and practical risk mitigation for public-facing assistants. Key areas for preparation include formalized multilingual retrieval-translation evaluation and rigorous pilot experimentation design.",
+      "responsibilities": [
+        {
+          "statement": "Map resident journeys and ensure seamless escalation routes to human advisers.",
+          "jd_quote": "The PM will map resident tasks and preserve a visible route to a human adviser."
+        },
+        {
+          "statement": "Establish repeatable evaluation suites across languages, permit types, and ambiguous inputs with explicit release gates.",
+          "jd_quote": "They must build a repeatable assessment across permit classes, languages, outdated pages, and ambiguous questions, with named release thresholds."
+        },
+        {
+          "statement": "Design comparative pilots to isolate assistant impact from confounding factors like outreach differences.",
+          "jd_quote": "They will design a district pilot with a comparison group, count residents who abandon the task, and separate outreach effects from the assistant's effect."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "USER_DISCOVERY",
+          "jd_quote": "The PM will map resident tasks and preserve a visible route to a human adviser.",
+          "profile_status": "strong",
+          "profile_quote": "I observed counter staff, read anonymised enquiry themes, and tested two content structures with residents."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "jd_quote": "They will compare translation, retrieval, and answer-generation options, including fallback behaviour when the source language differs from the question.",
+          "profile_status": "partial",
+          "profile_quote": "The team explored an assistant for explaining permit rules. I gathered approved source pages and defined a requirement to show the source and date for every answer."
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "They must build a repeatable assessment across permit classes, languages, outdated pages, and ambiguous questions, with named release thresholds.",
+          "profile_status": "partial",
+          "profile_quote": "During testing, several answers combined rules from different permit classes. I recommended limiting the assistant to navigation until that failure was addressed."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "They will design a district pilot with a comparison group, count residents who abandon the task, and separate outreach effects from the assistant's effect.",
+          "profile_status": "partial",
+          "profile_quote": "differences in local outreach mean I would not generalise the exact percentage to every district."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "They will choose the first supported tasks with accessibility, policy, procurement, design, and engineering colleagues.",
+          "profile_status": "strong",
+          "profile_quote": "Procurement and security colleagues handled vendor assessment; I handled user tasks and content quality."
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "AI_EVALUATION",
+          "why_now": "The role requires formalizing repeatable multi-variable evaluation suites and setting explicit launch thresholds across languages and permit types.",
+          "prep_action": "Draft an evaluation matrix with synthetic edge cases (e.g., outdated policy pages, ambiguous multilingual prompts) and define quantitative pass/fail thresholds for launch."
+        },
+        {
+          "capability_id": "AI_PRODUCT_LITERACY",
+          "why_now": "The role involves assessing specific retrieval, translation, and fallback mechanics for multilingual user journeys.",
+          "prep_action": "Map out product trade-offs between query-translation retrieval versus cross-lingual vector search, detailing UX fallbacks when confidence is low."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "why_now": "The council requires rigorous evidence via controlled district pilots before approving broader rollout.",
+          "prep_action": "Design a quasi-experimental pilot blueprint specifying a control/comparison district, tracking task abandonment, and isolating baseline outreach variance."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "DOC12",
+          "quote": "Explains how to define success and build test cases before tuning prompts.",
+          "title": "Define success criteria and build evaluations",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "DOC11",
+          "quote": "Introduces a process for improving Claude prompts using explicit goals and examples.",
+          "title": "Prompt engineering overview",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "The profile demonstrates manual content quality checks and risk scoping but lacks detailed evidence of structured AI benchmarking suites.",
+        "The profile shows awareness of confounding outreach variables but does not provide formal quasi-experimental pilot designs."
+      ]
+    }
+  },
+  "payload_sha256": "d6e32911dfd1e9ff0f5c422fb162711fc826b6c4946ade3ff8e568d180892276"
+}

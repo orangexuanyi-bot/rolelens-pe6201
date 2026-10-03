@@ -1,0 +1,179 @@
+{
+  "case_id": "RLR30-19",
+  "manifest_sha256": "3abf7ddc726da550aa92d120c494d212c97bc658c0602f8b640bd889a706e83d",
+  "reference_kind": "ai_generated_exploratory",
+  "human_reviewed": false,
+  "elapsed_ms": 7095.79,
+  "result": {
+    "mode": "ai",
+    "scope_bucket": "COMMERCIAL_PM",
+    "status": "ok",
+    "baseline": {
+      "method": "weighted_keyword_overlap",
+      "taxonomy_version": "2.0",
+      "responsibilities": [
+        "Define performance measures and protections, test new ideas and carry successful concepts through launch and scale."
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "label": "Ads and advertiser products",
+          "jd_quote": "Create advertising products for media and entertainment partners on Prime Video, including studios and channels.",
+          "profile_status": "not_evidenced",
+          "profile_quote": "",
+          "keyword_priority_score": 4
+        },
+        {
+          "capability_id": "GROWTH_LIFECYCLE",
+          "label": "Growth and lifecycle",
+          "jd_quote": "Balance viewer experience with advertiser effectiveness, subscriptions, engagement and program profitability.",
+          "profile_status": "partial_keyword_evidence",
+          "profile_quote": "Current scope: API onboarding for a cloud-monitoring startup.",
+          "keyword_priority_score": 2
+        }
+      ],
+      "top_gaps": [
+        "ADS_ECOSYSTEM",
+        "GROWTH_LIFECYCLE"
+      ],
+      "abstained": true,
+      "abstain_reason": "FEWER_THAN_THREE_EVIDENCED_JD_GAPS",
+      "limitation": "Keyword evidence is a proxy. Missing words do not prove missing skill; positive words do not prove proficiency."
+    },
+    "retrieved_knowledge": [
+      {
+        "id": "CK03",
+        "title": "Best practices for your Sponsored Products ads",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.890421
+      },
+      {
+        "id": "CK04",
+        "title": "Your complete guide to Sponsored Brands",
+        "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.890421
+      },
+      {
+        "id": "CK05",
+        "title": "Basic metrics and definitions in TikTok Ads Manager",
+        "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=en",
+        "accessed_at": "2026-09-26",
+        "domain": "commercial_product",
+        "score": 5.609374
+      }
+    ],
+    "reason_codes": [],
+    "privacy": "Inputs are processed in memory and are not saved by this program.",
+    "model_run": {
+      "model_requested": "google/gemini-3.7-flash",
+      "model_returned": "google/gemini-3.7-flash",
+      "latency_ms": 7091.38,
+      "usage": {
+        "prompt_tokens": 928,
+        "completion_tokens": 2058,
+        "total_tokens": 2986
+      },
+      "billed_cost_usd": 0.0084135,
+      "estimated_cost_usd": 0.0084135,
+      "finish_reason": "stop",
+      "price_basis": "OpenRouter standard listed rate for google/gemini-3.7-flash checked 2026-10-03; estimate, not invoice"
+    },
+    "analysis": {
+      "summary": "Candidate RL-P08 brings solid developer platform PM and solutions engineering experience with foundational query-evaluation exploration. However, the candidate lacks direct experience in video advertising ecosystems, partner monetization models, and commercial entertainment media partnerships.",
+      "responsibilities": [
+        {
+          "statement": "Develop and launch advertising formats and discovery experiences for studios and channel partners across Prime Video.",
+          "jd_quote": "Create advertising products for media and entertainment partners on Prime Video, including studios and channels."
+        },
+        {
+          "statement": "Balance audience viewing metrics, subscription retention, and program profitability against ad delivery and partner performance.",
+          "jd_quote": "Balance viewer experience with advertiser effectiveness, subscriptions, engagement and program profitability."
+        },
+        {
+          "statement": "Collaborate across multi-disciplinary partner, science, engineering, and business organizations to launch ad products.",
+          "jd_quote": "Work with advertising, engineering, science, business and customer-insight teams to serve partners and audiences."
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "jd_quote": "Create advertising products for media and entertainment partners on Prime Video, including studios and channels.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "AI_EVALUATION",
+          "jd_quote": "conversational search",
+          "profile_status": "partial",
+          "profile_quote": "Compared lexical documentation search with an embedding service on 60 queries and wrote relevance notes, including stale-example failures."
+        },
+        {
+          "capability_id": "METRICS_EXPERIMENTATION",
+          "jd_quote": "Define performance measures and protections, test new ideas and carry successful concepts through launch and scale.",
+          "profile_status": "partial",
+          "profile_quote": "Failed setup attempts fell in our instrumentation. I checked support tickets as a counterweight because the dashboard alone could miss people who abandoned setup early."
+        },
+        {
+          "capability_id": "CROSS_FUNCTIONAL",
+          "jd_quote": "Work with advertising, engineering, science, business and customer-insight teams to serve partners and audiences.",
+          "profile_status": "partial",
+          "profile_quote": "I still discuss rate limits, latency, and reliability directly with engineers, although the engineering lead owns architecture choices."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "jd_quote": "Balance viewer experience with advertiser effectiveness, subscriptions, engagement and program profitability.",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "jd_quote": "media and entertainment partners on Prime Video, including studios and channels",
+          "profile_status": "not_evidenced",
+          "profile_quote": ""
+        }
+      ],
+      "top_gaps": [
+        {
+          "capability_id": "ADS_ECOSYSTEM",
+          "why_now": "The role requires building ad products and formats tailored for streaming environments and ad-supported media discovery.",
+          "prep_action": "Study core ad-tech primitives including ad insertion, fill rates, frequency capping, reach, and reporting hierarchies across connected TV and digital streaming."
+        },
+        {
+          "capability_id": "MONETIZATION_PRICING",
+          "why_now": "The PM must trade off subscriber engagement and retention with ad load, revenue yield, and partner ROI.",
+          "prep_action": "Review CPM, ROAS, and yield optimization models to practice balancing viewer churn risk against ad monetization targets."
+        },
+        {
+          "capability_id": "COMMERCIAL_PARTNERSHIPS",
+          "why_now": "Serving external entertainment partners like studios and channels requires understanding B2B media business needs and joint value propositions.",
+          "prep_action": "Map typical media partner incentives around theatrical and digital release promotion, channel subscriptions, and co-marketing requirements."
+        }
+      ],
+      "knowledge_citations": [
+        {
+          "doc_id": "CK03",
+          "quote": "Its reporting section distinguishes exposure, clicks, attributed sales, and cost, which helps specify advertiser-facing metrics.",
+          "title": "Best practices for your Sponsored Products ads",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-products-best-practices",
+          "accessed_at": "2026-09-26"
+        },
+        {
+          "doc_id": "CK04",
+          "quote": "Connects brand discovery goals with impressions, new-to-brand purchases, and return on ad spend.",
+          "title": "Your complete guide to Sponsored Brands",
+          "url": "https://advertising.amazon.com/library/guides/sponsored-brands-what-to-know",
+          "accessed_at": "2026-09-26"
+        }
+      ],
+      "limitations": [
+        "Analysis is strictly limited to the provided job description and candidate background profile.",
+        "No hiring decisions, subjective qualification assessments, or inferences about non-evidenced skills are made."
+      ]
+    }
+  },
+  "payload_sha256": "39d0456beedd39424e6b7badd0c9c3b662276838259c4bcbfe91a99d2da8df24"
+}
