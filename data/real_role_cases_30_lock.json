@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "dataset_name": "Thirty verified employer PM requirement summaries paired with synthetic profiles",
+  "provenance": "Real employer requirements, summarized by Codex; 15 AI PM and 15 commercial PM; 30 previously used synthetic profiles, paired by fixed odd/even order. References frozen before this phase.",
+  "source_file_sha256": "5ab644504a21edc4eba47b1382979bd0387aa40970722d431cbc74fe97d6c5cb",
+  "record_count": 30,
+  "records": [
+    {
+      "id": "RLR30-01",
+      "sha256": "555cb94037831cc18cedc2bd2d0d8b585340c7cad1ae553e95332bd0b8772a90"
+    },
+    {
+      "id": "RLR30-02",
+      "sha256": "51b3b422af56c7b121c8ac551f4302d06e4df4a7d0ffbd72ebbc6aa5136628e9"
+    },
+    {
+      "id": "RLR30-03",
+      "sha256": "924a6d2bc2ab97e1476c16e078041dc6281905ce6b6719e33b42a52cfe2f9327"
+    },
+    {
+      "id": "RLR30-04",
+      "sha256": "1f34f3602210ed0de07caece42e3c7fe49594d9a45feb1bf60570bcdbd6d0cf0"
+    },
+    {
+      "id": "RLR30-05",
+      "sha256": "a53495369a46ba0ae0c88c347cbd3aadfab7629ec0bcc492346ea6003a819c90"
+    },
+    {
+      "id": "RLR30-06",
+      "sha256": "9bcc41395c333dc16c9e381c901abb6c6709d0c2965edd9bac939586a0738a85"
+    },
+    {
+      "id": "RLR30-07",
+      "sha256": "799de5032bf4506e458369d85ec32a247a7a43cf960417b33d1289bce3b58a71"
+    },
+    {
+      "id": "RLR30-08",
+      "sha256": "a4baef26fded4099181d1ea71f2b3ba4c07a6f2bdbe65a80079da7f98c94f6aa"
+    },
+    {
+      "id": "RLR30-09",
+      "sha256": "d35b67dd4b6d905eff5b937bda17ace1f8aae9236df4cce42b17211983aab1f7"
+    },
+    {
+      "id": "RLR30-10",
+      "sha256": "c76eaa0ef9a1f9bab71d176e621ce5a23ff72000abb7aa76e03242cac060cf22"
+    },
+    {
+      "id": "RLR30-11",
+      "sha256": "05899a3933f8ad86cbd45d9c63a04b039678bace0f18796c786180040e0bb89e"
+    },
+    {
+      "id": "RLR30-12",
+      "sha256": "9e29634ce5ba330959b109111cbd68fe2fb57704b6b2e0df42bec3c3096405a3"
+    },
+    {
+      "id": "RLR30-13",
+      "sha256": "ea0c0f66b214b98c49ba08e6d79a0cd1257ce610ef806f1db4930847c159be26"
+    },
+    {
+      "id": "RLR30-14",
+      "sha256": "7d77df7f6d741a148d5ac18ae860b104552110d65176becad6d1c79f1da9c2f9"
+    },
+    {
+      "id": "RLR30-15",
+      "sha256": "092d71a8daaf5281a3bedea3190a5764af2e1655de5fb83d9595ef680bcb7818"
+    },
+    {
+      "id": "RLR30-16",
+      "sha256": "a7a3caec3ee4638134961137a48f23a77619f81b2543b8367cce4b204da6e9ff"
+    },
+    {
+      "id": "RLR30-17",
+      "sha256": "821697ed4a00b2029f2526d3da201dc520949286ff796d0ac44aafb640468714"
+    },
+    {
+      "id": "RLR30-18",
+      "sha256": "144eab721a055bc828af77e377861747e43c3b80da9d824c41f8e627b9285d39"
+    },
+    {
+      "id": "RLR30-19",
+      "sha256": "f8826cbffd2b541a13115baac7c56a75c1a7aa1d3834d4f232be01f2b7768e2a"
+    },
+    {
+      "id": "RLR30-20",
+      "sha256": "80a6f135b02775ee2460eaf12ae75630d026287f0f1172afc541ab8c602997ec"
+    },
+    {
+      "id": "RLR30-21",
+      "sha256": "80ecb87509779af49ba28a566906a9144ad7a1a0f91a18249236b23e9392384b"
+    },
+    {
+      "id": "RLR30-22",
+      "sha256": "038e0aa344d4161c9963309e486af9fb3afe2133a9e08feff86354717ee1f574"
+    },
+    {
+      "id": "RLR30-23",
+      "sha256": "da8cd7f0f9f3ca1ac244fb04fd1ef2fe254e9d2b7b178b232ebd68e44b85bc9b"
+    },
+    {
+      "id": "RLR30-24",
+      "sha256": "7c85985b5472e84e398442d0c89cfd6fdf41b5d56ee64a10cf318e399499c597"
+    },
+    {
+      "id": "RLR30-25",
+      "sha256": "49845672c19c6d6f20805abab24dd22c42bd675126ff0851a957933dbc9f3e33"
+    },
+    {
+      "id": "RLR30-26",
+      "sha256": "540dc4258e813df7c747986073f7ea8a1bd704fdaed1dbbe5a78e87cc3335417"
+    },
+    {
+      "id": "RLR30-27",
+      "sha256": "1601eb11e71125aee456c49b8231f6ab35adc0997e9f778cde3e0e0b678a68d0"
+    },
+    {
+      "id": "RLR30-28",
+      "sha256": "7707862d250ca10892791c01393ccc276554d0e77e256f798cc4400842ab07c5"
+    },
+    {
+      "id": "RLR30-29",
+      "sha256": "e0308e0d2b598dda0561001d4c31130d201d42b37ad915eafd76320e5af4388b"
+    },
+    {
+      "id": "RLR30-30",
+      "sha256": "edc13588979aa3eb186acd5a61e556b882a18e96dc1189d1ddd4965ff60695ef"
+    }
+  ]
+}
