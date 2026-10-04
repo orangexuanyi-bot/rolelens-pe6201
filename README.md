@@ -47,6 +47,8 @@ python -m venv .venv
 
 The interface runs on localhost. The core CLI uses Python's standard library. Streamlit powers the UI; pypdf supports text-layer PDF input. Tested environment: Python 3.12.14, Streamlit 1.64.0, pypdf 6.19.0. Dependency ranges are in `requirements.txt`.
 
+For a one-page course presentation, open `http://localhost:8501/?demo=1` after starting Streamlit. This view uses the source-linked Spotify subscription PM summary and a synthetic profile. Its single button runs the local baseline; the adjacent Gemini panel reads the saved 3 October result and makes no new API call. The full input texts are available in an expander. This presenter route is not a separate evaluation run.
+
 ### Reproduce the final comparison
 
 No credentials are needed for a new baseline run:

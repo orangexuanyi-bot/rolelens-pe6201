@@ -14,6 +14,15 @@ ROOT = Path(__file__).resolve().parent
 KNOWLEDGE = ROOT / "data" / "knowledge_notes.jsonl"
 
 st.set_page_config(page_title="RoleLens", page_icon="🔎", layout="wide")
+
+# The read-only presenter route keeps one evaluated example on a single screen.
+# It never initiates an external model request or reads private candidate files.
+if st.query_params.get("demo") == "1":
+    from rolelens.recording_view import render_recording_view
+
+    render_recording_view(ROOT, KNOWLEDGE)
+    st.stop()
+
 st.title("RoleLens")
 st.caption("English-language AI and commercial product manager role preparation with evidence links. Put the PM title on the first JD line. This prototype supports candidate preparation, not hiring decisions.")
 

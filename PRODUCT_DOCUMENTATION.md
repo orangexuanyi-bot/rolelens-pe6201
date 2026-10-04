@@ -78,7 +78,8 @@ The 80% case-agreement threshold was not reached; the +20 percentage-point diffe
 
 | File or module | Role |
 | --- | --- |
-| `streamlit_app.py` | Pasted-text interface, permission checkbox, evidence display, abstention, model usage. |
+| `streamlit_app.py` | Pasted-text interface, permission checkbox, evidence display, abstention, model usage; routes `?demo=1` to the one-page presenter view. |
+| `rolelens/recording_view.py` | Source-linked synthetic presentation case; runs the local baseline on one click and labels the saved Gemini output and evaluation metrics without making a new model call. |
 | `rolelens/cli.py` | File-based analysis and local private-CV aggregate mode; preserves the original separately gated human-reference evaluator. |
 | `rolelens/pipeline.py` | Coordinates input/scope checks, baseline, retrieval, permission, provider and validator. |
 | `rolelens/scope.py` | First-line PM-title and AI/commercial-domain heuristics. |
