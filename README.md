@@ -28,7 +28,7 @@ Difference: **40.0 percentage points**. The 80% case-agreement threshold was not
 - **Reference chronology:** new real-role inputs and references frozen at `98997be` before prediction; profiles reused from older tests, so this is not an original unseen holdout.
 - **Personal ten-case check:** I checked the original ten reference cases and accepted the judgments unchanged. That check followed the earlier run. [Record](data/student_review_confirmation_20261003.json). It does not apply to the thirty new real-role references.
 - **Private sanity slice:** three consented de-identified CV summaries, stored separately and not public.
-- **Course handoff:** repository and report are prepared; the student recorded a 4-minute-39-second face-and-screen demonstration on 4 October 2026. The video is held locally for course upload. Final NTULearn submission and receipt remain pending. GitHub publication is not course submission.
+- **Course handoff:** the student recorded a 4-minute-39-second face-and-screen demonstration and submitted it with the report, AI-use cover and this repository link through NTULearn on 4 October 2026. The video is not published in GitHub. The course portal showed a submitted second attempt and receipt; grading remains pending.
 
 Historical fictional-role experiments remain in `results/exploratory_20261003/`, `results/expansion20_20261003/` and `results/evaluation_30_20261003/`; do not combine them with this real-role phase.
 
